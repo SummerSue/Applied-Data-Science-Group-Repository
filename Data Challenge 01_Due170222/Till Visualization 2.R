@@ -18,16 +18,84 @@ Crime_vs_Crime <- filter(fullData, rowSums(fullData[,11:18]) == 0,
 ```
 
 ```{r}
-# % Killed With Perfect Lethality
+# PL Ratios-----------------------------------------------------------------
+PL.ratio <- data.frame()
+PL.ratio[1:9, 1] <- c("Civilians",
+                      "Federal_Police",
+                      "Navy",
+                      "Army",
+                      "AFI",
+                      "State_Police",
+                      "Ministerial_Police",
+                      "Municipal_Police",
+                      "Public_Prosecutor")
 
+# PL Ratio of Civilians
 civ_killed_pl <- sum(filter(Pol_vs_Crime, civilian.wounded == 0,
                             organized.crime.wounded == 0)$civilian.dead)
 oc_killed_pl <- sum(filter(Pol_vs_Crime, civilian.wounded == 0,
                            organized.crime.wounded == 0)$organized.crime.dead)
 civ_killed <- sum(Pol_vs_Crime$civilian.dead)  
 oc_killed <- sum(Pol_vs_Crime$organized.crime.dead)
+PL.ratio[1, 2] <- (oc_killed_pl + civ_killed_pl) / (civ_killed + oc_killed)
 
-(oc_killed_pl + civ_killed_pl) / (civ_killed + oc_killed)
+# PL Ratio of Federal Police
+fedpol_killed_pl <- sum(filter(Pol_vs_Crime, federal.police.wounded == 0)$
+                       federal.police.dead)
+fedpol_killed <- sum(Pol_vs_Crime$federal.police.dead)
+PL.ratio[2, 2] <- fedpol_killed_pl / fedpol_killed
+
+# PL Ratio of Navy
+nav_killed_pl <- sum(filter(Pol_vs_Crime, navy.wounded == 0)$
+                       navy.dead)
+nav_killed <- sum(Pol_vs_Crime$navy.dead)
+PL.ratio[3, 2] <- nav_killed_pl / nav_killed
+
+# PL Ratio of Army
+mil_killed_pl <- sum(filter(Pol_vs_Crime, military.wounded == 0)$
+                       military.dead)
+mil_killed <- sum(Pol_vs_Crime$military.dead)
+PL.ratio[4, 2] <- mil_killed_pl / mil_killed
+
+# PL Ratio of AFI
+afi_killed_pl <- sum(filter(Pol_vs_Crime, afi.wounded == 0)$
+                       afi.dead)
+afi_killed <- sum(Pol_vs_Crime$afi.dead)
+PL.ratio[5, 2] <- afi_killed_pl / afi_killed
+
+# PL Ratio of State Police
+stpol_killed_pl <- sum(filter(Pol_vs_Crime, state.police.wounded == 0)$
+                       state.police.dead)
+stpol_killed <- sum(Pol_vs_Crime$state.police.dead)
+PL.ratio[6, 2] <- stpol_killed_pl / stpol_killed
+
+# PL Ratio of Ministerial Police
+minpol_killed_pl <- sum(filter(Pol_vs_Crime, ministerial.police.wounded == 0)$
+                       ministerial.police.dead)
+minpol_killed <- sum(Pol_vs_Crime$ministerial.police.dead)
+PL.ratio[7, 2] <- minpol_killed_pl / minpol_killed
+
+# PL Ratio of Municipal Police
+munpol_killed_pl <- sum(filter(Pol_vs_Crime, municipal.police.wounded == 0)$
+                       municipal.police.dead)
+munpol_killed <- sum(Pol_vs_Crime$municipal.police.dead)
+PL.ratio[8, 2] <- munpol_killed_pl / munpol_killed
+
+# PL Ratio of Public Prosecutor
+pp_killed_pl <- sum(filter(Pol_vs_Crime, public.prosecutor.wounded == 0)$
+                       public.prosecutor.dead)
+pp_killed <- sum(Pol_vs_Crime$public.prosecutor.dead)
+PL.ratio[9, 2] <- pp_killed_pl / pp_killed
+
+# Output
+names(kill.ratio) <- c("Force Type", "PL Ratio")
+kill.ratio$`Force Type` <- as.factor(kill.ratio$`Force Type`)
+
+# Visualization for Lethality Index by Force Type
+library(ggplot2)
+ggplot(kill.ratio, aes(x = Force Type, y = PL Ratio)) +
+  geom_bar(stat = "identity") +
+  theme_minimal()
 
 ```
 
