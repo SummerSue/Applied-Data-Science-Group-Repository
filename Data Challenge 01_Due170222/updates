@@ -1,0 +1,136 @@
+---
+title: "Data Challenge 1"
+author: "Sam Gass"
+date: "2/21/2017"
+output: pdf_document
+---
+```{r}
+#Data Cleaning 
+fullData <- read.csv('ConfrontationsData_170209.csv')
+library(dplyr)
+
+# Finding All Police vs. Criminals Events
+Pol_vs_Crime <- filter(fullData, rowSums(fullData[,11:18]) > 0 |
+                                 rowSums(fullData[,22:31]) > 0 | 
+                                 detained > 0)
+# Create Categorical Variable
+fullData <- mutate(fullData, conflict.type = ifelse(rowSums(fullData[,11:18]) > 0 |
+                                                    rowSums(fullData[,22:31]) > 0 |
+                                                    detained > 0,
+                                                    'Police vs. Criminals',
+                                                    'Criminals vs Criminals'))
+
+HQ_1 <- mutate(HQ, chall_voteshare = ifelse(po1 == 0 & inc == 0 | 
+                                     inc == 0 & po1 == 1, dv,
+                              ifelse(po1 == 0 & inc == 1 |
+                                     inc == 1 & po1 == 1, 100 - dv, NA)))
+
+# Criminal vs. Criminal Confrontations
+Crime_vs_Crime <- filter(fullData, rowSums(fullData[,11:18]) == 0,
+                                   rowSums(fullData[,22:31]) == 0,
+                                   detained == 0,
+                                   rowSums(fullData[,c(19:20,30:31)]) > 0)
+
+# Visualizations
+
+ggplot(data = fullData, aes(conflict.type)) + 
+  geom_bar(fill = "red4") + 
+  theme(plot.title = element_text(size = 20, color = "blue4", hjust = 0.5),
+                     panel.background = element_rect(fill = "lightsteelblue", 
+                                        color = "blue4", size = 2),
+                     axis.title  = element_text(color = "navyblue", size = 16, 
+                                 face = "bold"),
+                     axis.text  = element_text(color = "navyblue", size = 14)) +
+  labs(y = "", x = "Type of Conflict")
+
+#Boxplot shows compressed distribution
+ggplot(data = fullData, aes(x = conflict.type, y = total.people.dead)) +
+      geom_boxplot(fill = "springgreen4",size = 1) +
+      theme(legend.position = "none") +
+      theme_dark() +
+      coord_flip()
+
+``` 
+
+```{r}
+# % Killed With Perfect Lethality
+
+civ_killed_pl <- sum(filter(Pol_vs_Crime, civilian.wounded == 0,
+                            organized.crime.wounded == 0)$civilian.dead)
+oc_killed_pl <- sum(filter(Pol_vs_Crime, civilian.wounded == 0,
+                           organized.crime.wounded == 0)$organized.crime.dead)
+civ_killed <- sum(Pol_vs_Crime$civilian.dead)  
+oc_killed <- sum(Pol_vs_Crime$organized.crime.dead)
+
+(oc_killed_pl + civ_killed_pl) / (civ_killed + oc_killed)
+
+```
+
+```{r}
+kill.ratio <- data.frame()
+kill.ratio[1:8, 1] <- c("Federal Police",
+                        "Navy",
+                        "Army",
+                        "AFI",
+                        "State Police",
+                        "Ministerial Police",
+                        "Municipal Police",
+                        "Public Prosecutor")
+
+# Federal Police Confrontations (3.46 dead for every wounded)
+
+Fed_Pol <- filter(fullData, rowSums(fullData[,c(13,24)]) > 0)
+kill.ratio[1, 2] <- sum(Fed_Pol[,c(19,20)]) / sum(Fed_Pol[,c(30,31)]) 
+
+# Navy Lethality Index (7.14)
+
+Navy <- filter(fullData, rowSums(fullData[,c(12,23)]) > 0)
+kill.ratio[2, 2] <- sum(Navy[,c(19,20)]) / sum(Navy[,c(30,31)]) 
+
+# Army Lethality Index (4.24)
+
+Army <- filter(fullData, rowSums(fullData[,c(11,22)]) > 0)
+kill.ratio[3, 2] <- sum(Army[,c(19,20)]) / sum(Army[,c(30,31)]) 
+
+# AFI Lethality Index
+AFI <- filter(fullData, rowSums(fullData[,c(14, 25)]) > 0)
+kill.ratio[4, 2] <- sum(AFI[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+
+
+# State Police Lethality Index
+State_police <- filter(fullData, rowSums(fullData[,c(15, 26)]) > 0)
+kill.ratio[5, 2] <- sum(State_police[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+
+# Ministerial Police Lethality Index
+Ministerial <- filter(fullData, rowSums(fullData[,c(16, 27)]) > 0)
+kill.ratio[6, 2] <- sum(Ministerial[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+
+# Municipal Police Lethality Index
+Municipal <- filter(fullData, rowSums(fullData[,c(17, 28)]) > 0)
+kill.ratio[7, 2] <- sum(Municipal[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+
+# Public Prosecutor Lethality Index
+Public_Prosecutor <- filter(fullData, rowSums(fullData[,c(18, 29)]) > 0)
+kill.ratio[8, 2] <- sum(Public_Prosecutor[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+
+# Output
+names(kill.ratio) <- c("Force_Type", "Lethality_Ratio")
+kill.ratio$`Force Type` <- as.factor(kill.ratio$`Force Type`)
+
+# Visualization for Lethality Index by Force Type
+library(ggplot2)
+ggplot(kill.ratio, aes(x = reorder(Force_Type, Lethality_Ratio),
+                       y = Lethality_Ratio)) +
+  geom_bar(stat = "identity", fill = "darkorange") +
+  theme_dark() +
+  coord_flip() + 
+  labs(y = "Lethality Ratio", x = "") + 
+  theme(axis.title = element_text(size = 14, color = "grey41"),
+        axis.text = element_text(size = 10, color = "grey41"))
+```
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
