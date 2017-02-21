@@ -1,0 +1,82 @@
+fullData <- read.csv('ConfrontationsData_170209.csv')
+library(dplyr)
+
+# Separating Out the Data Set----------------------------------------------------------------------------------------------------------------
+
+#Finding All Police vs. Criminals Events
+Pol_vs_Crime <- filter(fullData, rowSums(fullData[,11:18]) > 0 | rowSums(fullData[,22:31]) > 0 | detained > 0)
+
+#Finding Federal Police vs. Criminals Events
+Fed_vs_Crime <- filter(fullData, rowSums(fullData[,11:14]) > 0 | rowSums(fullData[,22:25]) > 0)
+
+#Criminal vs. Criminal Confrontations
+Crime_vs_Crime <- filter(fullData, rowSums(fullData[,11:18]) == 0,
+                       rowSums(fullData[,22:31]) == 0,
+                       detained == 0,
+                       rowSums(fullData[,c(19:20,30:31)]) > 0)
+
+#Replicating 86.1% for PCT of civilian deaths that occured during instances of perfect lethality-----------------------------------------------------
+
+# Using Fed_vs_Crime (At least one federal officer killed or wounded) assuming civilian means civilian or organized crime killed. Also assuming that
+# perfect lethality means no civilians or organized crime wounded (Can have police wounded etc.) (72.53%)                
+(sum(filter(Fed_vs_Crime, civilian.wounded == 0, organized.crime.wounded == 0)$civilian.dead) + 
+  sum(filter(Fed_vs_Crime, civilian.wounded == 0, organized.crime.wounded == 0)$organized.crime.dead))/
+  (sum(Fed_vs_Crime$civilian.dead) + sum(Fed_vs_Crime$organized.crime.dead))
+
+# Using Pol_vs_Crime (At least one state or federal officer killed or wounded or suspect detained) assuming civilian means civilian 
+# or organized crime killed (56.36%)                  
+(sum(filter(Pol_vs_Crime, civilian.wounded == 0, organized.crime.wounded == 0)$civilian.dead) + 
+  sum(filter(Pol_vs_Crime, civilian.wounded == 0, organized.crime.wounded == 0)$organized.crime.dead))/
+  (sum(Pol_vs_Crime$civilian.dead) + sum(Pol_vs_Crime$organized.crime.dead))
+
+# Remove Organized Crime from equation (54.8%)
+sum(filter(Pol_vs_Crime, civilian.wounded == 0)$civilian.dead) / sum(Pol_vs_Crime$civilian.dead)
+
+#Using whole data set, if we assume organized crime counts, perfect lethality means no civilians wounded or organized crime wounded we get 71.9%
+Perf_Leth <- filter(fullData, civilian.wounded == 0, 
+                    organized.crime.wounded == 0,
+                    total.people.dead > 0)
+(sum(Perf_Leth$civilian.dead) + sum(Perf_Leth$organized.crime.dead)) /
+  (sum(fullData$civilian.dead) + sum(fullData$organized.crime.dead))
+
+#Using whole data set, if we assume organized crime deaths count, perfect lethality means no person involved in conflict is wounded we get 55.89%
+Perf_L <- filter(fullData, total.people.wounded == 0,
+                    total.people.dead > 0)
+(sum(Perf_L$civilian.dead) + sum(Perf_L$organized.crime.dead)) /
+  (sum(fullData$civilian.dead) + sum(fullData$organized.crime.dead))
+
+
+#Using whole data set, if we define perfect lethality as total.wounded = 0 we get 39.3%
+sum(filter(fullData, total.people.wounded == 0)$civilian.dead)/
+  sum(fullData$civilian.dead)
+
+#If we define perfect lethality as civilian.wounded = 0 we get 67.5%
+sum(fullData, civilian.wounded == 0, civilian.dead > 0) / sum(Perf_Leth$civilian.dead)/sum(fullData$civilian.dead)
+
+#If we think they mean only organized crime when referrning to civilians, we get
+#57.2%
+sum(filter(fullData, total.people.wounded == 0)$organized.crime.dead)/
+  sum(fullData$organized.crime.dead)
+
+
+#Trying to Replicate death ratios--------------------------------------------------------------------------------------------------------------
+
+# Federal Police Confrontations (3.46 dead for every wounded)
+
+Fed_Pol <- filter(fullData, rowSums(fullData[,c(13,25)]) > 0)
+sum(Fed_Pol[,c(19,20)]) / sum(Fed_Pol[,c(30,31)]) 
+
+# Navy Lethality Index (7.14)
+
+Navy <- filter(fullData, rowSums(fullData[,c(12,23)]) > 0)
+sum(Navy[,c(19,20)]) / sum(Navy[,c(30,31)]) 
+
+#Army Lethality Index (4.24)
+
+Army <- filter(fullData, rowSums(fullData[,c(11,22)]) > 0)
+sum(Army[,c(19,20)]) / sum(Army[,c(30,31)]) 
+
+
+
+
+
