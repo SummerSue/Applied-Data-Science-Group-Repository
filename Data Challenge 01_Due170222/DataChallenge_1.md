@@ -16,7 +16,9 @@ Based on our assumptions and calculations (shown below) we arrived at a perfect 
 
 #### Please show the exact computations you used to calculate them (most likely than not, you'll need to do some additional munging in the data to get there).
 
-\[{PL\,ratio} = \sum_{i=1}^{n} \frac {people_i\,killed\,in\,PL} {people_i\,killed\,in\,all\,events}\] \[{Lethality\,index} = \frac {people_i\,killed\,in\,all\,events} {people_i\,wounded\,in\,all\,events}\] where \(people_i\) denotes the group of people of category \(i\) (FAF, civilians)
+![](/Users/bobchen/Documents/Columbia/S17/5069%20Applied%20Data%20Science/Data%20Challenge/Equation.png)
+
+where people\_i denotes the group of people of category i (FAF, civilians)
 
 #### If you could not replicate them, please show why and the difference relative to your own computations (also, include a neat graph that summarizes this).
 
