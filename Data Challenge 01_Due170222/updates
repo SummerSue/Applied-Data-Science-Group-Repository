@@ -174,7 +174,6 @@ ggplot(PL.ratio, aes(x = reorder(Force_Type, PL_Ratio),
 ```
 
 
-
 ```{r}
 kill.ratio <- data.frame()
 kill.ratio[1:7, 1] <- c("Federal Police",
@@ -203,15 +202,15 @@ kill.ratio[4, 2] <- sum(AFI[,c(19,20)]) / sum(AFI[,c(30,31)])
 
 # State Police Lethality Index
 
-kill.ratio[5, 2] <- sum(State_Police[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+kill.ratio[5, 2] <- sum(State_Police[,c(19,20)]) / sum(State_Police[,c(30,31)]) 
 
 # Ministerial Police Lethality Index
 
-kill.ratio[6, 2] <- sum(Ministerial[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+kill.ratio[6, 2] <- sum(Ministerial[,c(19,20)]) / sum(Ministerial[,c(30,31)]) 
 
 # Municipal Police Lethality Index
 
-kill.ratio[7, 2] <- sum(Municipal[,c(19,20)]) / sum(AFI[,c(30,31)]) 
+kill.ratio[7, 2] <- sum(Municipal[,c(19,20)]) / sum(Municipal[,c(30,31)]) 
 
 #Add in Agency Types
 
