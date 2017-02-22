@@ -1,4 +1,4 @@
-# Applied-Data-Group-Repository
+# Applied-Data-Science-Group-Repository
 
 Welcome to our page!
 
