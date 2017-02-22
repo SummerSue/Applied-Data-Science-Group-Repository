@@ -16,7 +16,7 @@ Based on our assumptions and calculations (shown below) we arrived at a perfect 
 
 #### Please show the exact computations you used to calculate them (most likely than not, you'll need to do some additional munging in the data to get there).
 
-![](DataChallenge_1_files/figure-markdown_github/unnamed-chunk-1-1.png)![](DataChallenge_1_files/figure-markdown_github/Equation.png)
+![](DataChallenge_1_files/figure-markdown_github/Equation.png)
 
 where people\_i denotes the group of people of category i (FAF, civilians)
 
