@@ -1,0 +1,47 @@
+---
+title: "Question 2"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Hypothesis 1
+
+Our first hypothesis is that there will be more deaths if army was involved in the confrontation, regardless of the sacle of the combat. 
+
+The assumption is that a confrontation was of a larger scale if there were more vehicles and long guns seized in that event. This is based on 4 sub-assumptions:
+
+1. more vehicles and long guns seized means more vehicles and long guns were used in the confrontation
+2. more participating forces if more vehicles were used
+3. more vehicles also added complexitiy to the combat, such as explosion and defense 
+4. more long guns means participants could be murdered within a longer distance
+
+Below is an exhibition of our findings. The result demonstrates that there are more deaths if army was involved in the confrontation, regardless of the sacle of the combat, which agrees with our hypothesis.
+
+The marginal effect of the involvement of army on deaths is 0.16, on average, ceteris paribus. And this effect is statistically significant at a 95% confidence level. The marginal effects of `vehicles.seized` and `long.guns.seized` are both positive and significant as well. The interactions show that army involvement does not have a significant effect of the marginal effect of vehicles seized, but will significantly decreases the marginal effect of long guns seized. 
+
+```{r, echo = FALSE, warnings = FALSE, message = FALSE}
+all_violence <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
+
+lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized * army, data = all_violence)
+library(sjPlot)
+sjt.lm(lm1, show.ci = FALSE, show.se = TRUE)
+```
+
+The limitations of our interference are:
+
+1. the marginal effects of vehicles and long guns seized might not linear(addictive), but our model fails to detect if this is true
+2. the marginal effect of army could be so overwhelming large that our result might not differ a lot from the one that evaluate the marginal effects of army with no interactions at all
+3. there might be multicollinearity because armys use vehicles and long guns a lot
+
+# Codes
+
+```{r, eval = FALSE}
+all_violence <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
+
+lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized * army, data = all_violence)
+library(sjPlot)
+sjt.lm(lm1, show.ci = FALSE, show.se = TRUE)
+```
