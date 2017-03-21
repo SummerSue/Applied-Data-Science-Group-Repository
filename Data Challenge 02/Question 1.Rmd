@@ -1,0 +1,68 @@
+---
+title: "Data Challenge 2"
+author: "Sam Gass"
+date: "3/21/2017"
+output: github_document
+---
+```{r setup, include = FALSE}
+knitr::opts_knit$set(root.dir = '/Users/samgass/GitHub/QMSS-GR5069/week_07/datachallenge2/data/processed')
+```
+
+#Question 1 Part 1
+
+Does the presence of perfect lethality by the government agencies in a conflict prevent government deaths?
+
+```{r, warning = FALSE, message = FALSE}
+#Data Transformations
+library(dplyr)
+data <- read.csv("AllViolenceData_170216.csv")
+
+#Create variable for total deaths for all government agencies
+data <- mutate(data, total.force.dead = state.police.dead + municipal.police.dead  + 
+                                        federal.police.dead + afi.dead + navy.dead +
+                                        ministerial.police.dead + military.dead    +
+                                        public.prosecutor.dead)
+
+#Create month variables to control for seasonal variability
+library(lubridate)
+data$force.dead <- ifelse(data$total.force.dead > 0, 1, 0)
+data$date <- as.Date(data$date)
+data$month <- month(data$date)
+data <- mutate(data, MonthAbb = month.abb[month])
+```
+
+To answer this question we performed a logistic regression with force.dead (if there were any deaths on the side of the government) as the dependent variable and perfect lethality (if the government forces executed with perfect lethality) as the independent variable. To control for seasonal variability and location, we controlled for month of the year and state as well. The results of the regression are as follows:
+
+```{r, warning = FALSE, message = FALSE}
+#Logistic regression model
+log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, family = "binomial")
+summary(log)
+coef <- as.data.frame(coefficients(log))
+exp(coef[2,1])
+```
+
+These results indicate that if the government operates with perfect lethality, they reduce the  odds of the government incurring a death in that conflict by 48% controlling for location and time of year. 
+
+This analysis indicates a very significant drop in events with government deaths if the government executes with perfect lethality. This is a very important relationship to examine and I would highly recommend further study; if perfect lethality prevents government deaths it would explain its frequency in the conflicts (the government agencies would have a lot of incentive to act more lethally if it prevented deaths). At the same time, as government run agencies these organizations should try to reduce the number of people killed in raids. This observation creates an interesting dynamic between two opposing forces; the government agencies that conduct these raids and the government oversight organizations responsible for good governance. The former would probably support using more lethal force if it prevents deaths of their own people, the latter would probably push the agencies to reduce their lethality to prevent human rights abuses. There are limitations to this analysis; because there are so many incidents with no deaths, the sample is fairly bias and the results are probably not entirely reliable. This is hard to overcome as the events just occur in this distribution. Overall, this analysis gives valuable insight into a difficult subject. If the government wants to reduce deaths it will probably need to present an alternative to government forces. 
+
+
+```{r}
+data$dead <- ifelse(data$total.force.dead > 0, 1, 0)
+
+bardata <- data %>% 
+  group_by(dead, perfect.lethality) %>%
+  summarise(count = n())
+
+bardata$percentage <- c("72%", "28%", "77%", "23%")
+bardata$perfect.lethality <- as.factor(bardata$perfect.lethality)
+bardata$dead <- as.factor(bardata$dead)
+
+ggplot(bardata, aes(x = dead, 
+                    y = count,
+                    fill = perfect.lethality)) + 
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_text(aes(label = percentage), vjust = 0.2, color = "black", position=position_dodge(.9)) +
+  ggtitle("Perfect Lethality Proportion in Death and No-death Confrontations") +
+  theme_minimal()
+```
+In visualizing this drop brought by perfect lethality in police force death, we made a barplot showing different lethality proportion of cases with police death and no police death. We can see that perfect lethality accounts for a larger percent of the cases where there was no death in police forces. To be specific, in non-death cases 28% are perfectly lethal, while in cases involving police death, only 23% cases are perfect lethal. This is in consistence with the result found in regression analysis.
