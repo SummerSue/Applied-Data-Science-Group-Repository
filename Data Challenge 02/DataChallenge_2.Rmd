@@ -71,7 +71,7 @@ ggplot(bardata, aes(x = perf.leth,
                     y = count,
                     fill = dead)) + 
   geom_bar(stat = "identity", position = "dodge") +
-  geom_text(aes(label = percentage), vjust = 0.2, color = "black", position=position_dodge(.9)) +
+  geom_text(aes(label = percentage), vjust = 0, color = "black", position=position_dodge(.9)) +
   ggtitle("Effect of Perfect Lethality on Government Deaths") +
   theme_economist() + scale_fill_tableau() +
   labs(x = "", y = "", caption = "Plot 1") + 
