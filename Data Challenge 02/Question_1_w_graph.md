@@ -8,6 +8,935 @@ Question 1 Part 1
 
 Does the presence of perfect lethality by the government agencies in a conflict prevent government deaths?
 
+To answer this question we performed a logistic regression with force.dead (if there were any deaths on the side of the government) as the dependent variable and perfect lethality (if the government forces executed with perfect lethality) as the independent variable. To control for seasonal variability and location, we controlled for month of the year and state as well. The results of the regression are as follows:
+
+<table style="border-collapse:collapse; border:none;border-bottom:double;">
+<td style="padding:0.2cm; border-top:double;">
+ 
+</td>
+<td style="border-bottom:1px solid; padding-left:0.5em; padding-right:0.5em; border-top:double;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; border-bottom:1px solid; border-top:double;" colspan="4">
+force.dead
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; font-style:italic;">
+ 
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em; font-style:italic;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; font-style:italic; ">
+B
+</td>
+<td style="padding:0.2cm; text-align:center; font-style:italic; ">
+CI
+</td>
+<td style="padding:0.2cm; text-align:center; font-style:italic; ">
+std. Error
+</td>
+<td style="padding:0.2cm; text-align:center; font-style:italic; ">
+p
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; border-top:1px solid; text-align:left;">
+(Intercept)
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em; border-top:1px solid; ">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; border-top:1px solid; ">
+1.48
+</td>
+<td style="padding:0.2cm; text-align:center; border-top:1px solid; ">
+-0.04 – 3.45
+</td>
+<td style="padding:0.2cm; text-align:center; border-top:1px solid; ">
+0.85
+</td>
+<td style="padding:0.2cm; text-align:center; border-top:1px solid; ">
+.081
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+perfect.lethality
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.86
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.15 – -0.57
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.15
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+&lt;.001
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm;" colspan="6">
+state
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateBaja California
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.83
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.85 – -0.23
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.89
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.038
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateBaja California Sur
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+14.22
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-281.29 – NA
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1455.40
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.992
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateCampeche
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-16.67
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+NA – 139.24
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+999.57
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.987
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateChiapas
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.25
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.49 – -0.37
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1.02
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.028
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateChihuahua
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.44
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.39 – 0.07
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.84
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.088
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateCiudad de México
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.79
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.16 – 0.20
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1.08
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.097
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateCoahuila de Zaragoza
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.96
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.95 – -0.39
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.87
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.024
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateColima
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-17.03
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+NA – 48.48
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+640.93
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.979
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateDurango
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.13
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.11 – -0.58
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.86
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.013
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateGuanajuato
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.46
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.57 – 0.28
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.95
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.124
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateGuerrero
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.05
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.02 – 0.48
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.85
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.218
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateHidalgo
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.51
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.80 – 0.46
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1.06
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.153
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateJalisco
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.32
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.34 – -0.72
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.89
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.009
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateMéxico
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.84
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.86 – -0.24
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.88
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.037
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateMichoacán de Ocampo
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.31
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.29 – 0.23
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.85
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.124
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateMorelos
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.00
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.09 – 0.73
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.94
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.286
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateNayarit
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.33
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.39 – -0.69
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.91
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.010
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateNuevo León
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.94
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.91 – -0.42
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.85
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.022
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateOaxaca
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.95
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.13 – -0.15
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.99
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.047
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+statePuebla
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.39
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.68 – 1.73
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1.08
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.720
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateQuerétaro
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+13.91
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-281.59 – NA
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1455.40
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.992
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateQuintana Roo
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.43
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-5.79 – 0.09
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1.41
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.086
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateSan Luis Potosí
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.47
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.58 – 0.26
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.94
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.120
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateSinaloa
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.03
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.00 – -0.50
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.85
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.017
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateSonora
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.97
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-5.07 – -1.28
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.93
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.001
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateTabasco
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.43
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.77 – -0.47
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1.07
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.023
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateTamaulipas
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.97
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.92 – -0.47
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.84
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.018
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateTlaxcala
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+13.78
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-281.75 – NA
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+1455.40
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.992
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateVeracruz de Ignacio de la Llave
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-2.15
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-4.20 – -0.52
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.90
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.017
+</td>
+</tr>
+<tr>
+<td style="font-style:italic; padding:0.2cm; padding-left:0.6cm; text-align:left;">
+stateZacatecas
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.01
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-3.08 – 0.69
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.93
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.277
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbAug
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.01
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.58 – 0.61
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.30
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.977
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbDec
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.07
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.75 – 0.61
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.35
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.845
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbFeb
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.03
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.59 – 0.66
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.32
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.919
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbJan
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.22
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.91 – 0.46
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.35
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.529
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbJul
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.33
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.97 – 0.30
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.32
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.302
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbJun
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.17
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.46 – 0.81
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.32
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.595
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbMar
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.43
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-1.06 – 0.21
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.32
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.187
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbMay
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.15
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.48 – 0.78
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.32
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.651
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbNov
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.15
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.50 – 0.79
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.33
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.658
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbOct
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.14
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.74 – 0.47
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.31
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.662
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left;">
+MonthAbbSep
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.30
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+-0.35 – 0.95
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+0.33
+</td>
+<td style="padding:0.2cm; text-align:center; ">
+.364
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left; border-top:1px solid;">
+Observations
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em; border-top:1px solid;">
+ 
+</td>
+<td style="padding:0.2cm; padding-top:0.1cm; padding-bottom:0.1cm; text-align:center; border-top:1px solid;" colspan="4">
+1174
+</td>
+</tr>
+<tr>
+<td style="padding:0.2cm; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">
+R<sup>2</sup> / adj. R<sup>2</sup>
+</td>
+<td style="padding-left:0.5em; padding-right:0.5em;">
+ 
+</td>
+<td style="padding:0.2cm; text-align:center; padding-top:0.1cm; padding-bottom:0.1cm;" colspan="4">
+.093 / .128
+</td>
+</tr>
+</table>
+    ## [1] 0.4246105
+
+These results indicate that if the government operates with perfect lethality, they reduce the odds of the government incurring a death in an event with conflict by 42% controlling for location and time of year, the effect is statistically significant at the p&lt;.001 level.
+
+This analysis indicates a very significant drop in conflict events with government deaths if the government executes with perfect lethality. Plot 1 indicates that the government incurs a casualty in a much smaller portion of the events where perfect lethality is used. This is a very important relationship to examine and we would highly recommend further study; if perfect lethality prevents government deaths it would partially explain its frequency in these conflicts (the government agencies would have a lot of incentive to act more lethally if it prevents deaths on their side). At the same time, these government run organizations have a civic duty to reduce the number of people killed in raids. This creates an interesting dynamic between two opposing forces; the government agencies that conduct these raids and the government oversight organizations responsible for good governance. The former would probably support using more lethal force if it prevents deaths of their own people, the latter would probably push the agencies to reduce their lethality to prevent human rights abuses. There are limitations to this analysis; the sample is bias towards events with no deaths. This is hard to overcome as the events just occur in this distribution. Overall, this analysis gives valuable insight into a difficult subject and suggests that further study would be beneficial.
+
+![](Question_1_w_graph_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
 ``` r
 #Data Transformations
 library(dplyr)
@@ -19,164 +948,49 @@ data <- mutate(data, total.force.dead = state.police.dead + municipal.police.dea
                                         ministerial.police.dead + military.dead    +
                                         public.prosecutor.dead)
 
+#Remove cases with no deaths and wounded. This separates out events with no conflict. 
+
+data <- filter(data, total.people.dead > 0, total.people.wounded > 0)
+
 #Create month variables to control for seasonal variability
 library(lubridate)
 data$force.dead <- ifelse(data$total.force.dead > 0, 1, 0)
 data$date <- as.Date(data$date)
 data$month <- month(data$date)
 data <- mutate(data, MonthAbb = month.abb[month])
-```
 
-To answer this question we performed a logistic regression with force.dead (if there were any deaths on the side of the government) as the dependent variable and perfect lethality (if the government forces executed with perfect lethality) as the independent variable. To control for seasonal variability and location, we controlled for month of the year and state as well. The results of the regression are as follows:
 
-``` r
 #Logistic regression model
 log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, family = "binomial")
-summary(log)
-```
-
-    ## 
-    ## Call:
-    ## glm(formula = force.dead ~ perfect.lethality + state + MonthAbb, 
-    ##     family = "binomial", data = data)
-    ## 
-    ## Deviance Residuals: 
-    ##     Min       1Q   Median       3Q      Max  
-    ## -1.2504  -0.5948  -0.4717  -0.3511   2.5783  
-    ## 
-    ## Coefficients:
-    ##                                        Estimate Std. Error z value
-    ## (Intercept)                            0.082996   0.410456   0.202
-    ## perfect.lethality                     -0.657128   0.105875  -6.207
-    ## stateBaja California                  -1.246285   0.442893  -2.814
-    ## stateBaja California Sur              -1.193323   0.894561  -1.334
-    ## stateCampeche                         -1.637585   1.155276  -1.417
-    ## stateChiapas                          -2.059050   0.611472  -3.367
-    ## stateChihuahua                        -1.073227   0.400877  -2.677
-    ## stateCiudad de México                 -0.524570   0.602917  -0.870
-    ## stateCoahuila de Zaragoza             -1.892551   0.427528  -4.427
-    ## stateColima                           -2.463765   0.830368  -2.967
-    ## stateDurango                          -1.735312   0.422885  -4.104
-    ## stateGuanajuato                       -1.730722   0.496454  -3.486
-    ## stateGuerrero                         -1.307990   0.406413  -3.218
-    ## stateHidalgo                          -1.207480   0.603878  -2.000
-    ## stateJalisco                          -1.669701   0.436481  -3.825
-    ## stateMéxico                           -0.969788   0.438829  -2.210
-    ## stateMichoacán de Ocampo              -1.547105   0.414496  -3.732
-    ## stateMorelos                          -1.320861   0.482734  -2.736
-    ## stateNayarit                          -1.953669   0.492008  -3.971
-    ## stateNuevo León                       -2.208718   0.407591  -5.419
-    ## stateOaxaca                           -1.378828   0.522184  -2.641
-    ## statePuebla                           -0.682288   0.546404  -1.249
-    ## stateQuerétaro                        -0.093596   1.075447  -0.087
-    ## stateQuintana Roo                     -2.588283   0.829568  -3.120
-    ## stateSan Luis Potosí                  -1.344495   0.487359  -2.759
-    ## stateSinaloa                          -1.332439   0.409694  -3.252
-    ## stateSonora                           -1.896258   0.459691  -4.125
-    ## stateTabasco                          -2.160262   0.654124  -3.303
-    ## stateTamaulipas                       -2.376549   0.403864  -5.885
-    ## stateTlaxcala                         -1.829490   1.148292  -1.593
-    ## stateVeracruz de Ignacio de la Llave  -1.897276   0.449694  -4.219
-    ## stateYucatán                         -11.735989 196.968092  -0.060
-    ## stateZacatecas                        -1.543926   0.463255  -3.333
-    ## MonthAbbAug                           -0.201929   0.194206  -1.040
-    ## MonthAbbDec                            0.078566   0.215734   0.364
-    ## MonthAbbFeb                            0.027113   0.196962   0.138
-    ## MonthAbbJan                           -0.122047   0.214256  -0.570
-    ## MonthAbbJul                           -0.336392   0.194924  -1.726
-    ## MonthAbbJun                            0.005096   0.195357   0.026
-    ## MonthAbbMar                           -0.430062   0.202742  -2.121
-    ## MonthAbbMay                           -0.008738   0.195432  -0.045
-    ## MonthAbbNov                            0.169443   0.191323   0.886
-    ## MonthAbbOct                           -0.072182   0.186694  -0.387
-    ## MonthAbbSep                            0.086940   0.197407   0.440
-    ##                                      Pr(>|z|)    
-    ## (Intercept)                          0.839758    
-    ## perfect.lethality                    5.41e-10 ***
-    ## stateBaja California                 0.004893 ** 
-    ## stateBaja California Sur             0.182212    
-    ## stateCampeche                        0.156341    
-    ## stateChiapas                         0.000759 ***
-    ## stateChihuahua                       0.007424 ** 
-    ## stateCiudad de México                0.384271    
-    ## stateCoahuila de Zaragoza            9.57e-06 ***
-    ## stateColima                          0.003006 ** 
-    ## stateDurango                         4.07e-05 ***
-    ## stateGuanajuato                      0.000490 ***
-    ## stateGuerrero                        0.001289 ** 
-    ## stateHidalgo                         0.045550 *  
-    ## stateJalisco                         0.000131 ***
-    ## stateMéxico                          0.027109 *  
-    ## stateMichoacán de Ocampo             0.000190 ***
-    ## stateMorelos                         0.006215 ** 
-    ## stateNayarit                         7.16e-05 ***
-    ## stateNuevo León                      5.99e-08 ***
-    ## stateOaxaca                          0.008278 ** 
-    ## statePuebla                          0.211779    
-    ## stateQuerétaro                       0.930648    
-    ## stateQuintana Roo                    0.001808 ** 
-    ## stateSan Luis Potosí                 0.005803 ** 
-    ## stateSinaloa                         0.001145 ** 
-    ## stateSonora                          3.71e-05 ***
-    ## stateTabasco                         0.000958 ***
-    ## stateTamaulipas                      3.99e-09 ***
-    ## stateTlaxcala                        0.111109    
-    ## stateVeracruz de Ignacio de la Llave 2.45e-05 ***
-    ## stateYucatán                         0.952488    
-    ## stateZacatecas                       0.000860 ***
-    ## MonthAbbAug                          0.298448    
-    ## MonthAbbDec                          0.715724    
-    ## MonthAbbFeb                          0.890514    
-    ## MonthAbbJan                          0.568928    
-    ## MonthAbbJul                          0.084391 .  
-    ## MonthAbbJun                          0.979188    
-    ## MonthAbbMar                          0.033903 *  
-    ## MonthAbbMay                          0.964338    
-    ## MonthAbbNov                          0.375812    
-    ## MonthAbbOct                          0.699031    
-    ## MonthAbbSep                          0.659640    
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    ## 
-    ## (Dispersion parameter for binomial family taken to be 1)
-    ## 
-    ##     Null deviance: 4382.7  on 5393  degrees of freedom
-    ## Residual deviance: 4148.3  on 5350  degrees of freedom
-    ##   (2 observations deleted due to missingness)
-    ## AIC: 4236.3
-    ## 
-    ## Number of Fisher Scoring iterations: 10
-
-``` r
+library(sjPlot)
+sjt.lm(log, show.se = TRUE)
 coef <- as.data.frame(coefficients(log))
 exp(coef[2,1])
-```
 
-    ## [1] 0.518338
-
-These results indicate that if the government operates with perfect lethality, they reduce the odds of the government incurring a death in that conflict by 48% controlling for location and time of year.
-
-This analysis indicates a very significant drop in events with government deaths if the government executes with perfect lethality. This is a very important relationship to examine and I would highly recommend further study; if perfect lethality prevents government deaths it would explain its frequency in the conflicts (the government agencies would have a lot of incentive to act more lethally if it prevented deaths). At the same time, as government run agencies these organizations should try to reduce the number of people killed in raids. This observation creates an interesting dynamic between two opposing forces; the government agencies that conduct these raids and the government oversight organizations responsible for good governance. The former would probably support using more lethal force if it prevents deaths of their own people, the latter would probably push the agencies to reduce their lethality to prevent human rights abuses. There are limitations to this analysis; because there are so many incidents with no deaths, the sample is fairly bias and the results are probably not entirely reliable. This is hard to overcome as the events just occur in this distribution. Overall, this analysis gives valuable insight into a difficult subject. If the government wants to reduce deaths it will probably need to present an alternative to government forces.
-
-``` r
 library(ggplot2)
+library(dplyr)
+library(ggthemes)
+
 data$dead <- ifelse(data$total.force.dead > 0, 1, 0)
 
+data$perf.leth <- ifelse(data$perfect.lethality == 0, "Not Perfectly Lethal", 
+                          "Perfectly Lethal")
+data$dead <- ifelse(data$force.dead == 0, "No Deaths", "At Least One Dead")
+
 bardata <- data %>% 
-  group_by(dead, perfect.lethality) %>%
+  group_by(dead, perf.leth) %>%
   summarise(count = n())
 
-bardata$percentage <- c("72%", "28%", "77%", "23%")
-bardata$perfect.lethality <- as.factor(bardata$perfect.lethality)
-bardata$dead <- as.factor(bardata$dead)
+bardata$percentage <- c("42%", "23%", "58%", "77%")
 
-ggplot(bardata, aes(x = dead, 
+ggplot(bardata, aes(x = perf.leth, 
                     y = count,
-                    fill = perfect.lethality)) + 
+                    fill = dead)) + 
   geom_bar(stat = "identity", position = "dodge") +
   geom_text(aes(label = percentage), vjust = 0.2, color = "black", position=position_dodge(.9)) +
-  ggtitle("Perfect Lethality Proportion in Death and No-death Confrontations") +
-  theme_minimal()
+  ggtitle("Effect of Perfect Lethality on Government Deaths") +
+  theme_economist() + scale_fill_tableau() +
+  labs(x = "", y = "", caption = "Plot 1") + 
+  theme(plot.title = element_text(hjust = .5),
+        legend.title = element_blank())
 ```
-
-![](Question_1_w_graph_files/figure-markdown_github/unnamed-chunk-3-1.png) In visualizing this drop brought by perfect lethality in police force death, we made a barplot showing different lethality proportion of cases with police death and no police death. We can see that perfect lethality accounts for a larger percent of the cases where there was no death in police forces. To be specific, in non-death cases 28% are perfectly lethal, while in cases involving police death, only 23% cases are perfect lethal. This is in consistence with the result found in regression analysis.
