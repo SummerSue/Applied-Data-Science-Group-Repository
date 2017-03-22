@@ -10,23 +10,23 @@ knitr::opts_chunk$set(echo = TRUE)
 # Question 2
 
 ## Hypothesis 1
-Our first hypothesis is that there will be more deaths if army was involved in the confrontation, regardless of the sacle of the combat. 
+Our first hypothesis is that there will be more total overall deaths if army was involved in the confrontation, regardless of the scale of the combat. 
 
 #### Assumptions
 The assumption is that a confrontation was of a larger scale if there were more vehicles and long guns seized in that event. This is based on 4 sub-assumptions:
 
-1. more vehicles and long guns seized means more vehicles and long guns were used in the confrontation
-2. more participating forces if more vehicles were used
-3. more vehicles also added complexitiy to the combat, such as explosion and defense 
-4. more long guns means participants could be murdered within a longer distance
+1. More vehicles and long guns seized means more vehicles and long guns were used in the confrontation
+2. More participating forces if more vehicles were used
+3. More vehicles also added complexitiy to the combat, such as explosion and defense 
+4. More long guns means participants could be murdered within a longer distance
 
 #### Computations
-The marginal effect referenced was the "B" column provided by the regression model and is interpreted as described in the marginal effect section above. To arrive at standard error and confidence intervals by running OLS, the results are reflected in "std.Error" and "CI" columns, respectively, the CIs are 95% confidence interval. Computation methods for hypothesis 1 and 2 are the same.
+The marginal effect referenced was the "B" column provided by the regression model and is interpreted as described in the marginal effect section below. The "B" value represents the slope of the regression line for the variable of interest. To arrive at standard error and confidence intervals by running OLS, the results are reflected in "std.Error" and "CI" columns, respectively, the CIs are 95% confidence interval. The 95% confidence intervals represent +/- two standard errors from the mean "B" marginal effect value. Computation methods for hypothesis 1 and 2 are the same.
 
 #### Findings
-Below is an exhibition of our findings. The result demonstrates that there are more deaths if army was involved in the confrontation, regardless of the sacle of the combat, which agrees with our hypothesis.
+Below is an exhibition of our findings. The result demonstrates that there are more deaths if army was involved in the confrontation, regardless of the scale of the combat, which agrees with our hypothesis.
 
-The marginal effect of the involvement of army on deaths is 0.16(95% confidence interval range of .03 to .28), on average, ceteris paribus. And this effect is statistically significant at a 95% confidence level. The marginal effects of `vehicles.seized` and `long.guns.seized` are both positive and significant as well. The interactions show that army involvement does not have a significant effect of the marginal effect of vehicles seized, but will significantly decreases the marginal effect of long guns seized. 
+The marginal effect of the involvement of army on deaths is 0.16(95% confidence interval range of .03 to .28), on average, ceteris paribus. This effect is statistically significant at a 95% confidence level. The marginal effects of `vehicles.seized` and `long.guns.seized` are both positive and significant as well. The interactions show that if the army is involved each additional vehicle seized has a marginal effect of at 0.00 (95% confidence interval of -0.01 – 0.02) on average total overall deaths, certis paribus. It also shows that if the army is involved each additional long gun seized has a marginal effect of at -0.12 (95% confidence interval of -0.01 – 0.02) on average total overall deaths, certis paribus.  The interaction does show that army involvement will decreases the marginal effect of long guns seized at -0.12 (95% confidence interval of -0.15 – -0.09) . 
 
 ```{r, echo = FALSE, warnings = FALSE, message = FALSE}
 all_violence <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
