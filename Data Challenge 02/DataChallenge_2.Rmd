@@ -81,7 +81,7 @@ ggplot(bardata, aes(x = perf.leth,
 
 ## Part 2
 
-Question 2: Does violence or being detained act as a function of distance from the border to the U.S.? Is the more activity closer to the border?
+Question 2:  Does violence or being detained act as a function of distance from the border to the U.S.? Is the more activity closer to the border?
 
 The necessary transformation was to create a new variable that represents border closeness.
 
