@@ -43,10 +43,10 @@ log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, fami
 library(sjPlot)
 sjt.lm(log, show.se = TRUE)
 coef <- as.data.frame(coefficients(log))
-exp(coef[2,1])
+odd <- exp(coef[2,1])
 ```
 
-These results indicate that if the government operates with perfect lethality, they reduce the  odds of the government incurring a death in an event with conflict by 42% controlling for location and time of year, the effect is statistically significant at the p<.001 level.  
+These results indicate that if the government operates with perfect lethality, they reduce the  odds of the government incurring a death in an event with conflict by 58% (the coefficient for perfect.lethality converted to an odds ratio is .42, 1 - .42 = .58) controlling for location and time of year, the effect is statistically significant at the p<.001 level.  
 
 This analysis indicates a very significant drop in conflict events with government deaths if the government executes with perfect lethality. Plot 1 indicates that the government incurs a casualty in a much smaller portion of the events where perfect lethality is used. This is a very important relationship to examine and we would highly recommend further study; if perfect lethality prevents government deaths it would partially explain its frequency in these conflicts (the government agencies would have a lot of incentive to act more lethally if it prevents deaths on their side). At the same time, these government run organizations have a civic duty to reduce the number of people killed in raids. This creates an interesting dynamic between two opposing forces; the government agencies that conduct these raids and the government oversight organizations responsible for good governance. The former would probably support using more lethal force if it prevents deaths of their own people, the latter would probably push the agencies to reduce their lethality to prevent human rights abuses. There are limitations to this analysis; the sample is bias towards events with no deaths. This is hard to overcome as the events just occur in this distribution. Overall, this analysis gives valuable insight into a difficult subject and suggests that further study would be beneficial.
 
@@ -153,6 +153,7 @@ lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized *
 sjt.lm(lm1, show.se = TRUE)
 ```
 
+
 #### Limitations
 The limitations of our interference are:
 
@@ -180,6 +181,7 @@ Below is the multi-variate regression model with interactions to test this hypot
 lm2 <- lm(total.people.dead ~ navy + army + federal.police + detained + detained * navy + detained * army + detained * federal.police, data = data)
 sjt.lm(lm2, show.se = TRUE)
 ```
+
 
 #### Marginal Effects   
 
@@ -227,7 +229,7 @@ log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, fami
 library(sjPlot)
 sjt.lm(log, show.se = TRUE)
 coef <- as.data.frame(coefficients(log))
-exp(coef[2,1])
+odds <- exp(coef[2,1])
 
 library(ggplot2)
 library(dplyr)
