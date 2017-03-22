@@ -1,0 +1,140 @@
+---
+title: "Data Challenge 2"
+author: "Sam Gass"
+date: "3/21/2017"
+output: github_document
+---
+```{r setup, include = FALSE}
+knitr::opts_knit$set(root.dir = '/Users/samgass/GitHub/QMSS-GR5069/week_07/datachallenge2/data/processed')
+```
+
+#Question 1 Part 1
+
+Does the presence of perfect lethality by the government agencies in a conflict prevent government deaths?
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+#Data Transformations
+library(dplyr)
+data <- read.csv("AllViolenceData_170216.csv")
+
+#Create variable for total deaths for all government agencies
+data <- mutate(data, total.force.dead = state.police.dead + municipal.police.dead  + 
+                                        federal.police.dead + afi.dead + navy.dead +
+                                        ministerial.police.dead + military.dead    +
+                                        public.prosecutor.dead)
+
+#Remove cases with no deaths and wounded. This separates out events with no conflict. 
+
+data <- filter(data, total.people.dead > 0, total.people.wounded > 0)
+
+#Create month variables to control for seasonal variability
+library(lubridate)
+data$force.dead <- ifelse(data$total.force.dead > 0, 1, 0)
+data$date <- as.Date(data$date)
+data$month <- month(data$date)
+data <- mutate(data, MonthAbb = month.abb[month])
+```
+
+To answer this question we performed a logistic regression with force.dead (if there were any deaths on the side of the government) as the dependent variable and perfect lethality (if the government forces executed with perfect lethality) as the independent variable. To control for seasonal variability and location, we controlled for month of the year and state as well. The results of the regression are as follows:
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+#Logistic regression model
+log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, family = "binomial")
+library(sjPlot)
+sjt.lm(log, show.se = TRUE)
+coef <- as.data.frame(coefficients(log))
+exp(coef[2,1])
+```
+
+These results indicate that if the government operates with perfect lethality, they reduce the  odds of the government incurring a death in an event with conflict by 42% controlling for location and time of year, the effect is statistically significant at the p<.001 level.  
+
+This analysis indicates a very significant drop in conflict events with government deaths if the government executes with perfect lethality. Plot 1 indicates that the government incurs a casualty in a much smaller portion of the events where perfect lethality is used. This is a very important relationship to examine and we would highly recommend further study; if perfect lethality prevents government deaths it would partially explain its frequency in these conflicts (the government agencies would have a lot of incentive to act more lethally if it prevents deaths on their side). At the same time, these government run organizations have a civic duty to reduce the number of people killed in raids. This creates an interesting dynamic between two opposing forces; the government agencies that conduct these raids and the government oversight organizations responsible for good governance. The former would probably support using more lethal force if it prevents deaths of their own people, the latter would probably push the agencies to reduce their lethality to prevent human rights abuses. There are limitations to this analysis; the sample is bias towards events with no deaths. This is hard to overcome as the events just occur in this distribution. Overall, this analysis gives valuable insight into a difficult subject and suggests that further study would be beneficial.
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+library(ggplot2)
+library(dplyr)
+library(ggthemes)
+
+data$dead <- ifelse(data$total.force.dead > 0, 1, 0)
+
+data$perf.leth <- ifelse(data$perfect.lethality == 0, "Not Perfectly Lethal", 
+                          "Perfectly Lethal")
+data$dead <- ifelse(data$force.dead == 0, "No Deaths", "At Least One Dead")
+
+bardata <- data %>% 
+  group_by(dead, perf.leth) %>%
+  summarise(count = n())
+
+bardata$percentage <- c("42%", "23%", "58%", "77%")
+
+ggplot(bardata, aes(x = perf.leth, 
+                    y = count,
+                    fill = dead)) + 
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_text(aes(label = percentage), vjust = 0.2, color = "black", position=position_dodge(.9)) +
+  ggtitle("Effect of Perfect Lethality on Government Deaths") +
+  theme_economist() + scale_fill_tableau() +
+  labs(x = "", y = "", caption = "Plot 1") + 
+  theme(plot.title = element_text(hjust = .5),
+        legend.title = element_blank())
+  
+```
+
+```{r, eval = FALSE}
+#Data Transformations
+library(dplyr)
+data <- read.csv("AllViolenceData_170216.csv")
+
+#Create variable for total deaths for all government agencies
+data <- mutate(data, total.force.dead = state.police.dead + municipal.police.dead  + 
+                                        federal.police.dead + afi.dead + navy.dead +
+                                        ministerial.police.dead + military.dead    +
+                                        public.prosecutor.dead)
+
+#Remove cases with no deaths and wounded. This separates out events with no conflict. 
+
+data <- filter(data, total.people.dead > 0, total.people.wounded > 0)
+
+#Create month variables to control for seasonal variability
+library(lubridate)
+data$force.dead <- ifelse(data$total.force.dead > 0, 1, 0)
+data$date <- as.Date(data$date)
+data$month <- month(data$date)
+data <- mutate(data, MonthAbb = month.abb[month])
+
+
+#Logistic regression model
+log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, family = "binomial")
+library(sjPlot)
+sjt.lm(log, show.se = TRUE)
+coef <- as.data.frame(coefficients(log))
+exp(coef[2,1])
+
+library(ggplot2)
+library(dplyr)
+library(ggthemes)
+
+data$dead <- ifelse(data$total.force.dead > 0, 1, 0)
+
+data$perf.leth <- ifelse(data$perfect.lethality == 0, "Not Perfectly Lethal", 
+                          "Perfectly Lethal")
+data$dead <- ifelse(data$force.dead == 0, "No Deaths", "At Least One Dead")
+
+bardata <- data %>% 
+  group_by(dead, perf.leth) %>%
+  summarise(count = n())
+
+bardata$percentage <- c("42%", "23%", "58%", "77%")
+
+ggplot(bardata, aes(x = perf.leth, 
+                    y = count,
+                    fill = dead)) + 
+  geom_bar(stat = "identity", position = "dodge") +
+  geom_text(aes(label = percentage), vjust = 0.2, color = "black", position=position_dodge(.9)) +
+  ggtitle("Effect of Perfect Lethality on Government Deaths") +
+  theme_economist() + scale_fill_tableau() +
+  labs(x = "", y = "", caption = "Plot 1") + 
+  theme(plot.title = element_text(hjust = .5),
+        legend.title = element_blank())
+```
+
