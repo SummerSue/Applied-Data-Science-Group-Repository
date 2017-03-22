@@ -7,14 +7,15 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#Question 1 Part 1
+# Question 1 
+## Part 1
 
 Does the presence of perfect lethality by the government agencies in a conflict prevent government deaths?
 
 ```{r, warning = FALSE, message = FALSE, echo = FALSE}
 #Data Transformations
 library(dplyr)
-data <- read.csv("AllViolenceData_170216.csv")
+data <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
 
 #Create variable for total deaths for all government agencies
 data <- mutate(data, total.force.dead = state.police.dead + municipal.police.dead  + 
@@ -76,13 +77,120 @@ ggplot(bardata, aes(x = perf.leth,
   labs(x = "", y = "", caption = "Plot 1") + 
   theme(plot.title = element_text(hjust = .5),
         legend.title = element_blank())
-  
 ```
 
+## Part 2
+
+Question 2: Does violence or being detained act as a function of distance from the border to the U.S.? Is the more activity closer to the border?
+
+The necessary transformation was to create a new variable that represents border closeness.
+
+According to the *mexicocity3* plot, there seems to be a high density of activity close to the border (as aforementioned and hypothesized).
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(ggmap)
+library(raster)
+library(ggplot2)
+state <- c("Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Coahuila de Zaragoza", "Colima", "Chiapas", "Chihuahua", "Ciudad de México", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Mexico", "Michoacan de Ocampo", "Morelos", "Nayarit", "Nuevo Leon", "Oaxaca", "Puebla", "Queretaro", "Quintana Roo", "San Luis Potosi", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz de Ignacio de la Llave", "Yucatan", "Zacatecas")
+geo.state <- geocode(state)
+state.x <- geo.state$lon
+state.y <- geo.state$lat
+df1 <- data.frame(state.x, state.y)
+DF1 <- cbind(state, df1)
+state1 <- merge(DF1, data, by = c("state"))
+mexicomap1 <- get_map(location= 'mexico city', zoom = 3, maptype = "terrain", source = 'google')
+mexicocity1 <- ggmap(mexicomap1) + geom_point(aes(x = state.x, y = state.y), data = state1, size = 0.3, alpha = 0.3, color = "red") 
+mexicomap2 <- get_map(location= 'mexico city', zoom = 5, maptype = "terrain", source = 'google')
+mexicocity2 <- ggmap(mexicomap2) + geom_point(aes(x = state.x, y = state.y), data = state1, size = 0.3, alpha = 0.3, color = "red") 
+mexicocity3 <- mexicocity2 + geom_density2d(data = state1, aes(x = state.x, y = state.y)) +
+stat_density2d(data = state1, aes(x = state.x, y = state.y,  fill =..level.., alpha =..level..),
+size = 0.01, bins = 25, geom = 'polygon') +
+scale_fill_gradient(low = "green", high = "red") +
+scale_alpha(range = c(0.00, 0.25), guide = FALSE) +
+theme(legend.position = "none", axis.title = element_blank(), text = element_text(size = 12)) +
+ggtitle("Plot Density of Interactions")
+mexicocity3
+```
+
+The limitations of this analysis are that it is not exact, because "closest states to the border" was allocated to certain states according to a ggmap plot of points --rather than with a precise calculation (which can be created through the *raster* package or another distance-measuring package). Also, by designating the binary variable *borderclose* to only encapsulate 4 states we might be limiting ourselves in size.
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+closetoborder <- c("Nuevo Leon", "Chihuahua", "Coahuila de Zaragoza", "Ciudad de Mexico") #these are the states closest to the U.S. border
+farfromborder <- c("Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Colima", "Chiapas", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "México", "Michoacán de Ocampo", "Morelos", "Nayarit", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz de Ignacio de la Llave", "Yucatán", "Zacatecas")
+
+state1$borderclose <- ifelse(state1$state == c("Nuevo Leon", "Chihuahua", "Coahuila de Zaragoza", "Ciudad de Mexico"), 1, 0)
+bordermodel <- glm(state1$borderclose ~ state1$detained + state1$total.people.dead + state1$total.people.wounded, family = binomial(link = "logit"), data = state1)
+summary(bordermodel)
+```
+
+We thought that perhaps violence or imprisonment might be a function of U.S. border closeness. According to the multiple logistic regression of variables on predictor variable border-closeness, *detained* was statistically significant (p < 0.008). The negative coefficient for this variable suggests that all other variables equal, those who are detained are less likely to be close to the U.S./Mexico border. For every one unit change in *detained*, the log odds of being near the border decreases by 0.101. This could be because when you are near the border, your interactions with the police are more likely to be violence (thus, leading to death rather than being detained). Also, the null devience (which shows how well the response variable is predicted by a model that includes only the intercept) is different than the residual deviance by a 10.1 point decrease and loss of only 3 degrees of freedom.
+
+The results are fairly consistent with what we believed our findings would be, although we also suspected that perhaps increased violence might be a function of border closeness. You are less likely to be close to the border when you are detained. The theory about how the data might act as a function of distance from the U.S. border is an interesting one, and perhaps there will be more evidence to support this theory somewhere within the data after addressing the limitations. 
+
+# Question 2
+
+## Hypothesis 1
+Our first hypothesis is that there will be more total overall deaths if army was involved in the confrontation, regardless of the scale of the combat. 
+
+#### Assumptions
+The assumption is that a confrontation was of a larger scale if there were more vehicles and long guns seized in that event. This is based on 4 sub-assumptions:
+
+1. More vehicles and long guns seized means more vehicles and long guns were used in the confrontation
+2. More participating forces if more vehicles were used
+3. More vehicles also added complexitiy to the combat, such as explosion and defense 
+4. More long guns means participants could be murdered within a longer distance
+
+#### Computations
+The marginal effect referenced was the "B" column provided by the regression model and is interpreted as described in the marginal effect section below. The "B" value represents the slope of the regression line for the variable of interest. To arrive at standard error and confidence intervals by running OLS, the results are reflected in "std.Error" and "CI" columns, respectively, the CIs are 95% confidence interval. The 95% confidence intervals represent +/- two standard errors from the mean "B" marginal effect value. Computation methods for hypothesis 1 and 2 are the same.
+
+#### Findings
+Below is an exhibition of our findings. The result demonstrates that there are more deaths if army was involved in the confrontation, regardless of the scale of the combat, which agrees with our hypothesis.
+
+The marginal effect of the involvement of army on deaths is 0.16(95% confidence interval range of .03 to .28), on average, ceteris paribus. This effect is statistically significant at a 95% confidence level. The marginal effects of `vehicles.seized` and `long.guns.seized` are both positive and significant as well. The interactions show that if the army is involved each additional vehicle seized has a marginal effect of at 0.00 (95% confidence interval of -0.01 – 0.02) on average total overall deaths, certis paribus. It also shows that if the army is involved each additional long gun seized has a marginal effect of at -0.12 (95% confidence interval of -0.01 – 0.02) on average total overall deaths, certis paribus.  The interaction does show that army involvement will decreases the marginal effect of long guns seized at -0.12 (95% confidence interval of -0.15 – -0.09) . 
+
+```{r, echo = FALSE, warnings = FALSE, message = FALSE}
+lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized * army, data = data)
+sjt.lm(lm1, show.se = TRUE)
+```
+
+#### Limitations
+The limitations of our interference are:
+
+1. the marginal effects of vehicles and long guns seized might not linear(addictive), but our model fails to detect if this is true
+2. the marginal effect of army could be so overwhelming large that our result might not differ a lot from the one that evaluate the marginal effects of army with no interactions at all
+3. there might be multicollinearity because armys use vehicles and long guns a lot
+
+## Hypothesis 2  
+Our conditional hypothesis is that the total number of people dead is conditional upon the interaction between which federal force was involved and how many people were detained. We predict that if the army/navy/federal police is involved in an event each additional person detained results in a lower number of total people dead on average. The rational behind this prediction is that if there an event with federal forces ends with detained people, it is likely to be less deadly. 
+Below is the multi-variate regression model with interactions to test this hypothesis: 
+
+#### Assumptions 
+`navy`, `army`, and `federal police` are binary variables in which 1 = they were involved in an event and 0 = they were not involved in an event. `total.people.dead` and `detained` are numeric variables in that increase by one from 0 up each representing an additonal person dead or detained. Additionally in order to preform the analysis we assumed that in each event only the army, navy, or federal police were present alone at each event. 
+
+```{r  echo = FALSE}
+lm2 <- lm(total.people.dead ~ navy + army + federal.police + detained + detained * navy + detained * army + detained * federal.police, data = data)
+sjt.lm(lm2, show.se = TRUE)
+```
+
+#### Marginal Effects 
+__Intercept__ 
+The intercept in the regression output above shows that if no navy, army, or federal police were involved an if no one was detained, the average number of total people dead is 1.03. 
+__Coeffiencts__ 
+Given this is a conditional interaction, the model shows that if the navy is involved and no one is detained on average .43 (95% confidence interval range of .06 to .84) more people  killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05). If the army is involved and no one is detained on average .37 (95% confidence interval range of .25 to .52) more people  killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05). If the federal police is involved and no one is detained on average -.25 (95% confidence interval range of -.47 to -.05) less people killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05). Additionally for each additional detained person when no one from the navy, army, or federal police is involved on average .04 (95% confidence interval range of .02 to .06) more people killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05).
+__Interactions__ 
+The interation terms show that if the navy is involved, each additional detained person recorded in the event results in on average .17 (95% confidence interval of .07 to .26) more people killed overall , holding all other variables constant with statistical signifiance (p-value of at least .05). If the army is involved, each additional detained person recorded in the event results in on average -.09 (95% confidence interval of -.15 to -.03) less people killed overall , holding all other variables constant with statistical signifiance (p-value of at least .05). Finally if the federal police are involved each additional detained person recorded in the event results in on average .06 (95% confidence interval of .00 to .12) more people killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05).  
+__Conclusion__ 
+The hypothesis stated proved to be partial true per the data. In the case of the navy and federal police, each indivial detained person recorded actual resulted in an increase in average overall deaths which is contrary to the prediction. In the case of the army, each individual detained person recorded resulted in a decrease in average overall deaths. 
+
+#### Limitations
+The data is limited as the data is only provides information for a few year period of time in certain locations in mexico. The regression focuses on total people dead and did not segregate the analysis by which type of person died in each event.As such more detailed analysis would have to be preformed to get more insight on what type of person dies as more people are detained by certain armed forces. Additionally it is possible that the army, navy, and federal police were all at certain events which would complicate the analysis of the data as they are interrelated. 
+
+# Codes
+
 ```{r, eval = FALSE}
-#Data Transformations
+# Question 1 Part 1
 library(dplyr)
-data <- read.csv("AllViolenceData_170216.csv")
+data <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
 
 #Create variable for total deaths for all government agencies
 data <- mutate(data, total.force.dead = state.police.dead + municipal.police.dead  + 
@@ -100,7 +208,6 @@ data$force.dead <- ifelse(data$total.force.dead > 0, 1, 0)
 data$date <- as.Date(data$date)
 data$month <- month(data$date)
 data <- mutate(data, MonthAbb = month.abb[month])
-
 
 #Logistic regression model
 log <- glm(force.dead ~ perfect.lethality + state + MonthAbb , data = data, family = "binomial")
@@ -135,21 +242,18 @@ ggplot(bardata, aes(x = perf.leth,
   labs(x = "", y = "", caption = "Plot 1") + 
   theme(plot.title = element_text(hjust = .5),
         legend.title = element_blank())
-```
 
-```{r}
+# Question 1 Part 2
 library(ggmap)
 library(raster)
 library(ggplot2)
-confrontations <- read.csv("~/Documents/COLSP17 Applied/confrontations.csv", comment.char="#")
-levels(confrontations$state)
 state <- c("Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Coahuila de Zaragoza", "Colima", "Chiapas", "Chihuahua", "Ciudad de México", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Mexico", "Michoacan de Ocampo", "Morelos", "Nayarit", "Nuevo Leon", "Oaxaca", "Puebla", "Queretaro", "Quintana Roo", "San Luis Potosi", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz de Ignacio de la Llave", "Yucatan", "Zacatecas")
 geo.state <- geocode(state)
 state.x <- geo.state$lon
 state.y <- geo.state$lat
 df1 <- data.frame(state.x, state.y)
 DF1 <- cbind(state, df1)
-state1 <- merge(DF1, confrontations, by = c("state"))
+state1 <- merge(DF1, data, by = c("state"))
 mexicomap1 <- get_map(location= 'mexico city', zoom = 3, maptype = "terrain", source = 'google')
 mexicocity1 <- ggmap(mexicomap1) + geom_point(aes(x = state.x, y = state.y), data = state1, size = 0.3, alpha = 0.3, color = "red") 
 mexicomap2 <- get_map(location= 'mexico city', zoom = 5, maptype = "terrain", source = 'google')
@@ -161,95 +265,19 @@ scale_fill_gradient(low = "green", high = "red") +
 scale_alpha(range = c(0.00, 0.25), guide = FALSE) +
 theme(legend.position = "none", axis.title = element_blank(), text = element_text(size = 12)) +
 ggtitle("Plot Density of Interactions")
+mexicocity3
+
 closetoborder <- c("Nuevo Leon", "Chihuahua", "Coahuila de Zaragoza", "Ciudad de Mexico") #these are the states closest to the U.S. border
 farfromborder <- c("Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Colima", "Chiapas", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "México", "Michoacán de Ocampo", "Morelos", "Nayarit", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz de Ignacio de la Llave", "Yucatán", "Zacatecas")
-#state1$close <- values[match(state1$state, closetoborder)]
-#lm1 <- lm(state1$total.people.dead ~ state1$close, data = state1)
-#summary(lm1) #must adjust problems
+
 state1$borderclose <- ifelse(state1$state == c("Nuevo Leon", "Chihuahua", "Coahuila de Zaragoza", "Ciudad de Mexico"), 1, 0)
 bordermodel <- glm(state1$borderclose ~ state1$detained + state1$total.people.dead + state1$total.people.wounded, family = binomial(link = "logit"), data = state1)
 summary(bordermodel)
-```
-
-Question 2: Does violence or being detained act as a function of distance from the border to the U.S.? Is the more activity closer to the border?
-
-*- Perform necessary transformation in data* The necessary transformation was to create a new variable that represents border closeness.
-*- Print output from analysis* According to the *mexicocity3* plot, there seems to be a high density of activity close to the border (as aforementioned and hypothesized).
-*- What are the limitations of the analysis?* The limitations of this analysis are that it is not exact, because "closest states to the border" was allocated to certain states according to a ggmap plot of points --rather than with a precise calculation (which can be created through the *raster* package or another distance-measuring package). Also, by designating the binary variable *borderclose* to only encapsulate 4 states we might be limiting ourselves in size.
-*- Anything interesting? Is this worth pursuing?* We thought that perhaps violence or imprisonment might be a function of U.S. border closeness. According to the multiple logistic regression of variables on predictor variable border-closeness, *detained* was statistically significant (p < 0.008). The negative coefficient for this variable suggests that all other variables equal, those who are detained are less likely to be close to the U.S./Mexico border. For every one unit change in *detained*, the log odds of being near the border decreases by 0.101. This could be because when you are near the border, your interactions with the police are more likely to be violence (thus, leading to death rather than being detained). Also, the null devience (which shows how well the response variable is predicted by a model that includes only the intercept) is different than the residual deviance by a 10.1 point decrease and loss of only 3 degrees of freedom.
-*- Provide code and a visualization* (Mexico City 3 graph)
-*- One sentence to summarize insight, one paragraph to reflect nuance in insight* The results are fairly consistent with what we believed our findings would be, although we also suspected that perhaps increased violence might be a function of border closeness. You are less likely to be close to the border when you are detained. The theory about how the data might act as a function of distance from the U.S. border is an interesting one, and perhaps there will be more evidence to support this theory somewhere within the data after addressing the limitations. 
 
 # Question 2
-
-## Hypothesis 1
-Our first hypothesis is that there will be more total overall deaths if army was involved in the confrontation, regardless of the scale of the combat. 
-
-#### Assumptions
-The assumption is that a confrontation was of a larger scale if there were more vehicles and long guns seized in that event. This is based on 4 sub-assumptions:
-
-1. More vehicles and long guns seized means more vehicles and long guns were used in the confrontation
-2. More participating forces if more vehicles were used
-3. More vehicles also added complexitiy to the combat, such as explosion and defense 
-4. More long guns means participants could be murdered within a longer distance
-
-#### Computations
-The marginal effect referenced was the "B" column provided by the regression model and is interpreted as described in the marginal effect section below. The "B" value represents the slope of the regression line for the variable of interest. To arrive at standard error and confidence intervals by running OLS, the results are reflected in "std.Error" and "CI" columns, respectively, the CIs are 95% confidence interval. The 95% confidence intervals represent +/- two standard errors from the mean "B" marginal effect value. Computation methods for hypothesis 1 and 2 are the same.
-
-#### Findings
-Below is an exhibition of our findings. The result demonstrates that there are more deaths if army was involved in the confrontation, regardless of the scale of the combat, which agrees with our hypothesis.
-
-The marginal effect of the involvement of army on deaths is 0.16(95% confidence interval range of .03 to .28), on average, ceteris paribus. This effect is statistically significant at a 95% confidence level. The marginal effects of `vehicles.seized` and `long.guns.seized` are both positive and significant as well. The interactions show that if the army is involved each additional vehicle seized has a marginal effect of at 0.00 (95% confidence interval of -0.01 – 0.02) on average total overall deaths, certis paribus. It also shows that if the army is involved each additional long gun seized has a marginal effect of at -0.12 (95% confidence interval of -0.01 – 0.02) on average total overall deaths, certis paribus.  The interaction does show that army involvement will decreases the marginal effect of long guns seized at -0.12 (95% confidence interval of -0.15 – -0.09) . 
-
-```{r, echo = FALSE, warnings = FALSE, message = FALSE}
-all_violence <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
-
-lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized * army, data = all_violence)
-library(sjPlot)
-sjt.lm(lm1, show.se = TRUE)
-```
-
-#### Limitations
-The limitations of our interference are:
-
-1. the marginal effects of vehicles and long guns seized might not linear(addictive), but our model fails to detect if this is true
-2. the marginal effect of army could be so overwhelming large that our result might not differ a lot from the one that evaluate the marginal effects of army with no interactions at all
-3. there might be multicollinearity because armys use vehicles and long guns a lot
-
-## Hypothesis 2  
-Our conditional hypothesis is that the total number of people dead is conditional upon the interaction between which federal force was involved and how many people were detained. We predict that if the army/navy/federal police is involved in an event each additional person detained results in a lower number of total people dead on average. The rational behind this prediction is that if there an event with federal forces ends with detained people, it is likely to be less deadly. 
-Below is the multi-variate regression model with interactions to test this hypothesis: 
-
-#### Assumptions 
-`navy`, `army`, and `federal police` are binary variables in which 1 = they were involved in an event and 0 = they were not involved in an event. `total.people.dead` and `detained` are numeric variables in that increase by one from 0 up each representing an additonal person dead or detained. Additionally in order to preform the analysis we assumed that in each event only the army, navy, or federal police were present alone at each event. 
-
-```{r  echo = FALSE}
-lm2 <- lm(total.people.dead ~ navy + army + federal.police + detained + detained * navy + detained * army + detained * federal.police, data = all_violence)
-sjt.lm(lm2, show.se = TRUE)
-```
-
-#### Marginal Effects 
-__Intercept__ 
-The intercept in the regression output above shows that if no navy, army, or federal police were involved an if no one was detained, the average number of total people dead is 1.03. 
-__Coeffiencts__ 
-Given this is a conditional interaction, the model shows that if the navy is involved and no one is detained on average .43 (95% confidence interval range of .06 to .84) more people  killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05). If the army is involved and no one is detained on average .37 (95% confidence interval range of .25 to .52) more people  killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05). If the federal police is involved and no one is detained on average -.25 (95% confidence interval range of -.47 to -.05) less people killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05). Additionally for each additional detained person when no one from the navy, army, or federal police is involved on average .04 (95% confidence interval range of .02 to .06) more people killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05).
-__Interactions__ 
-The interation terms show that if the navy is involved, each additional detained person recorded in the event results in on average .17 (95% confidence interval of .07 to .26) more people killed overall , holding all other variables constant with statistical signifiance (p-value of at least .05). If the army is involved, each additional detained person recorded in the event results in on average -.09 (95% confidence interval of -.15 to -.03) less people killed overall , holding all other variables constant with statistical signifiance (p-value of at least .05). Finally if the federal police are involved each additional detained person recorded in the event results in on average .06 (95% confidence interval of .00 to .12) more people killed overall, holding all other variables constant with statistical signifiance (p-value of at least .05).  
-__Conclusion__ 
-The hypothesis stated proved to be partial true per the data. In the case of the navy and federal police, each indivial detained person recorded actual resulted in an increase in average overall deaths which is contrary to the prediction. In the case of the army, each individual detained person recorded resulted in a decrease in average overall deaths. 
-
-#### Limitations
-The data is limited as the data is only provides information for a few year period of time in certain locations in mexico. The regression focuses on total people dead and did not segregate the analysis by which type of person died in each event.As such more detailed analysis would have to be preformed to get more insight on what type of person dies as more people are detained by certain armed forces. Additionally it is possible that the army, navy, and federal police were all at certain events which would complicate the analysis of the data as they are interrelated. 
-
-# Codes
-
-```{r, eval = FALSE}
-all_violence <- read.csv("/Users/bobchen/Documents/Columbia/S17/5069 Applied Data Science/QMSS-GR5069/week_07/datachallenge2/data/processed/AllViolenceData_170216.csv")
-
-lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized * army, data = all_violence)
-library(sjPlot)
+lm1 <- lm(total.people.dead ~ army + vehicles.seized * army + long.guns.seized * army, data = data)
 sjt.lm(lm1, show.se = TRUE)
 
-lm2 <- lm(total.people.dead ~ navy + army + federal.police + detained + detained * navy + detained * army + detained * federal.police, data = all_violence)
+lm2 <- lm(total.people.dead ~ navy + army + federal.police + detained + detained * navy + detained * army + detained * federal.police, data = data)
 sjt.lm(lm2, show.se = TRUE)
 ```
