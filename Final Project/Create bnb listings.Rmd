@@ -47,10 +47,11 @@ for (i in neigh){
 oakland_bnb <- as.data.frame(oakland_bnb)
 
 # Change columns into time
+dat <- as.data.frame(dat)
 dat <- as.data.frame(t(dat))
 oakland_bnb$time <- dat$V1
 rownames(oakland_bnb) <- oakland_bnb$time
-oakland_bnb <- oakland_bnb[ , !(names(oakland_bnb) %in% "time")]
+oakland_bnb <- portland_bnb[ , !(names(oakland_bnb) %in% "time")]
 
 # Write to csv
 write.csv(oakland_bnb, "oakland_bnb.csv")
