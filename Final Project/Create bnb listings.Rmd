@@ -55,4 +55,3 @@ oakland_bnb <- oakland_bnb[ , !(names(oakland_bnb) %in% "time")]
 # Write to csv
 write.csv(oakland_bnb, "oakland_bnb.csv")
 ```
-
