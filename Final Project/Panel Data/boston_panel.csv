@@ -1,0 +1,1705 @@
+"","Neighborhood","Airbnb","Date","City","ZRI"
+"1","Bay Village",24,2016-09-01,"Boston",NA
+"2","Bay Village",23,2016-08-01,"Boston",NA
+"3","Bay Village",23,2016-07-01,"Boston",NA
+"4","Bay Village",23,2016-06-01,"Boston",NA
+"5","Bay Village",21,2016-05-01,"Boston",NA
+"6","Bay Village",20,2016-04-01,"Boston",NA
+"7","Bay Village",20,2016-03-01,"Boston",NA
+"8","Bay Village",20,2016-02-01,"Boston",NA
+"9","Bay Village",19,2016-01-01,"Boston",NA
+"10","Bay Village",19,2015-12-01,"Boston",NA
+"11","Bay Village",19,2015-11-01,"Boston",NA
+"12","Bay Village",19,2015-10-01,"Boston",NA
+"13","Bay Village",19,2015-09-01,"Boston",NA
+"14","Bay Village",18,2015-08-01,"Boston",NA
+"15","Bay Village",18,2015-07-01,"Boston",NA
+"16","Bay Village",18,2015-06-01,"Boston",NA
+"17","Bay Village",18,2015-05-01,"Boston",NA
+"18","Bay Village",17,2015-04-01,"Boston",NA
+"19","Bay Village",16,2015-03-01,"Boston",NA
+"20","Bay Village",15,2015-02-01,"Boston",NA
+"21","Bay Village",14,2015-01-01,"Boston",NA
+"22","Bay Village",13,2014-12-01,"Boston",NA
+"23","Bay Village",13,2014-11-01,"Boston",NA
+"24","Bay Village",12,2014-10-01,"Boston",NA
+"25","Bay Village",10,2014-09-01,"Boston",NA
+"26","Bay Village",10,2014-08-01,"Boston",NA
+"27","Bay Village",10,2014-07-01,"Boston",NA
+"28","Bay Village",10,2014-06-01,"Boston",NA
+"29","Bay Village",9,2014-05-01,"Boston",NA
+"30","Bay Village",9,2014-04-01,"Boston",NA
+"31","Bay Village",9,2014-03-01,"Boston",NA
+"32","Bay Village",9,2014-02-01,"Boston",NA
+"33","Bay Village",9,2014-01-01,"Boston",NA
+"34","Bay Village",6,2013-12-01,"Boston",NA
+"35","Bay Village",6,2013-11-01,"Boston",NA
+"36","Bay Village",6,2013-10-01,"Boston",NA
+"37","Bay Village",6,2013-09-01,"Boston",NA
+"38","Bay Village",6,2013-08-01,"Boston",NA
+"39","Bay Village",6,2013-07-01,"Boston",NA
+"40","Bay Village",6,2013-06-01,"Boston",NA
+"41","Bay Village",6,2013-05-01,"Boston",NA
+"42","Bay Village",6,2013-04-01,"Boston",NA
+"43","Bay Village",6,2013-03-01,"Boston",NA
+"44","Bay Village",6,2013-02-01,"Boston",NA
+"45","Bay Village",6,2013-01-01,"Boston",NA
+"46","Bay Village",6,2012-12-01,"Boston",NA
+"47","Bay Village",6,2012-11-01,"Boston",NA
+"48","Bay Village",6,2012-10-01,"Boston",NA
+"49","Bay Village",6,2012-09-01,"Boston",NA
+"50","Bay Village",6,2012-08-01,"Boston",NA
+"51","Bay Village",6,2012-07-01,"Boston",NA
+"52","Bay Village",6,2012-06-01,"Boston",NA
+"53","Bay Village",2,2012-05-01,"Boston",NA
+"54","Bay Village",2,2012-04-01,"Boston",NA
+"55","Bay Village",2,2012-03-01,"Boston",NA
+"56","Bay Village",2,2012-02-01,"Boston",NA
+"57","Bay Village",2,2012-01-01,"Boston",NA
+"58","Bay Village",2,2011-12-01,"Boston",NA
+"59","Bay Village",2,2011-11-01,"Boston",NA
+"60","Bay Village",2,2011-10-01,"Boston",NA
+"61","Bay Village",1,2011-09-01,"Boston",NA
+"62","Bay Village",1,2011-08-01,"Boston",NA
+"63","Bay Village",1,2011-07-01,"Boston",NA
+"64","Bay Village",1,2011-06-01,"Boston",NA
+"65","Bay Village",1,2011-05-01,"Boston",NA
+"66","Bay Village",0,2011-04-01,"Boston",NA
+"67","Bay Village",0,2011-03-01,"Boston",NA
+"68","Bay Village",0,2011-02-01,"Boston",NA
+"69","Bay Village",0,2011-01-01,"Boston",NA
+"70","Bay Village",0,2010-12-01,"Boston",NA
+"71","Bay Village",0,2010-11-01,"Boston",NA
+"72","Downtown",172,2016-09-01,"Boston",NA
+"73","Downtown",170,2016-08-01,"Boston",NA
+"74","Downtown",164,2016-07-01,"Boston",NA
+"75","Downtown",164,2016-06-01,"Boston",NA
+"76","Downtown",161,2016-05-01,"Boston",NA
+"77","Downtown",160,2016-04-01,"Boston",NA
+"78","Downtown",160,2016-03-01,"Boston",NA
+"79","Downtown",159,2016-02-01,"Boston",NA
+"80","Downtown",154,2016-01-01,"Boston",NA
+"81","Downtown",154,2015-12-01,"Boston",NA
+"82","Downtown",152,2015-11-01,"Boston",NA
+"83","Downtown",147,2015-10-01,"Boston",NA
+"84","Downtown",141,2015-09-01,"Boston",NA
+"85","Downtown",138,2015-08-01,"Boston",NA
+"86","Downtown",135,2015-07-01,"Boston",NA
+"87","Downtown",134,2015-06-01,"Boston",NA
+"88","Downtown",133,2015-05-01,"Boston",NA
+"89","Downtown",128,2015-04-01,"Boston",NA
+"90","Downtown",121,2015-03-01,"Boston",NA
+"91","Downtown",117,2015-02-01,"Boston",NA
+"92","Downtown",111,2015-01-01,"Boston",NA
+"93","Downtown",110,2014-12-01,"Boston",NA
+"94","Downtown",109,2014-11-01,"Boston",NA
+"95","Downtown",104,2014-10-01,"Boston",NA
+"96","Downtown",98,2014-09-01,"Boston",NA
+"97","Downtown",91,2014-08-01,"Boston",NA
+"98","Downtown",87,2014-07-01,"Boston",NA
+"99","Downtown",84,2014-06-01,"Boston",NA
+"100","Downtown",82,2014-05-01,"Boston",NA
+"101","Downtown",82,2014-04-01,"Boston",NA
+"102","Downtown",81,2014-03-01,"Boston",NA
+"103","Downtown",74,2014-02-01,"Boston",NA
+"104","Downtown",69,2014-01-01,"Boston",NA
+"105","Downtown",67,2013-12-01,"Boston",NA
+"106","Downtown",67,2013-11-01,"Boston",NA
+"107","Downtown",64,2013-10-01,"Boston",NA
+"108","Downtown",64,2013-09-01,"Boston",NA
+"109","Downtown",64,2013-08-01,"Boston",NA
+"110","Downtown",62,2013-07-01,"Boston",NA
+"111","Downtown",61,2013-06-01,"Boston",NA
+"112","Downtown",60,2013-05-01,"Boston",NA
+"113","Downtown",60,2013-04-01,"Boston",NA
+"114","Downtown",57,2013-03-01,"Boston",NA
+"115","Downtown",46,2013-02-01,"Boston",NA
+"116","Downtown",46,2013-01-01,"Boston",NA
+"117","Downtown",46,2012-12-01,"Boston",NA
+"118","Downtown",46,2012-11-01,"Boston",NA
+"119","Downtown",45,2012-10-01,"Boston",NA
+"120","Downtown",45,2012-09-01,"Boston",NA
+"121","Downtown",39,2012-08-01,"Boston",NA
+"122","Downtown",39,2012-07-01,"Boston",NA
+"123","Downtown",38,2012-06-01,"Boston",NA
+"124","Downtown",31,2012-05-01,"Boston",NA
+"125","Downtown",30,2012-04-01,"Boston",NA
+"126","Downtown",28,2012-03-01,"Boston",NA
+"127","Downtown",27,2012-02-01,"Boston",NA
+"128","Downtown",27,2012-01-01,"Boston",NA
+"129","Downtown",27,2011-12-01,"Boston",NA
+"130","Downtown",27,2011-11-01,"Boston",NA
+"131","Downtown",27,2011-10-01,"Boston",NA
+"132","Downtown",26,2011-09-01,"Boston",NA
+"133","Downtown",26,2011-08-01,"Boston",NA
+"134","Downtown",25,2011-07-01,"Boston",NA
+"135","Downtown",23,2011-06-01,"Boston",NA
+"136","Downtown",23,2011-05-01,"Boston",NA
+"137","Downtown",19,2011-04-01,"Boston",NA
+"138","Downtown",19,2011-03-01,"Boston",NA
+"139","Downtown",18,2011-02-01,"Boston",NA
+"140","Downtown",18,2011-01-01,"Boston",NA
+"141","Downtown",18,2010-12-01,"Boston",NA
+"142","Downtown",18,2010-11-01,"Boston",NA
+"143","West End",49,2016-09-01,"Boston",NA
+"144","West End",48,2016-08-01,"Boston",NA
+"145","West End",48,2016-07-01,"Boston",NA
+"146","West End",48,2016-06-01,"Boston",NA
+"147","West End",48,2016-05-01,"Boston",NA
+"148","West End",48,2016-04-01,"Boston",NA
+"149","West End",48,2016-03-01,"Boston",NA
+"150","West End",48,2016-02-01,"Boston",NA
+"151","West End",47,2016-01-01,"Boston",NA
+"152","West End",47,2015-12-01,"Boston",NA
+"153","West End",47,2015-11-01,"Boston",NA
+"154","West End",47,2015-10-01,"Boston",NA
+"155","West End",46,2015-09-01,"Boston",NA
+"156","West End",45,2015-08-01,"Boston",NA
+"157","West End",45,2015-07-01,"Boston",NA
+"158","West End",43,2015-06-01,"Boston",NA
+"159","West End",43,2015-05-01,"Boston",NA
+"160","West End",43,2015-04-01,"Boston",NA
+"161","West End",24,2015-03-01,"Boston",NA
+"162","West End",24,2015-02-01,"Boston",NA
+"163","West End",24,2015-01-01,"Boston",NA
+"164","West End",23,2014-12-01,"Boston",NA
+"165","West End",22,2014-11-01,"Boston",NA
+"166","West End",21,2014-10-01,"Boston",NA
+"167","West End",21,2014-09-01,"Boston",NA
+"168","West End",18,2014-08-01,"Boston",NA
+"169","West End",18,2014-07-01,"Boston",NA
+"170","West End",18,2014-06-01,"Boston",NA
+"171","West End",18,2014-05-01,"Boston",NA
+"172","West End",17,2014-04-01,"Boston",NA
+"173","West End",17,2014-03-01,"Boston",NA
+"174","West End",17,2014-02-01,"Boston",NA
+"175","West End",17,2014-01-01,"Boston",NA
+"176","West End",17,2013-12-01,"Boston",NA
+"177","West End",17,2013-11-01,"Boston",NA
+"178","West End",13,2013-10-01,"Boston",NA
+"179","West End",13,2013-09-01,"Boston",NA
+"180","West End",13,2013-08-01,"Boston",NA
+"181","West End",13,2013-07-01,"Boston",NA
+"182","West End",13,2013-06-01,"Boston",NA
+"183","West End",13,2013-05-01,"Boston",NA
+"184","West End",13,2013-04-01,"Boston",NA
+"185","West End",13,2013-03-01,"Boston",NA
+"186","West End",9,2013-02-01,"Boston",NA
+"187","West End",9,2013-01-01,"Boston",NA
+"188","West End",9,2012-12-01,"Boston",NA
+"189","West End",9,2012-11-01,"Boston",NA
+"190","West End",9,2012-10-01,"Boston",NA
+"191","West End",9,2012-09-01,"Boston",NA
+"192","West End",9,2012-08-01,"Boston",NA
+"193","West End",9,2012-07-01,"Boston",NA
+"194","West End",9,2012-06-01,"Boston",NA
+"195","West End",9,2012-05-01,"Boston",NA
+"196","West End",9,2012-04-01,"Boston",NA
+"197","West End",9,2012-03-01,"Boston",NA
+"198","West End",9,2012-02-01,"Boston",NA
+"199","West End",9,2012-01-01,"Boston",NA
+"200","West End",8,2011-12-01,"Boston",NA
+"201","West End",8,2011-11-01,"Boston",NA
+"202","West End",8,2011-10-01,"Boston",NA
+"203","West End",8,2011-09-01,"Boston",NA
+"204","West End",8,2011-08-01,"Boston",NA
+"205","West End",8,2011-07-01,"Boston",NA
+"206","West End",8,2011-06-01,"Boston",NA
+"207","West End",8,2011-05-01,"Boston",NA
+"208","West End",7,2011-04-01,"Boston",NA
+"209","West End",7,2011-03-01,"Boston",NA
+"210","West End",7,2011-02-01,"Boston",NA
+"211","West End",7,2011-01-01,"Boston",NA
+"212","West End",7,2010-12-01,"Boston",NA
+"213","West End",7,2010-11-01,"Boston",NA
+"214","Chinatown",70,2016-09-01,"Boston",NA
+"215","Chinatown",69,2016-08-01,"Boston",NA
+"216","Chinatown",66,2016-07-01,"Boston",NA
+"217","Chinatown",66,2016-06-01,"Boston",NA
+"218","Chinatown",65,2016-05-01,"Boston",NA
+"219","Chinatown",65,2016-04-01,"Boston",NA
+"220","Chinatown",65,2016-03-01,"Boston",NA
+"221","Chinatown",64,2016-02-01,"Boston",NA
+"222","Chinatown",64,2016-01-01,"Boston",NA
+"223","Chinatown",64,2015-12-01,"Boston",NA
+"224","Chinatown",64,2015-11-01,"Boston",NA
+"225","Chinatown",63,2015-10-01,"Boston",NA
+"226","Chinatown",63,2015-09-01,"Boston",NA
+"227","Chinatown",63,2015-08-01,"Boston",NA
+"228","Chinatown",61,2015-07-01,"Boston",NA
+"229","Chinatown",60,2015-06-01,"Boston",NA
+"230","Chinatown",59,2015-05-01,"Boston",NA
+"231","Chinatown",57,2015-04-01,"Boston",NA
+"232","Chinatown",33,2015-03-01,"Boston",NA
+"233","Chinatown",33,2015-02-01,"Boston",NA
+"234","Chinatown",33,2015-01-01,"Boston",NA
+"235","Chinatown",33,2014-12-01,"Boston",NA
+"236","Chinatown",33,2014-11-01,"Boston",NA
+"237","Chinatown",29,2014-10-01,"Boston",NA
+"238","Chinatown",29,2014-09-01,"Boston",NA
+"239","Chinatown",28,2014-08-01,"Boston",NA
+"240","Chinatown",28,2014-07-01,"Boston",NA
+"241","Chinatown",28,2014-06-01,"Boston",NA
+"242","Chinatown",27,2014-05-01,"Boston",NA
+"243","Chinatown",24,2014-04-01,"Boston",NA
+"244","Chinatown",24,2014-03-01,"Boston",NA
+"245","Chinatown",22,2014-02-01,"Boston",NA
+"246","Chinatown",21,2014-01-01,"Boston",NA
+"247","Chinatown",21,2013-12-01,"Boston",NA
+"248","Chinatown",21,2013-11-01,"Boston",NA
+"249","Chinatown",14,2013-10-01,"Boston",NA
+"250","Chinatown",14,2013-09-01,"Boston",NA
+"251","Chinatown",14,2013-08-01,"Boston",NA
+"252","Chinatown",14,2013-07-01,"Boston",NA
+"253","Chinatown",14,2013-06-01,"Boston",NA
+"254","Chinatown",14,2013-05-01,"Boston",NA
+"255","Chinatown",14,2013-04-01,"Boston",NA
+"256","Chinatown",12,2013-03-01,"Boston",NA
+"257","Chinatown",10,2013-02-01,"Boston",NA
+"258","Chinatown",10,2013-01-01,"Boston",NA
+"259","Chinatown",10,2012-12-01,"Boston",NA
+"260","Chinatown",10,2012-11-01,"Boston",NA
+"261","Chinatown",9,2012-10-01,"Boston",NA
+"262","Chinatown",9,2012-09-01,"Boston",NA
+"263","Chinatown",9,2012-08-01,"Boston",NA
+"264","Chinatown",4,2012-07-01,"Boston",NA
+"265","Chinatown",4,2012-06-01,"Boston",NA
+"266","Chinatown",4,2012-05-01,"Boston",NA
+"267","Chinatown",4,2012-04-01,"Boston",NA
+"268","Chinatown",4,2012-03-01,"Boston",NA
+"269","Chinatown",4,2012-02-01,"Boston",NA
+"270","Chinatown",4,2012-01-01,"Boston",NA
+"271","Chinatown",4,2011-12-01,"Boston",NA
+"272","Chinatown",4,2011-11-01,"Boston",NA
+"273","Chinatown",4,2011-10-01,"Boston",NA
+"274","Chinatown",4,2011-09-01,"Boston",NA
+"275","Chinatown",4,2011-08-01,"Boston",NA
+"276","Chinatown",4,2011-07-01,"Boston",NA
+"277","Chinatown",4,2011-06-01,"Boston",NA
+"278","Chinatown",4,2011-05-01,"Boston",NA
+"279","Chinatown",4,2011-04-01,"Boston",NA
+"280","Chinatown",4,2011-03-01,"Boston",NA
+"281","Chinatown",4,2011-02-01,"Boston",NA
+"282","Chinatown",4,2011-01-01,"Boston",NA
+"283","Chinatown",4,2010-12-01,"Boston",NA
+"284","Chinatown",4,2010-11-01,"Boston",NA
+"285","Beacon Hill",194,2016-09-01,"Boston",NA
+"286","Beacon Hill",191,2016-08-01,"Boston",NA
+"287","Beacon Hill",187,2016-07-01,"Boston",NA
+"288","Beacon Hill",184,2016-06-01,"Boston",NA
+"289","Beacon Hill",184,2016-05-01,"Boston",NA
+"290","Beacon Hill",184,2016-04-01,"Boston",NA
+"291","Beacon Hill",182,2016-03-01,"Boston",NA
+"292","Beacon Hill",179,2016-02-01,"Boston",NA
+"293","Beacon Hill",176,2016-01-01,"Boston",NA
+"294","Beacon Hill",171,2015-12-01,"Boston",NA
+"295","Beacon Hill",166,2015-11-01,"Boston",NA
+"296","Beacon Hill",158,2015-10-01,"Boston",NA
+"297","Beacon Hill",154,2015-09-01,"Boston",NA
+"298","Beacon Hill",148,2015-08-01,"Boston",NA
+"299","Beacon Hill",146,2015-07-01,"Boston",NA
+"300","Beacon Hill",140,2015-06-01,"Boston",NA
+"301","Beacon Hill",136,2015-05-01,"Boston",NA
+"302","Beacon Hill",133,2015-04-01,"Boston",NA
+"303","Beacon Hill",129,2015-03-01,"Boston",NA
+"304","Beacon Hill",121,2015-02-01,"Boston",NA
+"305","Beacon Hill",117,2015-01-01,"Boston",NA
+"306","Beacon Hill",116,2014-12-01,"Boston",NA
+"307","Beacon Hill",114,2014-11-01,"Boston",NA
+"308","Beacon Hill",102,2014-10-01,"Boston",NA
+"309","Beacon Hill",90,2014-09-01,"Boston",NA
+"310","Beacon Hill",89,2014-08-01,"Boston",NA
+"311","Beacon Hill",87,2014-07-01,"Boston",NA
+"312","Beacon Hill",85,2014-06-01,"Boston",NA
+"313","Beacon Hill",83,2014-05-01,"Boston",NA
+"314","Beacon Hill",81,2014-04-01,"Boston",NA
+"315","Beacon Hill",80,2014-03-01,"Boston",NA
+"316","Beacon Hill",78,2014-02-01,"Boston",NA
+"317","Beacon Hill",74,2014-01-01,"Boston",NA
+"318","Beacon Hill",70,2013-12-01,"Boston",NA
+"319","Beacon Hill",70,2013-11-01,"Boston",NA
+"320","Beacon Hill",63,2013-10-01,"Boston",NA
+"321","Beacon Hill",61,2013-09-01,"Boston",NA
+"322","Beacon Hill",58,2013-08-01,"Boston",NA
+"323","Beacon Hill",57,2013-07-01,"Boston",NA
+"324","Beacon Hill",51,2013-06-01,"Boston",NA
+"325","Beacon Hill",50,2013-05-01,"Boston",NA
+"326","Beacon Hill",48,2013-04-01,"Boston",NA
+"327","Beacon Hill",43,2013-03-01,"Boston",NA
+"328","Beacon Hill",43,2013-02-01,"Boston",NA
+"329","Beacon Hill",42,2013-01-01,"Boston",NA
+"330","Beacon Hill",41,2012-12-01,"Boston",NA
+"331","Beacon Hill",41,2012-11-01,"Boston",NA
+"332","Beacon Hill",40,2012-10-01,"Boston",NA
+"333","Beacon Hill",37,2012-09-01,"Boston",NA
+"334","Beacon Hill",37,2012-08-01,"Boston",NA
+"335","Beacon Hill",34,2012-07-01,"Boston",NA
+"336","Beacon Hill",33,2012-06-01,"Boston",NA
+"337","Beacon Hill",31,2012-05-01,"Boston",NA
+"338","Beacon Hill",29,2012-04-01,"Boston",NA
+"339","Beacon Hill",27,2012-03-01,"Boston",NA
+"340","Beacon Hill",27,2012-02-01,"Boston",NA
+"341","Beacon Hill",25,2012-01-01,"Boston",NA
+"342","Beacon Hill",25,2011-12-01,"Boston",NA
+"343","Beacon Hill",20,2011-11-01,"Boston",NA
+"344","Beacon Hill",20,2011-10-01,"Boston",NA
+"345","Beacon Hill",19,2011-09-01,"Boston",NA
+"346","Beacon Hill",19,2011-08-01,"Boston",NA
+"347","Beacon Hill",16,2011-07-01,"Boston",NA
+"348","Beacon Hill",13,2011-06-01,"Boston",NA
+"349","Beacon Hill",13,2011-05-01,"Boston",NA
+"350","Beacon Hill",13,2011-04-01,"Boston",NA
+"351","Beacon Hill",13,2011-03-01,"Boston",NA
+"352","Beacon Hill",13,2011-02-01,"Boston",NA
+"353","Beacon Hill",12,2011-01-01,"Boston",NA
+"354","Beacon Hill",9,2010-12-01,"Boston",NA
+"355","Beacon Hill",7,2010-11-01,"Boston",NA
+"356","North End",143,2016-09-01,"Boston",NA
+"357","North End",143,2016-08-01,"Boston",NA
+"358","North End",142,2016-07-01,"Boston",NA
+"359","North End",137,2016-06-01,"Boston",NA
+"360","North End",136,2016-05-01,"Boston",NA
+"361","North End",126,2016-04-01,"Boston",NA
+"362","North End",125,2016-03-01,"Boston",NA
+"363","North End",125,2016-02-01,"Boston",NA
+"364","North End",123,2016-01-01,"Boston",NA
+"365","North End",120,2015-12-01,"Boston",NA
+"366","North End",118,2015-11-01,"Boston",NA
+"367","North End",116,2015-10-01,"Boston",NA
+"368","North End",113,2015-09-01,"Boston",NA
+"369","North End",110,2015-08-01,"Boston",NA
+"370","North End",107,2015-07-01,"Boston",NA
+"371","North End",102,2015-06-01,"Boston",NA
+"372","North End",100,2015-05-01,"Boston",NA
+"373","North End",98,2015-04-01,"Boston",NA
+"374","North End",95,2015-03-01,"Boston",NA
+"375","North End",94,2015-02-01,"Boston",NA
+"376","North End",92,2015-01-01,"Boston",NA
+"377","North End",88,2014-12-01,"Boston",NA
+"378","North End",86,2014-11-01,"Boston",NA
+"379","North End",84,2014-10-01,"Boston",NA
+"380","North End",78,2014-09-01,"Boston",NA
+"381","North End",77,2014-08-01,"Boston",NA
+"382","North End",76,2014-07-01,"Boston",NA
+"383","North End",75,2014-06-01,"Boston",NA
+"384","North End",75,2014-05-01,"Boston",NA
+"385","North End",72,2014-04-01,"Boston",NA
+"386","North End",71,2014-03-01,"Boston",NA
+"387","North End",70,2014-02-01,"Boston",NA
+"388","North End",69,2014-01-01,"Boston",NA
+"389","North End",63,2013-12-01,"Boston",NA
+"390","North End",62,2013-11-01,"Boston",NA
+"391","North End",56,2013-10-01,"Boston",NA
+"392","North End",55,2013-09-01,"Boston",NA
+"393","North End",55,2013-08-01,"Boston",NA
+"394","North End",55,2013-07-01,"Boston",NA
+"395","North End",53,2013-06-01,"Boston",NA
+"396","North End",52,2013-05-01,"Boston",NA
+"397","North End",52,2013-04-01,"Boston",NA
+"398","North End",38,2013-03-01,"Boston",NA
+"399","North End",37,2013-02-01,"Boston",NA
+"400","North End",35,2013-01-01,"Boston",NA
+"401","North End",35,2012-12-01,"Boston",NA
+"402","North End",34,2012-11-01,"Boston",NA
+"403","North End",33,2012-10-01,"Boston",NA
+"404","North End",26,2012-09-01,"Boston",NA
+"405","North End",24,2012-08-01,"Boston",NA
+"406","North End",23,2012-07-01,"Boston",NA
+"407","North End",23,2012-06-01,"Boston",NA
+"408","North End",23,2012-05-01,"Boston",NA
+"409","North End",23,2012-04-01,"Boston",NA
+"410","North End",18,2012-03-01,"Boston",NA
+"411","North End",16,2012-02-01,"Boston",NA
+"412","North End",13,2012-01-01,"Boston",NA
+"413","North End",13,2011-12-01,"Boston",NA
+"414","North End",12,2011-11-01,"Boston",NA
+"415","North End",11,2011-10-01,"Boston",NA
+"416","North End",8,2011-09-01,"Boston",NA
+"417","North End",8,2011-08-01,"Boston",NA
+"418","North End",8,2011-07-01,"Boston",NA
+"419","North End",8,2011-06-01,"Boston",NA
+"420","North End",7,2011-05-01,"Boston",NA
+"421","North End",7,2011-04-01,"Boston",NA
+"422","North End",7,2011-03-01,"Boston",NA
+"423","North End",7,2011-02-01,"Boston",NA
+"424","North End",7,2011-01-01,"Boston",NA
+"425","North End",7,2010-12-01,"Boston",NA
+"426","North End",6,2010-11-01,"Boston",NA
+"427","Mission Hill",124,2016-09-01,"Boston",NA
+"428","Mission Hill",122,2016-08-01,"Boston",NA
+"429","Mission Hill",118,2016-07-01,"Boston",NA
+"430","Mission Hill",116,2016-06-01,"Boston",NA
+"431","Mission Hill",114,2016-05-01,"Boston",NA
+"432","Mission Hill",102,2016-04-01,"Boston",NA
+"433","Mission Hill",99,2016-03-01,"Boston",NA
+"434","Mission Hill",97,2016-02-01,"Boston",NA
+"435","Mission Hill",95,2016-01-01,"Boston",NA
+"436","Mission Hill",94,2015-12-01,"Boston",NA
+"437","Mission Hill",94,2015-11-01,"Boston",NA
+"438","Mission Hill",92,2015-10-01,"Boston",NA
+"439","Mission Hill",90,2015-09-01,"Boston",NA
+"440","Mission Hill",85,2015-08-01,"Boston",NA
+"441","Mission Hill",84,2015-07-01,"Boston",NA
+"442","Mission Hill",82,2015-06-01,"Boston",NA
+"443","Mission Hill",78,2015-05-01,"Boston",NA
+"444","Mission Hill",74,2015-04-01,"Boston",NA
+"445","Mission Hill",63,2015-03-01,"Boston",NA
+"446","Mission Hill",63,2015-02-01,"Boston",NA
+"447","Mission Hill",63,2015-01-01,"Boston",NA
+"448","Mission Hill",59,2014-12-01,"Boston",NA
+"449","Mission Hill",59,2014-11-01,"Boston",NA
+"450","Mission Hill",58,2014-10-01,"Boston",NA
+"451","Mission Hill",58,2014-09-01,"Boston",NA
+"452","Mission Hill",54,2014-08-01,"Boston",NA
+"453","Mission Hill",49,2014-07-01,"Boston",NA
+"454","Mission Hill",47,2014-06-01,"Boston",NA
+"455","Mission Hill",47,2014-05-01,"Boston",NA
+"456","Mission Hill",43,2014-04-01,"Boston",NA
+"457","Mission Hill",43,2014-03-01,"Boston",NA
+"458","Mission Hill",43,2014-02-01,"Boston",NA
+"459","Mission Hill",41,2014-01-01,"Boston",NA
+"460","Mission Hill",41,2013-12-01,"Boston",NA
+"461","Mission Hill",40,2013-11-01,"Boston",NA
+"462","Mission Hill",36,2013-10-01,"Boston",NA
+"463","Mission Hill",34,2013-09-01,"Boston",NA
+"464","Mission Hill",34,2013-08-01,"Boston",NA
+"465","Mission Hill",31,2013-07-01,"Boston",NA
+"466","Mission Hill",30,2013-06-01,"Boston",NA
+"467","Mission Hill",29,2013-05-01,"Boston",NA
+"468","Mission Hill",28,2013-04-01,"Boston",NA
+"469","Mission Hill",27,2013-03-01,"Boston",NA
+"470","Mission Hill",26,2013-02-01,"Boston",NA
+"471","Mission Hill",25,2013-01-01,"Boston",NA
+"472","Mission Hill",23,2012-12-01,"Boston",NA
+"473","Mission Hill",23,2012-11-01,"Boston",NA
+"474","Mission Hill",23,2012-10-01,"Boston",NA
+"475","Mission Hill",22,2012-09-01,"Boston",NA
+"476","Mission Hill",22,2012-08-01,"Boston",NA
+"477","Mission Hill",22,2012-07-01,"Boston",NA
+"478","Mission Hill",22,2012-06-01,"Boston",NA
+"479","Mission Hill",22,2012-05-01,"Boston",NA
+"480","Mission Hill",22,2012-04-01,"Boston",NA
+"481","Mission Hill",22,2012-03-01,"Boston",NA
+"482","Mission Hill",22,2012-02-01,"Boston",NA
+"483","Mission Hill",22,2012-01-01,"Boston",NA
+"484","Mission Hill",18,2011-12-01,"Boston",NA
+"485","Mission Hill",18,2011-11-01,"Boston",NA
+"486","Mission Hill",18,2011-10-01,"Boston",NA
+"487","Mission Hill",16,2011-09-01,"Boston",NA
+"488","Mission Hill",13,2011-08-01,"Boston",NA
+"489","Mission Hill",13,2011-07-01,"Boston",NA
+"490","Mission Hill",13,2011-06-01,"Boston",NA
+"491","Mission Hill",13,2011-05-01,"Boston",NA
+"492","Mission Hill",10,2011-04-01,"Boston",NA
+"493","Mission Hill",10,2011-03-01,"Boston",NA
+"494","Mission Hill",10,2011-02-01,"Boston",NA
+"495","Mission Hill",10,2011-01-01,"Boston",NA
+"496","Mission Hill",9,2010-12-01,"Boston",NA
+"497","Mission Hill",9,2010-11-01,"Boston",NA
+"498","Kenmore",0,2016-09-01,"Boston",NA
+"499","Kenmore",0,2016-08-01,"Boston",NA
+"500","Kenmore",0,2016-07-01,"Boston",NA
+"501","Kenmore",0,2016-06-01,"Boston",NA
+"502","Kenmore",0,2016-05-01,"Boston",NA
+"503","Kenmore",0,2016-04-01,"Boston",NA
+"504","Kenmore",0,2016-03-01,"Boston",NA
+"505","Kenmore",0,2016-02-01,"Boston",NA
+"506","Kenmore",0,2016-01-01,"Boston",NA
+"507","Kenmore",0,2015-12-01,"Boston",NA
+"508","Kenmore",0,2015-11-01,"Boston",NA
+"509","Kenmore",0,2015-10-01,"Boston",NA
+"510","Kenmore",0,2015-09-01,"Boston",NA
+"511","Kenmore",0,2015-08-01,"Boston",NA
+"512","Kenmore",0,2015-07-01,"Boston",NA
+"513","Kenmore",0,2015-06-01,"Boston",NA
+"514","Kenmore",0,2015-05-01,"Boston",NA
+"515","Kenmore",0,2015-04-01,"Boston",NA
+"516","Kenmore",0,2015-03-01,"Boston",NA
+"517","Kenmore",0,2015-02-01,"Boston",NA
+"518","Kenmore",0,2015-01-01,"Boston",NA
+"519","Kenmore",0,2014-12-01,"Boston",NA
+"520","Kenmore",0,2014-11-01,"Boston",NA
+"521","Kenmore",0,2014-10-01,"Boston",NA
+"522","Kenmore",0,2014-09-01,"Boston",NA
+"523","Kenmore",0,2014-08-01,"Boston",NA
+"524","Kenmore",0,2014-07-01,"Boston",NA
+"525","Kenmore",0,2014-06-01,"Boston",NA
+"526","Kenmore",0,2014-05-01,"Boston",NA
+"527","Kenmore",0,2014-04-01,"Boston",NA
+"528","Kenmore",0,2014-03-01,"Boston",NA
+"529","Kenmore",0,2014-02-01,"Boston",NA
+"530","Kenmore",0,2014-01-01,"Boston",NA
+"531","Kenmore",0,2013-12-01,"Boston",NA
+"532","Kenmore",0,2013-11-01,"Boston",NA
+"533","Kenmore",0,2013-10-01,"Boston",NA
+"534","Kenmore",0,2013-09-01,"Boston",NA
+"535","Kenmore",0,2013-08-01,"Boston",NA
+"536","Kenmore",0,2013-07-01,"Boston",NA
+"537","Kenmore",0,2013-06-01,"Boston",NA
+"538","Kenmore",0,2013-05-01,"Boston",NA
+"539","Kenmore",0,2013-04-01,"Boston",NA
+"540","Kenmore",0,2013-03-01,"Boston",NA
+"541","Kenmore",0,2013-02-01,"Boston",NA
+"542","Kenmore",0,2013-01-01,"Boston",NA
+"543","Kenmore",0,2012-12-01,"Boston",NA
+"544","Kenmore",0,2012-11-01,"Boston",NA
+"545","Kenmore",0,2012-10-01,"Boston",NA
+"546","Kenmore",0,2012-09-01,"Boston",NA
+"547","Kenmore",0,2012-08-01,"Boston",NA
+"548","Kenmore",0,2012-07-01,"Boston",NA
+"549","Kenmore",0,2012-06-01,"Boston",NA
+"550","Kenmore",0,2012-05-01,"Boston",NA
+"551","Kenmore",0,2012-04-01,"Boston",NA
+"552","Kenmore",0,2012-03-01,"Boston",NA
+"553","Kenmore",0,2012-02-01,"Boston",NA
+"554","Kenmore",0,2012-01-01,"Boston",NA
+"555","Kenmore",0,2011-12-01,"Boston",NA
+"556","Kenmore",0,2011-11-01,"Boston",NA
+"557","Kenmore",0,2011-10-01,"Boston",NA
+"558","Kenmore",0,2011-09-01,"Boston",NA
+"559","Kenmore",0,2011-08-01,"Boston",NA
+"560","Kenmore",0,2011-07-01,"Boston",NA
+"561","Kenmore",0,2011-06-01,"Boston",NA
+"562","Kenmore",0,2011-05-01,"Boston",NA
+"563","Kenmore",0,2011-04-01,"Boston",NA
+"564","Kenmore",0,2011-03-01,"Boston",NA
+"565","Kenmore",0,2011-02-01,"Boston",NA
+"566","Kenmore",0,2011-01-01,"Boston",NA
+"567","Kenmore",0,2010-12-01,"Boston",NA
+"568","Kenmore",0,2010-11-01,"Boston",NA
+"569","Charlestown",110,2016-09-01,"Boston",NA
+"570","Charlestown",108,2016-08-01,"Boston",NA
+"571","Charlestown",107,2016-07-01,"Boston",NA
+"572","Charlestown",105,2016-06-01,"Boston",NA
+"573","Charlestown",102,2016-05-01,"Boston",NA
+"574","Charlestown",101,2016-04-01,"Boston",NA
+"575","Charlestown",100,2016-03-01,"Boston",NA
+"576","Charlestown",98,2016-02-01,"Boston",NA
+"577","Charlestown",98,2016-01-01,"Boston",NA
+"578","Charlestown",98,2015-12-01,"Boston",NA
+"579","Charlestown",96,2015-11-01,"Boston",NA
+"580","Charlestown",95,2015-10-01,"Boston",NA
+"581","Charlestown",95,2015-09-01,"Boston",NA
+"582","Charlestown",92,2015-08-01,"Boston",NA
+"583","Charlestown",87,2015-07-01,"Boston",NA
+"584","Charlestown",83,2015-06-01,"Boston",NA
+"585","Charlestown",82,2015-05-01,"Boston",NA
+"586","Charlestown",81,2015-04-01,"Boston",NA
+"587","Charlestown",77,2015-03-01,"Boston",NA
+"588","Charlestown",74,2015-02-01,"Boston",NA
+"589","Charlestown",73,2015-01-01,"Boston",NA
+"590","Charlestown",72,2014-12-01,"Boston",NA
+"591","Charlestown",71,2014-11-01,"Boston",NA
+"592","Charlestown",68,2014-10-01,"Boston",NA
+"593","Charlestown",62,2014-09-01,"Boston",NA
+"594","Charlestown",59,2014-08-01,"Boston",NA
+"595","Charlestown",48,2014-07-01,"Boston",NA
+"596","Charlestown",48,2014-06-01,"Boston",NA
+"597","Charlestown",46,2014-05-01,"Boston",NA
+"598","Charlestown",42,2014-04-01,"Boston",NA
+"599","Charlestown",42,2014-03-01,"Boston",NA
+"600","Charlestown",42,2014-02-01,"Boston",NA
+"601","Charlestown",41,2014-01-01,"Boston",NA
+"602","Charlestown",40,2013-12-01,"Boston",NA
+"603","Charlestown",40,2013-11-01,"Boston",NA
+"604","Charlestown",40,2013-10-01,"Boston",NA
+"605","Charlestown",39,2013-09-01,"Boston",NA
+"606","Charlestown",39,2013-08-01,"Boston",NA
+"607","Charlestown",37,2013-07-01,"Boston",NA
+"608","Charlestown",37,2013-06-01,"Boston",NA
+"609","Charlestown",35,2013-05-01,"Boston",NA
+"610","Charlestown",34,2013-04-01,"Boston",NA
+"611","Charlestown",33,2013-03-01,"Boston",NA
+"612","Charlestown",32,2013-02-01,"Boston",NA
+"613","Charlestown",31,2013-01-01,"Boston",NA
+"614","Charlestown",31,2012-12-01,"Boston",NA
+"615","Charlestown",29,2012-11-01,"Boston",NA
+"616","Charlestown",28,2012-10-01,"Boston",NA
+"617","Charlestown",26,2012-09-01,"Boston",NA
+"618","Charlestown",22,2012-08-01,"Boston",NA
+"619","Charlestown",21,2012-07-01,"Boston",NA
+"620","Charlestown",20,2012-06-01,"Boston",NA
+"621","Charlestown",19,2012-05-01,"Boston",NA
+"622","Charlestown",19,2012-04-01,"Boston",NA
+"623","Charlestown",18,2012-03-01,"Boston",NA
+"624","Charlestown",18,2012-02-01,"Boston",NA
+"625","Charlestown",18,2012-01-01,"Boston",NA
+"626","Charlestown",18,2011-12-01,"Boston",NA
+"627","Charlestown",16,2011-11-01,"Boston",NA
+"628","Charlestown",16,2011-10-01,"Boston",NA
+"629","Charlestown",16,2011-09-01,"Boston",NA
+"630","Charlestown",16,2011-08-01,"Boston",NA
+"631","Charlestown",13,2011-07-01,"Boston",NA
+"632","Charlestown",12,2011-06-01,"Boston",NA
+"633","Charlestown",11,2011-05-01,"Boston",NA
+"634","Charlestown",9,2011-04-01,"Boston",NA
+"635","Charlestown",9,2011-03-01,"Boston",NA
+"636","Charlestown",7,2011-02-01,"Boston",NA
+"637","Charlestown",7,2011-01-01,"Boston",NA
+"638","Charlestown",6,2010-12-01,"Boston",NA
+"639","Charlestown",6,2010-11-01,"Boston",NA
+"640","Back Bay",302,2016-09-01,"Boston",NA
+"641","Back Bay",299,2016-08-01,"Boston",NA
+"642","Back Bay",294,2016-07-01,"Boston",NA
+"643","Back Bay",292,2016-06-01,"Boston",NA
+"644","Back Bay",286,2016-05-01,"Boston",NA
+"645","Back Bay",282,2016-04-01,"Boston",NA
+"646","Back Bay",278,2016-03-01,"Boston",NA
+"647","Back Bay",276,2016-02-01,"Boston",NA
+"648","Back Bay",274,2016-01-01,"Boston",NA
+"649","Back Bay",263,2015-12-01,"Boston",NA
+"650","Back Bay",256,2015-11-01,"Boston",NA
+"651","Back Bay",251,2015-10-01,"Boston",NA
+"652","Back Bay",248,2015-09-01,"Boston",NA
+"653","Back Bay",243,2015-08-01,"Boston",NA
+"654","Back Bay",238,2015-07-01,"Boston",NA
+"655","Back Bay",232,2015-06-01,"Boston",NA
+"656","Back Bay",222,2015-05-01,"Boston",NA
+"657","Back Bay",217,2015-04-01,"Boston",NA
+"658","Back Bay",203,2015-03-01,"Boston",NA
+"659","Back Bay",200,2015-02-01,"Boston",NA
+"660","Back Bay",197,2015-01-01,"Boston",NA
+"661","Back Bay",191,2014-12-01,"Boston",NA
+"662","Back Bay",189,2014-11-01,"Boston",NA
+"663","Back Bay",173,2014-10-01,"Boston",NA
+"664","Back Bay",160,2014-09-01,"Boston",NA
+"665","Back Bay",156,2014-08-01,"Boston",NA
+"666","Back Bay",145,2014-07-01,"Boston",NA
+"667","Back Bay",137,2014-06-01,"Boston",NA
+"668","Back Bay",134,2014-05-01,"Boston",NA
+"669","Back Bay",132,2014-04-01,"Boston",NA
+"670","Back Bay",130,2014-03-01,"Boston",NA
+"671","Back Bay",122,2014-02-01,"Boston",NA
+"672","Back Bay",119,2014-01-01,"Boston",NA
+"673","Back Bay",117,2013-12-01,"Boston",NA
+"674","Back Bay",114,2013-11-01,"Boston",NA
+"675","Back Bay",98,2013-10-01,"Boston",NA
+"676","Back Bay",96,2013-09-01,"Boston",NA
+"677","Back Bay",93,2013-08-01,"Boston",NA
+"678","Back Bay",90,2013-07-01,"Boston",NA
+"679","Back Bay",87,2013-06-01,"Boston",NA
+"680","Back Bay",85,2013-05-01,"Boston",NA
+"681","Back Bay",82,2013-04-01,"Boston",NA
+"682","Back Bay",81,2013-03-01,"Boston",NA
+"683","Back Bay",72,2013-02-01,"Boston",NA
+"684","Back Bay",72,2013-01-01,"Boston",NA
+"685","Back Bay",72,2012-12-01,"Boston",NA
+"686","Back Bay",62,2012-11-01,"Boston",NA
+"687","Back Bay",61,2012-10-01,"Boston",NA
+"688","Back Bay",57,2012-09-01,"Boston",NA
+"689","Back Bay",56,2012-08-01,"Boston",NA
+"690","Back Bay",53,2012-07-01,"Boston",NA
+"691","Back Bay",53,2012-06-01,"Boston",NA
+"692","Back Bay",52,2012-05-01,"Boston",NA
+"693","Back Bay",51,2012-04-01,"Boston",NA
+"694","Back Bay",47,2012-03-01,"Boston",NA
+"695","Back Bay",46,2012-02-01,"Boston",NA
+"696","Back Bay",44,2012-01-01,"Boston",NA
+"697","Back Bay",43,2011-12-01,"Boston",NA
+"698","Back Bay",41,2011-11-01,"Boston",NA
+"699","Back Bay",40,2011-10-01,"Boston",NA
+"700","Back Bay",39,2011-09-01,"Boston",NA
+"701","Back Bay",39,2011-08-01,"Boston",NA
+"702","Back Bay",34,2011-07-01,"Boston",NA
+"703","Back Bay",34,2011-06-01,"Boston",NA
+"704","Back Bay",34,2011-05-01,"Boston",NA
+"705","Back Bay",32,2011-04-01,"Boston",NA
+"706","Back Bay",32,2011-03-01,"Boston",NA
+"707","Back Bay",31,2011-02-01,"Boston",NA
+"708","Back Bay",31,2011-01-01,"Boston",NA
+"709","Back Bay",31,2010-12-01,"Boston",NA
+"710","Back Bay",31,2010-11-01,"Boston",NA
+"711","Fenway",290,2016-09-01,"Boston",NA
+"712","Fenway",282,2016-08-01,"Boston",NA
+"713","Fenway",276,2016-07-01,"Boston",NA
+"714","Fenway",271,2016-06-01,"Boston",NA
+"715","Fenway",260,2016-05-01,"Boston",NA
+"716","Fenway",256,2016-04-01,"Boston",NA
+"717","Fenway",256,2016-03-01,"Boston",NA
+"718","Fenway",253,2016-02-01,"Boston",NA
+"719","Fenway",252,2016-01-01,"Boston",NA
+"720","Fenway",245,2015-12-01,"Boston",NA
+"721","Fenway",240,2015-11-01,"Boston",NA
+"722","Fenway",232,2015-10-01,"Boston",NA
+"723","Fenway",228,2015-09-01,"Boston",NA
+"724","Fenway",221,2015-08-01,"Boston",NA
+"725","Fenway",218,2015-07-01,"Boston",NA
+"726","Fenway",214,2015-06-01,"Boston",NA
+"727","Fenway",203,2015-05-01,"Boston",NA
+"728","Fenway",197,2015-04-01,"Boston",NA
+"729","Fenway",140,2015-03-01,"Boston",NA
+"730","Fenway",136,2015-02-01,"Boston",NA
+"731","Fenway",133,2015-01-01,"Boston",NA
+"732","Fenway",130,2014-12-01,"Boston",NA
+"733","Fenway",126,2014-11-01,"Boston",NA
+"734","Fenway",117,2014-10-01,"Boston",NA
+"735","Fenway",110,2014-09-01,"Boston",NA
+"736","Fenway",104,2014-08-01,"Boston",NA
+"737","Fenway",96,2014-07-01,"Boston",NA
+"738","Fenway",93,2014-06-01,"Boston",NA
+"739","Fenway",90,2014-05-01,"Boston",NA
+"740","Fenway",88,2014-04-01,"Boston",NA
+"741","Fenway",84,2014-03-01,"Boston",NA
+"742","Fenway",81,2014-02-01,"Boston",NA
+"743","Fenway",81,2014-01-01,"Boston",NA
+"744","Fenway",79,2013-12-01,"Boston",NA
+"745","Fenway",74,2013-11-01,"Boston",NA
+"746","Fenway",46,2013-10-01,"Boston",NA
+"747","Fenway",45,2013-09-01,"Boston",NA
+"748","Fenway",44,2013-08-01,"Boston",NA
+"749","Fenway",43,2013-07-01,"Boston",NA
+"750","Fenway",42,2013-06-01,"Boston",NA
+"751","Fenway",39,2013-05-01,"Boston",NA
+"752","Fenway",39,2013-04-01,"Boston",NA
+"753","Fenway",36,2013-03-01,"Boston",NA
+"754","Fenway",35,2013-02-01,"Boston",NA
+"755","Fenway",34,2013-01-01,"Boston",NA
+"756","Fenway",33,2012-12-01,"Boston",NA
+"757","Fenway",30,2012-11-01,"Boston",NA
+"758","Fenway",29,2012-10-01,"Boston",NA
+"759","Fenway",29,2012-09-01,"Boston",NA
+"760","Fenway",29,2012-08-01,"Boston",NA
+"761","Fenway",27,2012-07-01,"Boston",NA
+"762","Fenway",27,2012-06-01,"Boston",NA
+"763","Fenway",27,2012-05-01,"Boston",NA
+"764","Fenway",27,2012-04-01,"Boston",NA
+"765","Fenway",25,2012-03-01,"Boston",NA
+"766","Fenway",24,2012-02-01,"Boston",NA
+"767","Fenway",24,2012-01-01,"Boston",NA
+"768","Fenway",22,2011-12-01,"Boston",NA
+"769","Fenway",22,2011-11-01,"Boston",NA
+"770","Fenway",22,2011-10-01,"Boston",NA
+"771","Fenway",22,2011-09-01,"Boston",NA
+"772","Fenway",20,2011-08-01,"Boston",NA
+"773","Fenway",20,2011-07-01,"Boston",NA
+"774","Fenway",20,2011-06-01,"Boston",NA
+"775","Fenway",20,2011-05-01,"Boston",NA
+"776","Fenway",20,2011-04-01,"Boston",NA
+"777","Fenway",20,2011-03-01,"Boston",NA
+"778","Fenway",20,2011-02-01,"Boston",NA
+"779","Fenway",20,2011-01-01,"Boston",NA
+"780","Fenway",17,2010-12-01,"Boston",NA
+"781","Fenway",17,2010-11-01,"Boston",NA
+"782","Allston",260,2016-09-01,"Boston",NA
+"783","Allston",257,2016-08-01,"Boston",NA
+"784","Allston",255,2016-07-01,"Boston",NA
+"785","Allston",246,2016-06-01,"Boston",NA
+"786","Allston",245,2016-05-01,"Boston",NA
+"787","Allston",237,2016-04-01,"Boston",NA
+"788","Allston",235,2016-03-01,"Boston",NA
+"789","Allston",234,2016-02-01,"Boston",NA
+"790","Allston",230,2016-01-01,"Boston",NA
+"791","Allston",221,2015-12-01,"Boston",NA
+"792","Allston",211,2015-11-01,"Boston",NA
+"793","Allston",208,2015-10-01,"Boston",NA
+"794","Allston",204,2015-09-01,"Boston",NA
+"795","Allston",196,2015-08-01,"Boston",NA
+"796","Allston",190,2015-07-01,"Boston",NA
+"797","Allston",184,2015-06-01,"Boston",NA
+"798","Allston",180,2015-05-01,"Boston",NA
+"799","Allston",158,2015-04-01,"Boston",NA
+"800","Allston",151,2015-03-01,"Boston",NA
+"801","Allston",148,2015-02-01,"Boston",NA
+"802","Allston",138,2015-01-01,"Boston",NA
+"803","Allston",128,2014-12-01,"Boston",NA
+"804","Allston",127,2014-11-01,"Boston",NA
+"805","Allston",124,2014-10-01,"Boston",NA
+"806","Allston",122,2014-09-01,"Boston",NA
+"807","Allston",111,2014-08-01,"Boston",NA
+"808","Allston",100,2014-07-01,"Boston",NA
+"809","Allston",98,2014-06-01,"Boston",NA
+"810","Allston",94,2014-05-01,"Boston",NA
+"811","Allston",90,2014-04-01,"Boston",NA
+"812","Allston",87,2014-03-01,"Boston",NA
+"813","Allston",66,2014-02-01,"Boston",NA
+"814","Allston",64,2014-01-01,"Boston",NA
+"815","Allston",64,2013-12-01,"Boston",NA
+"816","Allston",59,2013-11-01,"Boston",NA
+"817","Allston",54,2013-10-01,"Boston",NA
+"818","Allston",52,2013-09-01,"Boston",NA
+"819","Allston",40,2013-08-01,"Boston",NA
+"820","Allston",40,2013-07-01,"Boston",NA
+"821","Allston",38,2013-06-01,"Boston",NA
+"822","Allston",36,2013-05-01,"Boston",NA
+"823","Allston",32,2013-04-01,"Boston",NA
+"824","Allston",31,2013-03-01,"Boston",NA
+"825","Allston",28,2013-02-01,"Boston",NA
+"826","Allston",28,2013-01-01,"Boston",NA
+"827","Allston",27,2012-12-01,"Boston",NA
+"828","Allston",26,2012-11-01,"Boston",NA
+"829","Allston",26,2012-10-01,"Boston",NA
+"830","Allston",24,2012-09-01,"Boston",NA
+"831","Allston",23,2012-08-01,"Boston",NA
+"832","Allston",23,2012-07-01,"Boston",NA
+"833","Allston",23,2012-06-01,"Boston",NA
+"834","Allston",22,2012-05-01,"Boston",NA
+"835","Allston",20,2012-04-01,"Boston",NA
+"836","Allston",17,2012-03-01,"Boston",NA
+"837","Allston",17,2012-02-01,"Boston",NA
+"838","Allston",17,2012-01-01,"Boston",NA
+"839","Allston",17,2011-12-01,"Boston",NA
+"840","Allston",17,2011-11-01,"Boston",NA
+"841","Allston",17,2011-10-01,"Boston",NA
+"842","Allston",16,2011-09-01,"Boston",NA
+"843","Allston",15,2011-08-01,"Boston",NA
+"844","Allston",14,2011-07-01,"Boston",NA
+"845","Allston",11,2011-06-01,"Boston",NA
+"846","Allston",11,2011-05-01,"Boston",NA
+"847","Allston",9,2011-04-01,"Boston",NA
+"848","Allston",9,2011-03-01,"Boston",NA
+"849","Allston",8,2011-02-01,"Boston",NA
+"850","Allston",8,2011-01-01,"Boston",NA
+"851","Allston",8,2010-12-01,"Boston",NA
+"852","Allston",8,2010-11-01,"Boston",NA
+"853","North Dorchester",0,2016-09-01,"Boston",NA
+"854","North Dorchester",0,2016-08-01,"Boston",NA
+"855","North Dorchester",0,2016-07-01,"Boston",NA
+"856","North Dorchester",0,2016-06-01,"Boston",NA
+"857","North Dorchester",0,2016-05-01,"Boston",NA
+"858","North Dorchester",0,2016-04-01,"Boston",NA
+"859","North Dorchester",0,2016-03-01,"Boston",NA
+"860","North Dorchester",0,2016-02-01,"Boston",NA
+"861","North Dorchester",0,2016-01-01,"Boston",NA
+"862","North Dorchester",0,2015-12-01,"Boston",NA
+"863","North Dorchester",0,2015-11-01,"Boston",NA
+"864","North Dorchester",0,2015-10-01,"Boston",NA
+"865","North Dorchester",0,2015-09-01,"Boston",NA
+"866","North Dorchester",0,2015-08-01,"Boston",NA
+"867","North Dorchester",0,2015-07-01,"Boston",NA
+"868","North Dorchester",0,2015-06-01,"Boston",NA
+"869","North Dorchester",0,2015-05-01,"Boston",NA
+"870","North Dorchester",0,2015-04-01,"Boston",NA
+"871","North Dorchester",0,2015-03-01,"Boston",NA
+"872","North Dorchester",0,2015-02-01,"Boston",NA
+"873","North Dorchester",0,2015-01-01,"Boston",NA
+"874","North Dorchester",0,2014-12-01,"Boston",NA
+"875","North Dorchester",0,2014-11-01,"Boston",NA
+"876","North Dorchester",0,2014-10-01,"Boston",NA
+"877","North Dorchester",0,2014-09-01,"Boston",NA
+"878","North Dorchester",0,2014-08-01,"Boston",NA
+"879","North Dorchester",0,2014-07-01,"Boston",NA
+"880","North Dorchester",0,2014-06-01,"Boston",NA
+"881","North Dorchester",0,2014-05-01,"Boston",NA
+"882","North Dorchester",0,2014-04-01,"Boston",NA
+"883","North Dorchester",0,2014-03-01,"Boston",NA
+"884","North Dorchester",0,2014-02-01,"Boston",NA
+"885","North Dorchester",0,2014-01-01,"Boston",NA
+"886","North Dorchester",0,2013-12-01,"Boston",NA
+"887","North Dorchester",0,2013-11-01,"Boston",NA
+"888","North Dorchester",0,2013-10-01,"Boston",NA
+"889","North Dorchester",0,2013-09-01,"Boston",NA
+"890","North Dorchester",0,2013-08-01,"Boston",NA
+"891","North Dorchester",0,2013-07-01,"Boston",NA
+"892","North Dorchester",0,2013-06-01,"Boston",NA
+"893","North Dorchester",0,2013-05-01,"Boston",NA
+"894","North Dorchester",0,2013-04-01,"Boston",NA
+"895","North Dorchester",0,2013-03-01,"Boston",NA
+"896","North Dorchester",0,2013-02-01,"Boston",NA
+"897","North Dorchester",0,2013-01-01,"Boston",NA
+"898","North Dorchester",0,2012-12-01,"Boston",NA
+"899","North Dorchester",0,2012-11-01,"Boston",NA
+"900","North Dorchester",0,2012-10-01,"Boston",NA
+"901","North Dorchester",0,2012-09-01,"Boston",NA
+"902","North Dorchester",0,2012-08-01,"Boston",NA
+"903","North Dorchester",0,2012-07-01,"Boston",NA
+"904","North Dorchester",0,2012-06-01,"Boston",NA
+"905","North Dorchester",0,2012-05-01,"Boston",NA
+"906","North Dorchester",0,2012-04-01,"Boston",NA
+"907","North Dorchester",0,2012-03-01,"Boston",NA
+"908","North Dorchester",0,2012-02-01,"Boston",NA
+"909","North Dorchester",0,2012-01-01,"Boston",NA
+"910","North Dorchester",0,2011-12-01,"Boston",NA
+"911","North Dorchester",0,2011-11-01,"Boston",NA
+"912","North Dorchester",0,2011-10-01,"Boston",NA
+"913","North Dorchester",0,2011-09-01,"Boston",NA
+"914","North Dorchester",0,2011-08-01,"Boston",NA
+"915","North Dorchester",0,2011-07-01,"Boston",NA
+"916","North Dorchester",0,2011-06-01,"Boston",NA
+"917","North Dorchester",0,2011-05-01,"Boston",NA
+"918","North Dorchester",0,2011-04-01,"Boston",NA
+"919","North Dorchester",0,2011-03-01,"Boston",NA
+"920","North Dorchester",0,2011-02-01,"Boston",NA
+"921","North Dorchester",0,2011-01-01,"Boston",NA
+"922","North Dorchester",0,2010-12-01,"Boston",NA
+"923","North Dorchester",0,2010-11-01,"Boston",NA
+"924","South End",325,2016-09-01,"Boston",NA
+"925","South End",322,2016-08-01,"Boston",NA
+"926","South End",320,2016-07-01,"Boston",NA
+"927","South End",315,2016-06-01,"Boston",NA
+"928","South End",311,2016-05-01,"Boston",NA
+"929","South End",308,2016-04-01,"Boston",NA
+"930","South End",304,2016-03-01,"Boston",NA
+"931","South End",304,2016-02-01,"Boston",NA
+"932","South End",300,2016-01-01,"Boston",NA
+"933","South End",291,2015-12-01,"Boston",NA
+"934","South End",286,2015-11-01,"Boston",NA
+"935","South End",275,2015-10-01,"Boston",NA
+"936","South End",265,2015-09-01,"Boston",NA
+"937","South End",262,2015-08-01,"Boston",NA
+"938","South End",252,2015-07-01,"Boston",NA
+"939","South End",244,2015-06-01,"Boston",NA
+"940","South End",230,2015-05-01,"Boston",NA
+"941","South End",227,2015-04-01,"Boston",NA
+"942","South End",221,2015-03-01,"Boston",NA
+"943","South End",220,2015-02-01,"Boston",NA
+"944","South End",215,2015-01-01,"Boston",NA
+"945","South End",214,2014-12-01,"Boston",NA
+"946","South End",211,2014-11-01,"Boston",NA
+"947","South End",179,2014-10-01,"Boston",NA
+"948","South End",174,2014-09-01,"Boston",NA
+"949","South End",170,2014-08-01,"Boston",NA
+"950","South End",165,2014-07-01,"Boston",NA
+"951","South End",162,2014-06-01,"Boston",NA
+"952","South End",161,2014-05-01,"Boston",NA
+"953","South End",155,2014-04-01,"Boston",NA
+"954","South End",152,2014-03-01,"Boston",NA
+"955","South End",135,2014-02-01,"Boston",NA
+"956","South End",132,2014-01-01,"Boston",NA
+"957","South End",131,2013-12-01,"Boston",NA
+"958","South End",129,2013-11-01,"Boston",NA
+"959","South End",122,2013-10-01,"Boston",NA
+"960","South End",120,2013-09-01,"Boston",NA
+"961","South End",119,2013-08-01,"Boston",NA
+"962","South End",115,2013-07-01,"Boston",NA
+"963","South End",113,2013-06-01,"Boston",NA
+"964","South End",109,2013-05-01,"Boston",NA
+"965","South End",104,2013-04-01,"Boston",NA
+"966","South End",94,2013-03-01,"Boston",NA
+"967","South End",94,2013-02-01,"Boston",NA
+"968","South End",86,2013-01-01,"Boston",NA
+"969","South End",82,2012-12-01,"Boston",NA
+"970","South End",80,2012-11-01,"Boston",NA
+"971","South End",76,2012-10-01,"Boston",NA
+"972","South End",75,2012-09-01,"Boston",NA
+"973","South End",67,2012-08-01,"Boston",NA
+"974","South End",64,2012-07-01,"Boston",NA
+"975","South End",63,2012-06-01,"Boston",NA
+"976","South End",61,2012-05-01,"Boston",NA
+"977","South End",52,2012-04-01,"Boston",NA
+"978","South End",50,2012-03-01,"Boston",NA
+"979","South End",49,2012-02-01,"Boston",NA
+"980","South End",40,2012-01-01,"Boston",NA
+"981","South End",40,2011-12-01,"Boston",NA
+"982","South End",32,2011-11-01,"Boston",NA
+"983","South End",32,2011-10-01,"Boston",NA
+"984","South End",31,2011-09-01,"Boston",NA
+"985","South End",28,2011-08-01,"Boston",NA
+"986","South End",23,2011-07-01,"Boston",NA
+"987","South End",23,2011-06-01,"Boston",NA
+"988","South End",22,2011-05-01,"Boston",NA
+"989","South End",19,2011-04-01,"Boston",NA
+"990","South End",18,2011-03-01,"Boston",NA
+"991","South End",18,2011-02-01,"Boston",NA
+"992","South End",18,2011-01-01,"Boston",NA
+"993","South End",17,2010-12-01,"Boston",NA
+"994","South End",17,2010-11-01,"Boston",NA
+"995","West Roxbury",46,2016-09-01,"Boston",NA
+"996","West Roxbury",44,2016-08-01,"Boston",NA
+"997","West Roxbury",43,2016-07-01,"Boston",NA
+"998","West Roxbury",42,2016-06-01,"Boston",NA
+"999","West Roxbury",42,2016-05-01,"Boston",NA
+"1000","West Roxbury",39,2016-04-01,"Boston",NA
+"1001","West Roxbury",38,2016-03-01,"Boston",NA
+"1002","West Roxbury",38,2016-02-01,"Boston",NA
+"1003","West Roxbury",36,2016-01-01,"Boston",NA
+"1004","West Roxbury",34,2015-12-01,"Boston",NA
+"1005","West Roxbury",33,2015-11-01,"Boston",NA
+"1006","West Roxbury",33,2015-10-01,"Boston",NA
+"1007","West Roxbury",28,2015-09-01,"Boston",NA
+"1008","West Roxbury",27,2015-08-01,"Boston",NA
+"1009","West Roxbury",27,2015-07-01,"Boston",NA
+"1010","West Roxbury",27,2015-06-01,"Boston",NA
+"1011","West Roxbury",26,2015-05-01,"Boston",NA
+"1012","West Roxbury",26,2015-04-01,"Boston",NA
+"1013","West Roxbury",24,2015-03-01,"Boston",NA
+"1014","West Roxbury",23,2015-02-01,"Boston",NA
+"1015","West Roxbury",23,2015-01-01,"Boston",NA
+"1016","West Roxbury",23,2014-12-01,"Boston",NA
+"1017","West Roxbury",22,2014-11-01,"Boston",NA
+"1018","West Roxbury",21,2014-10-01,"Boston",NA
+"1019","West Roxbury",20,2014-09-01,"Boston",NA
+"1020","West Roxbury",18,2014-08-01,"Boston",NA
+"1021","West Roxbury",17,2014-07-01,"Boston",NA
+"1022","West Roxbury",17,2014-06-01,"Boston",NA
+"1023","West Roxbury",17,2014-05-01,"Boston",NA
+"1024","West Roxbury",17,2014-04-01,"Boston",NA
+"1025","West Roxbury",17,2014-03-01,"Boston",NA
+"1026","West Roxbury",17,2014-02-01,"Boston",NA
+"1027","West Roxbury",17,2014-01-01,"Boston",NA
+"1028","West Roxbury",17,2013-12-01,"Boston",NA
+"1029","West Roxbury",17,2013-11-01,"Boston",NA
+"1030","West Roxbury",14,2013-10-01,"Boston",NA
+"1031","West Roxbury",14,2013-09-01,"Boston",NA
+"1032","West Roxbury",11,2013-08-01,"Boston",NA
+"1033","West Roxbury",10,2013-07-01,"Boston",NA
+"1034","West Roxbury",10,2013-06-01,"Boston",NA
+"1035","West Roxbury",10,2013-05-01,"Boston",NA
+"1036","West Roxbury",10,2013-04-01,"Boston",NA
+"1037","West Roxbury",10,2013-03-01,"Boston",NA
+"1038","West Roxbury",10,2013-02-01,"Boston",NA
+"1039","West Roxbury",10,2013-01-01,"Boston",NA
+"1040","West Roxbury",9,2012-12-01,"Boston",NA
+"1041","West Roxbury",9,2012-11-01,"Boston",NA
+"1042","West Roxbury",8,2012-10-01,"Boston",NA
+"1043","West Roxbury",8,2012-09-01,"Boston",NA
+"1044","West Roxbury",8,2012-08-01,"Boston",NA
+"1045","West Roxbury",5,2012-07-01,"Boston",NA
+"1046","West Roxbury",5,2012-06-01,"Boston",NA
+"1047","West Roxbury",5,2012-05-01,"Boston",NA
+"1048","West Roxbury",5,2012-04-01,"Boston",NA
+"1049","West Roxbury",5,2012-03-01,"Boston",NA
+"1050","West Roxbury",5,2012-02-01,"Boston",NA
+"1051","West Roxbury",5,2012-01-01,"Boston",NA
+"1052","West Roxbury",5,2011-12-01,"Boston",NA
+"1053","West Roxbury",5,2011-11-01,"Boston",NA
+"1054","West Roxbury",4,2011-10-01,"Boston",NA
+"1055","West Roxbury",4,2011-09-01,"Boston",NA
+"1056","West Roxbury",4,2011-08-01,"Boston",NA
+"1057","West Roxbury",3,2011-07-01,"Boston",NA
+"1058","West Roxbury",3,2011-06-01,"Boston",NA
+"1059","West Roxbury",2,2011-05-01,"Boston",NA
+"1060","West Roxbury",1,2011-04-01,"Boston",NA
+"1061","West Roxbury",1,2011-03-01,"Boston",NA
+"1062","West Roxbury",1,2011-02-01,"Boston",NA
+"1063","West Roxbury",1,2011-01-01,"Boston",NA
+"1064","West Roxbury",1,2010-12-01,"Boston",NA
+"1065","West Roxbury",1,2010-11-01,"Boston",NA
+"1066","Roslindale",56,2016-09-01,"Boston",NA
+"1067","Roslindale",56,2016-08-01,"Boston",NA
+"1068","Roslindale",55,2016-07-01,"Boston",NA
+"1069","Roslindale",55,2016-06-01,"Boston",NA
+"1070","Roslindale",54,2016-05-01,"Boston",NA
+"1071","Roslindale",53,2016-04-01,"Boston",NA
+"1072","Roslindale",51,2016-03-01,"Boston",NA
+"1073","Roslindale",50,2016-02-01,"Boston",NA
+"1074","Roslindale",50,2016-01-01,"Boston",NA
+"1075","Roslindale",50,2015-12-01,"Boston",NA
+"1076","Roslindale",50,2015-11-01,"Boston",NA
+"1077","Roslindale",49,2015-10-01,"Boston",NA
+"1078","Roslindale",48,2015-09-01,"Boston",NA
+"1079","Roslindale",47,2015-08-01,"Boston",NA
+"1080","Roslindale",47,2015-07-01,"Boston",NA
+"1081","Roslindale",46,2015-06-01,"Boston",NA
+"1082","Roslindale",43,2015-05-01,"Boston",NA
+"1083","Roslindale",42,2015-04-01,"Boston",NA
+"1084","Roslindale",41,2015-03-01,"Boston",NA
+"1085","Roslindale",39,2015-02-01,"Boston",NA
+"1086","Roslindale",39,2015-01-01,"Boston",NA
+"1087","Roslindale",39,2014-12-01,"Boston",NA
+"1088","Roslindale",39,2014-11-01,"Boston",NA
+"1089","Roslindale",38,2014-10-01,"Boston",NA
+"1090","Roslindale",38,2014-09-01,"Boston",NA
+"1091","Roslindale",38,2014-08-01,"Boston",NA
+"1092","Roslindale",37,2014-07-01,"Boston",NA
+"1093","Roslindale",35,2014-06-01,"Boston",NA
+"1094","Roslindale",34,2014-05-01,"Boston",NA
+"1095","Roslindale",34,2014-04-01,"Boston",NA
+"1096","Roslindale",29,2014-03-01,"Boston",NA
+"1097","Roslindale",29,2014-02-01,"Boston",NA
+"1098","Roslindale",29,2014-01-01,"Boston",NA
+"1099","Roslindale",29,2013-12-01,"Boston",NA
+"1100","Roslindale",28,2013-11-01,"Boston",NA
+"1101","Roslindale",27,2013-10-01,"Boston",NA
+"1102","Roslindale",23,2013-09-01,"Boston",NA
+"1103","Roslindale",21,2013-08-01,"Boston",NA
+"1104","Roslindale",18,2013-07-01,"Boston",NA
+"1105","Roslindale",18,2013-06-01,"Boston",NA
+"1106","Roslindale",15,2013-05-01,"Boston",NA
+"1107","Roslindale",14,2013-04-01,"Boston",NA
+"1108","Roslindale",14,2013-03-01,"Boston",NA
+"1109","Roslindale",14,2013-02-01,"Boston",NA
+"1110","Roslindale",11,2013-01-01,"Boston",NA
+"1111","Roslindale",10,2012-12-01,"Boston",NA
+"1112","Roslindale",10,2012-11-01,"Boston",NA
+"1113","Roslindale",9,2012-10-01,"Boston",NA
+"1114","Roslindale",9,2012-09-01,"Boston",NA
+"1115","Roslindale",7,2012-08-01,"Boston",NA
+"1116","Roslindale",7,2012-07-01,"Boston",NA
+"1117","Roslindale",6,2012-06-01,"Boston",NA
+"1118","Roslindale",6,2012-05-01,"Boston",NA
+"1119","Roslindale",6,2012-04-01,"Boston",NA
+"1120","Roslindale",6,2012-03-01,"Boston",NA
+"1121","Roslindale",6,2012-02-01,"Boston",NA
+"1122","Roslindale",6,2012-01-01,"Boston",NA
+"1123","Roslindale",6,2011-12-01,"Boston",NA
+"1124","Roslindale",6,2011-11-01,"Boston",NA
+"1125","Roslindale",6,2011-10-01,"Boston",NA
+"1126","Roslindale",3,2011-09-01,"Boston",NA
+"1127","Roslindale",3,2011-08-01,"Boston",NA
+"1128","Roslindale",3,2011-07-01,"Boston",NA
+"1129","Roslindale",3,2011-06-01,"Boston",NA
+"1130","Roslindale",3,2011-05-01,"Boston",NA
+"1131","Roslindale",3,2011-04-01,"Boston",NA
+"1132","Roslindale",2,2011-03-01,"Boston",NA
+"1133","Roslindale",2,2011-02-01,"Boston",NA
+"1134","Roslindale",1,2011-01-01,"Boston",NA
+"1135","Roslindale",1,2010-12-01,"Boston",NA
+"1136","Roslindale",1,2010-11-01,"Boston",NA
+"1137","Hyde Park",31,2016-09-01,"Boston",NA
+"1138","Hyde Park",30,2016-08-01,"Boston",NA
+"1139","Hyde Park",29,2016-07-01,"Boston",NA
+"1140","Hyde Park",29,2016-06-01,"Boston",NA
+"1141","Hyde Park",26,2016-05-01,"Boston",NA
+"1142","Hyde Park",26,2016-04-01,"Boston",NA
+"1143","Hyde Park",26,2016-03-01,"Boston",NA
+"1144","Hyde Park",25,2016-02-01,"Boston",NA
+"1145","Hyde Park",25,2016-01-01,"Boston",NA
+"1146","Hyde Park",24,2015-12-01,"Boston",NA
+"1147","Hyde Park",23,2015-11-01,"Boston",NA
+"1148","Hyde Park",23,2015-10-01,"Boston",NA
+"1149","Hyde Park",21,2015-09-01,"Boston",NA
+"1150","Hyde Park",17,2015-08-01,"Boston",NA
+"1151","Hyde Park",17,2015-07-01,"Boston",NA
+"1152","Hyde Park",16,2015-06-01,"Boston",NA
+"1153","Hyde Park",15,2015-05-01,"Boston",NA
+"1154","Hyde Park",15,2015-04-01,"Boston",NA
+"1155","Hyde Park",15,2015-03-01,"Boston",NA
+"1156","Hyde Park",13,2015-02-01,"Boston",NA
+"1157","Hyde Park",13,2015-01-01,"Boston",NA
+"1158","Hyde Park",13,2014-12-01,"Boston",NA
+"1159","Hyde Park",13,2014-11-01,"Boston",NA
+"1160","Hyde Park",13,2014-10-01,"Boston",NA
+"1161","Hyde Park",13,2014-09-01,"Boston",NA
+"1162","Hyde Park",10,2014-08-01,"Boston",NA
+"1163","Hyde Park",9,2014-07-01,"Boston",NA
+"1164","Hyde Park",9,2014-06-01,"Boston",NA
+"1165","Hyde Park",5,2014-05-01,"Boston",NA
+"1166","Hyde Park",5,2014-04-01,"Boston",NA
+"1167","Hyde Park",3,2014-03-01,"Boston",NA
+"1168","Hyde Park",3,2014-02-01,"Boston",NA
+"1169","Hyde Park",3,2014-01-01,"Boston",NA
+"1170","Hyde Park",3,2013-12-01,"Boston",NA
+"1171","Hyde Park",3,2013-11-01,"Boston",NA
+"1172","Hyde Park",3,2013-10-01,"Boston",NA
+"1173","Hyde Park",3,2013-09-01,"Boston",NA
+"1174","Hyde Park",3,2013-08-01,"Boston",NA
+"1175","Hyde Park",1,2013-07-01,"Boston",NA
+"1176","Hyde Park",1,2013-06-01,"Boston",NA
+"1177","Hyde Park",1,2013-05-01,"Boston",NA
+"1178","Hyde Park",1,2013-04-01,"Boston",NA
+"1179","Hyde Park",1,2013-03-01,"Boston",NA
+"1180","Hyde Park",1,2013-02-01,"Boston",NA
+"1181","Hyde Park",1,2013-01-01,"Boston",NA
+"1182","Hyde Park",1,2012-12-01,"Boston",NA
+"1183","Hyde Park",1,2012-11-01,"Boston",NA
+"1184","Hyde Park",1,2012-10-01,"Boston",NA
+"1185","Hyde Park",1,2012-09-01,"Boston",NA
+"1186","Hyde Park",0,2012-08-01,"Boston",NA
+"1187","Hyde Park",0,2012-07-01,"Boston",NA
+"1188","Hyde Park",0,2012-06-01,"Boston",NA
+"1189","Hyde Park",0,2012-05-01,"Boston",NA
+"1190","Hyde Park",0,2012-04-01,"Boston",NA
+"1191","Hyde Park",0,2012-03-01,"Boston",NA
+"1192","Hyde Park",0,2012-02-01,"Boston",NA
+"1193","Hyde Park",0,2012-01-01,"Boston",NA
+"1194","Hyde Park",0,2011-12-01,"Boston",NA
+"1195","Hyde Park",0,2011-11-01,"Boston",NA
+"1196","Hyde Park",0,2011-10-01,"Boston",NA
+"1197","Hyde Park",0,2011-09-01,"Boston",NA
+"1198","Hyde Park",0,2011-08-01,"Boston",NA
+"1199","Hyde Park",0,2011-07-01,"Boston",NA
+"1200","Hyde Park",0,2011-06-01,"Boston",NA
+"1201","Hyde Park",0,2011-05-01,"Boston",NA
+"1202","Hyde Park",0,2011-04-01,"Boston",NA
+"1203","Hyde Park",0,2011-03-01,"Boston",NA
+"1204","Hyde Park",0,2011-02-01,"Boston",NA
+"1205","Hyde Park",0,2011-01-01,"Boston",NA
+"1206","Hyde Park",0,2010-12-01,"Boston",NA
+"1207","Hyde Park",0,2010-11-01,"Boston",NA
+"1208","South Boston",174,2016-09-01,"Boston",NA
+"1209","South Boston",171,2016-08-01,"Boston",NA
+"1210","South Boston",170,2016-07-01,"Boston",NA
+"1211","South Boston",170,2016-06-01,"Boston",NA
+"1212","South Boston",165,2016-05-01,"Boston",NA
+"1213","South Boston",160,2016-04-01,"Boston",NA
+"1214","South Boston",156,2016-03-01,"Boston",NA
+"1215","South Boston",154,2016-02-01,"Boston",NA
+"1216","South Boston",147,2016-01-01,"Boston",NA
+"1217","South Boston",144,2015-12-01,"Boston",NA
+"1218","South Boston",142,2015-11-01,"Boston",NA
+"1219","South Boston",142,2015-10-01,"Boston",NA
+"1220","South Boston",142,2015-09-01,"Boston",NA
+"1221","South Boston",139,2015-08-01,"Boston",NA
+"1222","South Boston",136,2015-07-01,"Boston",NA
+"1223","South Boston",131,2015-06-01,"Boston",NA
+"1224","South Boston",125,2015-05-01,"Boston",NA
+"1225","South Boston",122,2015-04-01,"Boston",NA
+"1226","South Boston",119,2015-03-01,"Boston",NA
+"1227","South Boston",115,2015-02-01,"Boston",NA
+"1228","South Boston",100,2015-01-01,"Boston",NA
+"1229","South Boston",99,2014-12-01,"Boston",NA
+"1230","South Boston",94,2014-11-01,"Boston",NA
+"1231","South Boston",91,2014-10-01,"Boston",NA
+"1232","South Boston",84,2014-09-01,"Boston",NA
+"1233","South Boston",78,2014-08-01,"Boston",NA
+"1234","South Boston",67,2014-07-01,"Boston",NA
+"1235","South Boston",65,2014-06-01,"Boston",NA
+"1236","South Boston",63,2014-05-01,"Boston",NA
+"1237","South Boston",60,2014-04-01,"Boston",NA
+"1238","South Boston",60,2014-03-01,"Boston",NA
+"1239","South Boston",60,2014-02-01,"Boston",NA
+"1240","South Boston",59,2014-01-01,"Boston",NA
+"1241","South Boston",57,2013-12-01,"Boston",NA
+"1242","South Boston",52,2013-11-01,"Boston",NA
+"1243","South Boston",47,2013-10-01,"Boston",NA
+"1244","South Boston",46,2013-09-01,"Boston",NA
+"1245","South Boston",43,2013-08-01,"Boston",NA
+"1246","South Boston",41,2013-07-01,"Boston",NA
+"1247","South Boston",34,2013-06-01,"Boston",NA
+"1248","South Boston",32,2013-05-01,"Boston",NA
+"1249","South Boston",32,2013-04-01,"Boston",NA
+"1250","South Boston",31,2013-03-01,"Boston",NA
+"1251","South Boston",31,2013-02-01,"Boston",NA
+"1252","South Boston",29,2013-01-01,"Boston",NA
+"1253","South Boston",29,2012-12-01,"Boston",NA
+"1254","South Boston",28,2012-11-01,"Boston",NA
+"1255","South Boston",27,2012-10-01,"Boston",NA
+"1256","South Boston",24,2012-09-01,"Boston",NA
+"1257","South Boston",22,2012-08-01,"Boston",NA
+"1258","South Boston",21,2012-07-01,"Boston",NA
+"1259","South Boston",21,2012-06-01,"Boston",NA
+"1260","South Boston",20,2012-05-01,"Boston",NA
+"1261","South Boston",20,2012-04-01,"Boston",NA
+"1262","South Boston",19,2012-03-01,"Boston",NA
+"1263","South Boston",19,2012-02-01,"Boston",NA
+"1264","South Boston",19,2012-01-01,"Boston",NA
+"1265","South Boston",19,2011-12-01,"Boston",NA
+"1266","South Boston",13,2011-11-01,"Boston",NA
+"1267","South Boston",12,2011-10-01,"Boston",NA
+"1268","South Boston",12,2011-09-01,"Boston",NA
+"1269","South Boston",8,2011-08-01,"Boston",NA
+"1270","South Boston",2,2011-07-01,"Boston",NA
+"1271","South Boston",1,2011-06-01,"Boston",NA
+"1272","South Boston",0,2011-05-01,"Boston",NA
+"1273","South Boston",0,2011-04-01,"Boston",NA
+"1274","South Boston",0,2011-03-01,"Boston",NA
+"1275","South Boston",0,2011-02-01,"Boston",NA
+"1276","South Boston",0,2011-01-01,"Boston",NA
+"1277","South Boston",0,2010-12-01,"Boston",NA
+"1278","South Boston",0,2010-11-01,"Boston",NA
+"1279","Mattapan",24,2016-09-01,"Boston",NA
+"1280","Mattapan",22,2016-08-01,"Boston",NA
+"1281","Mattapan",22,2016-07-01,"Boston",NA
+"1282","Mattapan",22,2016-06-01,"Boston",NA
+"1283","Mattapan",22,2016-05-01,"Boston",NA
+"1284","Mattapan",20,2016-04-01,"Boston",NA
+"1285","Mattapan",20,2016-03-01,"Boston",NA
+"1286","Mattapan",20,2016-02-01,"Boston",NA
+"1287","Mattapan",20,2016-01-01,"Boston",NA
+"1288","Mattapan",17,2015-12-01,"Boston",NA
+"1289","Mattapan",17,2015-11-01,"Boston",NA
+"1290","Mattapan",14,2015-10-01,"Boston",NA
+"1291","Mattapan",14,2015-09-01,"Boston",NA
+"1292","Mattapan",13,2015-08-01,"Boston",NA
+"1293","Mattapan",13,2015-07-01,"Boston",NA
+"1294","Mattapan",13,2015-06-01,"Boston",NA
+"1295","Mattapan",13,2015-05-01,"Boston",NA
+"1296","Mattapan",13,2015-04-01,"Boston",NA
+"1297","Mattapan",13,2015-03-01,"Boston",NA
+"1298","Mattapan",11,2015-02-01,"Boston",NA
+"1299","Mattapan",11,2015-01-01,"Boston",NA
+"1300","Mattapan",11,2014-12-01,"Boston",NA
+"1301","Mattapan",11,2014-11-01,"Boston",NA
+"1302","Mattapan",10,2014-10-01,"Boston",NA
+"1303","Mattapan",10,2014-09-01,"Boston",NA
+"1304","Mattapan",10,2014-08-01,"Boston",NA
+"1305","Mattapan",9,2014-07-01,"Boston",NA
+"1306","Mattapan",9,2014-06-01,"Boston",NA
+"1307","Mattapan",9,2014-05-01,"Boston",NA
+"1308","Mattapan",9,2014-04-01,"Boston",NA
+"1309","Mattapan",8,2014-03-01,"Boston",NA
+"1310","Mattapan",8,2014-02-01,"Boston",NA
+"1311","Mattapan",4,2014-01-01,"Boston",NA
+"1312","Mattapan",4,2013-12-01,"Boston",NA
+"1313","Mattapan",4,2013-11-01,"Boston",NA
+"1314","Mattapan",4,2013-10-01,"Boston",NA
+"1315","Mattapan",3,2013-09-01,"Boston",NA
+"1316","Mattapan",3,2013-08-01,"Boston",NA
+"1317","Mattapan",3,2013-07-01,"Boston",NA
+"1318","Mattapan",3,2013-06-01,"Boston",NA
+"1319","Mattapan",3,2013-05-01,"Boston",NA
+"1320","Mattapan",2,2013-04-01,"Boston",NA
+"1321","Mattapan",2,2013-03-01,"Boston",NA
+"1322","Mattapan",2,2013-02-01,"Boston",NA
+"1323","Mattapan",0,2013-01-01,"Boston",NA
+"1324","Mattapan",0,2012-12-01,"Boston",NA
+"1325","Mattapan",0,2012-11-01,"Boston",NA
+"1326","Mattapan",0,2012-10-01,"Boston",NA
+"1327","Mattapan",0,2012-09-01,"Boston",NA
+"1328","Mattapan",0,2012-08-01,"Boston",NA
+"1329","Mattapan",0,2012-07-01,"Boston",NA
+"1330","Mattapan",0,2012-06-01,"Boston",NA
+"1331","Mattapan",0,2012-05-01,"Boston",NA
+"1332","Mattapan",0,2012-04-01,"Boston",NA
+"1333","Mattapan",0,2012-03-01,"Boston",NA
+"1334","Mattapan",0,2012-02-01,"Boston",NA
+"1335","Mattapan",0,2012-01-01,"Boston",NA
+"1336","Mattapan",0,2011-12-01,"Boston",NA
+"1337","Mattapan",0,2011-11-01,"Boston",NA
+"1338","Mattapan",0,2011-10-01,"Boston",NA
+"1339","Mattapan",0,2011-09-01,"Boston",NA
+"1340","Mattapan",0,2011-08-01,"Boston",NA
+"1341","Mattapan",0,2011-07-01,"Boston",NA
+"1342","Mattapan",0,2011-06-01,"Boston",NA
+"1343","Mattapan",0,2011-05-01,"Boston",NA
+"1344","Mattapan",0,2011-04-01,"Boston",NA
+"1345","Mattapan",0,2011-03-01,"Boston",NA
+"1346","Mattapan",0,2011-02-01,"Boston",NA
+"1347","Mattapan",0,2011-01-01,"Boston",NA
+"1348","Mattapan",0,2010-12-01,"Boston",NA
+"1349","Mattapan",0,2010-11-01,"Boston",NA
+"1350","Brighton",183,2016-09-01,"Boston",NA
+"1351","Brighton",177,2016-08-01,"Boston",NA
+"1352","Brighton",172,2016-07-01,"Boston",NA
+"1353","Brighton",164,2016-06-01,"Boston",NA
+"1354","Brighton",158,2016-05-01,"Boston",NA
+"1355","Brighton",153,2016-04-01,"Boston",NA
+"1356","Brighton",151,2016-03-01,"Boston",NA
+"1357","Brighton",147,2016-02-01,"Boston",NA
+"1358","Brighton",144,2016-01-01,"Boston",NA
+"1359","Brighton",140,2015-12-01,"Boston",NA
+"1360","Brighton",137,2015-11-01,"Boston",NA
+"1361","Brighton",135,2015-10-01,"Boston",NA
+"1362","Brighton",130,2015-09-01,"Boston",NA
+"1363","Brighton",129,2015-08-01,"Boston",NA
+"1364","Brighton",126,2015-07-01,"Boston",NA
+"1365","Brighton",120,2015-06-01,"Boston",NA
+"1366","Brighton",115,2015-05-01,"Boston",NA
+"1367","Brighton",112,2015-04-01,"Boston",NA
+"1368","Brighton",107,2015-03-01,"Boston",NA
+"1369","Brighton",103,2015-02-01,"Boston",NA
+"1370","Brighton",85,2015-01-01,"Boston",NA
+"1371","Brighton",84,2014-12-01,"Boston",NA
+"1372","Brighton",77,2014-11-01,"Boston",NA
+"1373","Brighton",74,2014-10-01,"Boston",NA
+"1374","Brighton",73,2014-09-01,"Boston",NA
+"1375","Brighton",72,2014-08-01,"Boston",NA
+"1376","Brighton",67,2014-07-01,"Boston",NA
+"1377","Brighton",64,2014-06-01,"Boston",NA
+"1378","Brighton",61,2014-05-01,"Boston",NA
+"1379","Brighton",60,2014-04-01,"Boston",NA
+"1380","Brighton",56,2014-03-01,"Boston",NA
+"1381","Brighton",53,2014-02-01,"Boston",NA
+"1382","Brighton",49,2014-01-01,"Boston",NA
+"1383","Brighton",48,2013-12-01,"Boston",NA
+"1384","Brighton",45,2013-11-01,"Boston",NA
+"1385","Brighton",40,2013-10-01,"Boston",NA
+"1386","Brighton",39,2013-09-01,"Boston",NA
+"1387","Brighton",35,2013-08-01,"Boston",NA
+"1388","Brighton",31,2013-07-01,"Boston",NA
+"1389","Brighton",26,2013-06-01,"Boston",NA
+"1390","Brighton",21,2013-05-01,"Boston",NA
+"1391","Brighton",20,2013-04-01,"Boston",NA
+"1392","Brighton",20,2013-03-01,"Boston",NA
+"1393","Brighton",20,2013-02-01,"Boston",NA
+"1394","Brighton",20,2013-01-01,"Boston",NA
+"1395","Brighton",20,2012-12-01,"Boston",NA
+"1396","Brighton",20,2012-11-01,"Boston",NA
+"1397","Brighton",19,2012-10-01,"Boston",NA
+"1398","Brighton",17,2012-09-01,"Boston",NA
+"1399","Brighton",17,2012-08-01,"Boston",NA
+"1400","Brighton",17,2012-07-01,"Boston",NA
+"1401","Brighton",17,2012-06-01,"Boston",NA
+"1402","Brighton",15,2012-05-01,"Boston",NA
+"1403","Brighton",15,2012-04-01,"Boston",NA
+"1404","Brighton",13,2012-03-01,"Boston",NA
+"1405","Brighton",12,2012-02-01,"Boston",NA
+"1406","Brighton",12,2012-01-01,"Boston",NA
+"1407","Brighton",11,2011-12-01,"Boston",NA
+"1408","Brighton",11,2011-11-01,"Boston",NA
+"1409","Brighton",11,2011-10-01,"Boston",NA
+"1410","Brighton",9,2011-09-01,"Boston",NA
+"1411","Brighton",9,2011-08-01,"Boston",NA
+"1412","Brighton",7,2011-07-01,"Boston",NA
+"1413","Brighton",5,2011-06-01,"Boston",NA
+"1414","Brighton",5,2011-05-01,"Boston",NA
+"1415","Brighton",4,2011-04-01,"Boston",NA
+"1416","Brighton",4,2011-03-01,"Boston",NA
+"1417","Brighton",2,2011-02-01,"Boston",NA
+"1418","Brighton",2,2011-01-01,"Boston",NA
+"1419","Brighton",1,2010-12-01,"Boston",NA
+"1420","Brighton",0,2010-11-01,"Boston",NA
+"1421","Jamaica Plain",342,2016-09-01,"Boston",NA
+"1422","Jamaica Plain",340,2016-08-01,"Boston",NA
+"1423","Jamaica Plain",340,2016-07-01,"Boston",NA
+"1424","Jamaica Plain",334,2016-06-01,"Boston",NA
+"1425","Jamaica Plain",329,2016-05-01,"Boston",NA
+"1426","Jamaica Plain",321,2016-04-01,"Boston",NA
+"1427","Jamaica Plain",319,2016-03-01,"Boston",NA
+"1428","Jamaica Plain",318,2016-02-01,"Boston",NA
+"1429","Jamaica Plain",316,2016-01-01,"Boston",NA
+"1430","Jamaica Plain",311,2015-12-01,"Boston",NA
+"1431","Jamaica Plain",300,2015-11-01,"Boston",NA
+"1432","Jamaica Plain",292,2015-10-01,"Boston",NA
+"1433","Jamaica Plain",289,2015-09-01,"Boston",NA
+"1434","Jamaica Plain",287,2015-08-01,"Boston",NA
+"1435","Jamaica Plain",280,2015-07-01,"Boston",NA
+"1436","Jamaica Plain",273,2015-06-01,"Boston",NA
+"1437","Jamaica Plain",269,2015-05-01,"Boston",NA
+"1438","Jamaica Plain",262,2015-04-01,"Boston",NA
+"1439","Jamaica Plain",255,2015-03-01,"Boston",NA
+"1440","Jamaica Plain",250,2015-02-01,"Boston",NA
+"1441","Jamaica Plain",246,2015-01-01,"Boston",NA
+"1442","Jamaica Plain",240,2014-12-01,"Boston",NA
+"1443","Jamaica Plain",237,2014-11-01,"Boston",NA
+"1444","Jamaica Plain",232,2014-10-01,"Boston",NA
+"1445","Jamaica Plain",226,2014-09-01,"Boston",NA
+"1446","Jamaica Plain",223,2014-08-01,"Boston",NA
+"1447","Jamaica Plain",205,2014-07-01,"Boston",NA
+"1448","Jamaica Plain",201,2014-06-01,"Boston",NA
+"1449","Jamaica Plain",193,2014-05-01,"Boston",NA
+"1450","Jamaica Plain",182,2014-04-01,"Boston",NA
+"1451","Jamaica Plain",177,2014-03-01,"Boston",NA
+"1452","Jamaica Plain",171,2014-02-01,"Boston",NA
+"1453","Jamaica Plain",163,2014-01-01,"Boston",NA
+"1454","Jamaica Plain",160,2013-12-01,"Boston",NA
+"1455","Jamaica Plain",159,2013-11-01,"Boston",NA
+"1456","Jamaica Plain",152,2013-10-01,"Boston",NA
+"1457","Jamaica Plain",149,2013-09-01,"Boston",NA
+"1458","Jamaica Plain",145,2013-08-01,"Boston",NA
+"1459","Jamaica Plain",141,2013-07-01,"Boston",NA
+"1460","Jamaica Plain",139,2013-06-01,"Boston",NA
+"1461","Jamaica Plain",134,2013-05-01,"Boston",NA
+"1462","Jamaica Plain",130,2013-04-01,"Boston",NA
+"1463","Jamaica Plain",123,2013-03-01,"Boston",NA
+"1464","Jamaica Plain",113,2013-02-01,"Boston",NA
+"1465","Jamaica Plain",105,2013-01-01,"Boston",NA
+"1466","Jamaica Plain",104,2012-12-01,"Boston",NA
+"1467","Jamaica Plain",98,2012-11-01,"Boston",NA
+"1468","Jamaica Plain",90,2012-10-01,"Boston",NA
+"1469","Jamaica Plain",87,2012-09-01,"Boston",NA
+"1470","Jamaica Plain",83,2012-08-01,"Boston",NA
+"1471","Jamaica Plain",78,2012-07-01,"Boston",NA
+"1472","Jamaica Plain",72,2012-06-01,"Boston",NA
+"1473","Jamaica Plain",71,2012-05-01,"Boston",NA
+"1474","Jamaica Plain",64,2012-04-01,"Boston",NA
+"1475","Jamaica Plain",60,2012-03-01,"Boston",NA
+"1476","Jamaica Plain",54,2012-02-01,"Boston",NA
+"1477","Jamaica Plain",51,2012-01-01,"Boston",NA
+"1478","Jamaica Plain",43,2011-12-01,"Boston",NA
+"1479","Jamaica Plain",41,2011-11-01,"Boston",NA
+"1480","Jamaica Plain",39,2011-10-01,"Boston",NA
+"1481","Jamaica Plain",36,2011-09-01,"Boston",NA
+"1482","Jamaica Plain",29,2011-08-01,"Boston",NA
+"1483","Jamaica Plain",22,2011-07-01,"Boston",NA
+"1484","Jamaica Plain",22,2011-06-01,"Boston",NA
+"1485","Jamaica Plain",20,2011-05-01,"Boston",NA
+"1486","Jamaica Plain",19,2011-04-01,"Boston",NA
+"1487","Jamaica Plain",17,2011-03-01,"Boston",NA
+"1488","Jamaica Plain",16,2011-02-01,"Boston",NA
+"1489","Jamaica Plain",14,2011-01-01,"Boston",NA
+"1490","Jamaica Plain",13,2010-12-01,"Boston",NA
+"1491","Jamaica Plain",13,2010-11-01,"Boston",NA
+"1492","East Boston",149,2016-09-01,"Boston",NA
+"1493","East Boston",147,2016-08-01,"Boston",NA
+"1494","East Boston",143,2016-07-01,"Boston",NA
+"1495","East Boston",140,2016-06-01,"Boston",NA
+"1496","East Boston",139,2016-05-01,"Boston",NA
+"1497","East Boston",136,2016-04-01,"Boston",NA
+"1498","East Boston",135,2016-03-01,"Boston",NA
+"1499","East Boston",132,2016-02-01,"Boston",NA
+"1500","East Boston",131,2016-01-01,"Boston",NA
+"1501","East Boston",128,2015-12-01,"Boston",NA
+"1502","East Boston",125,2015-11-01,"Boston",NA
+"1503","East Boston",121,2015-10-01,"Boston",NA
+"1504","East Boston",118,2015-09-01,"Boston",NA
+"1505","East Boston",107,2015-08-01,"Boston",NA
+"1506","East Boston",102,2015-07-01,"Boston",NA
+"1507","East Boston",102,2015-06-01,"Boston",NA
+"1508","East Boston",101,2015-05-01,"Boston",NA
+"1509","East Boston",99,2015-04-01,"Boston",NA
+"1510","East Boston",93,2015-03-01,"Boston",NA
+"1511","East Boston",93,2015-02-01,"Boston",NA
+"1512","East Boston",85,2015-01-01,"Boston",NA
+"1513","East Boston",84,2014-12-01,"Boston",NA
+"1514","East Boston",79,2014-11-01,"Boston",NA
+"1515","East Boston",74,2014-10-01,"Boston",NA
+"1516","East Boston",74,2014-09-01,"Boston",NA
+"1517","East Boston",73,2014-08-01,"Boston",NA
+"1518","East Boston",69,2014-07-01,"Boston",NA
+"1519","East Boston",61,2014-06-01,"Boston",NA
+"1520","East Boston",57,2014-05-01,"Boston",NA
+"1521","East Boston",54,2014-04-01,"Boston",NA
+"1522","East Boston",52,2014-03-01,"Boston",NA
+"1523","East Boston",51,2014-02-01,"Boston",NA
+"1524","East Boston",51,2014-01-01,"Boston",NA
+"1525","East Boston",51,2013-12-01,"Boston",NA
+"1526","East Boston",49,2013-11-01,"Boston",NA
+"1527","East Boston",48,2013-10-01,"Boston",NA
+"1528","East Boston",45,2013-09-01,"Boston",NA
+"1529","East Boston",44,2013-08-01,"Boston",NA
+"1530","East Boston",42,2013-07-01,"Boston",NA
+"1531","East Boston",42,2013-06-01,"Boston",NA
+"1532","East Boston",37,2013-05-01,"Boston",NA
+"1533","East Boston",35,2013-04-01,"Boston",NA
+"1534","East Boston",27,2013-03-01,"Boston",NA
+"1535","East Boston",25,2013-02-01,"Boston",NA
+"1536","East Boston",25,2013-01-01,"Boston",NA
+"1537","East Boston",24,2012-12-01,"Boston",NA
+"1538","East Boston",24,2012-11-01,"Boston",NA
+"1539","East Boston",24,2012-10-01,"Boston",NA
+"1540","East Boston",20,2012-09-01,"Boston",NA
+"1541","East Boston",20,2012-08-01,"Boston",NA
+"1542","East Boston",19,2012-07-01,"Boston",NA
+"1543","East Boston",16,2012-06-01,"Boston",NA
+"1544","East Boston",16,2012-05-01,"Boston",NA
+"1545","East Boston",16,2012-04-01,"Boston",NA
+"1546","East Boston",16,2012-03-01,"Boston",NA
+"1547","East Boston",16,2012-02-01,"Boston",NA
+"1548","East Boston",16,2012-01-01,"Boston",NA
+"1549","East Boston",16,2011-12-01,"Boston",NA
+"1550","East Boston",11,2011-11-01,"Boston",NA
+"1551","East Boston",11,2011-10-01,"Boston",NA
+"1552","East Boston",10,2011-09-01,"Boston",NA
+"1553","East Boston",10,2011-08-01,"Boston",NA
+"1554","East Boston",10,2011-07-01,"Boston",NA
+"1555","East Boston",10,2011-06-01,"Boston",NA
+"1556","East Boston",10,2011-05-01,"Boston",NA
+"1557","East Boston",9,2011-04-01,"Boston",NA
+"1558","East Boston",6,2011-03-01,"Boston",NA
+"1559","East Boston",6,2011-02-01,"Boston",NA
+"1560","East Boston",6,2011-01-01,"Boston",NA
+"1561","East Boston",6,2010-12-01,"Boston",NA
+"1562","East Boston",6,2010-11-01,"Boston",NA
+"1563","Roxbury",144,2016-09-01,"Boston",NA
+"1564","Roxbury",144,2016-08-01,"Boston",NA
+"1565","Roxbury",144,2016-07-01,"Boston",NA
+"1566","Roxbury",141,2016-06-01,"Boston",NA
+"1567","Roxbury",140,2016-05-01,"Boston",NA
+"1568","Roxbury",138,2016-04-01,"Boston",NA
+"1569","Roxbury",135,2016-03-01,"Boston",NA
+"1570","Roxbury",135,2016-02-01,"Boston",NA
+"1571","Roxbury",134,2016-01-01,"Boston",NA
+"1572","Roxbury",133,2015-12-01,"Boston",NA
+"1573","Roxbury",129,2015-11-01,"Boston",NA
+"1574","Roxbury",125,2015-10-01,"Boston",NA
+"1575","Roxbury",123,2015-09-01,"Boston",NA
+"1576","Roxbury",117,2015-08-01,"Boston",NA
+"1577","Roxbury",115,2015-07-01,"Boston",NA
+"1578","Roxbury",114,2015-06-01,"Boston",NA
+"1579","Roxbury",113,2015-05-01,"Boston",NA
+"1580","Roxbury",109,2015-04-01,"Boston",NA
+"1581","Roxbury",101,2015-03-01,"Boston",NA
+"1582","Roxbury",101,2015-02-01,"Boston",NA
+"1583","Roxbury",99,2015-01-01,"Boston",NA
+"1584","Roxbury",99,2014-12-01,"Boston",NA
+"1585","Roxbury",98,2014-11-01,"Boston",NA
+"1586","Roxbury",97,2014-10-01,"Boston",NA
+"1587","Roxbury",97,2014-09-01,"Boston",NA
+"1588","Roxbury",90,2014-08-01,"Boston",NA
+"1589","Roxbury",82,2014-07-01,"Boston",NA
+"1590","Roxbury",81,2014-06-01,"Boston",NA
+"1591","Roxbury",78,2014-05-01,"Boston",NA
+"1592","Roxbury",72,2014-04-01,"Boston",NA
+"1593","Roxbury",71,2014-03-01,"Boston",NA
+"1594","Roxbury",65,2014-02-01,"Boston",NA
+"1595","Roxbury",59,2014-01-01,"Boston",NA
+"1596","Roxbury",56,2013-12-01,"Boston",NA
+"1597","Roxbury",56,2013-11-01,"Boston",NA
+"1598","Roxbury",49,2013-10-01,"Boston",NA
+"1599","Roxbury",48,2013-09-01,"Boston",NA
+"1600","Roxbury",46,2013-08-01,"Boston",NA
+"1601","Roxbury",46,2013-07-01,"Boston",NA
+"1602","Roxbury",46,2013-06-01,"Boston",NA
+"1603","Roxbury",43,2013-05-01,"Boston",NA
+"1604","Roxbury",42,2013-04-01,"Boston",NA
+"1605","Roxbury",40,2013-03-01,"Boston",NA
+"1606","Roxbury",39,2013-02-01,"Boston",NA
+"1607","Roxbury",38,2013-01-01,"Boston",NA
+"1608","Roxbury",38,2012-12-01,"Boston",NA
+"1609","Roxbury",38,2012-11-01,"Boston",NA
+"1610","Roxbury",33,2012-10-01,"Boston",NA
+"1611","Roxbury",33,2012-09-01,"Boston",NA
+"1612","Roxbury",33,2012-08-01,"Boston",NA
+"1613","Roxbury",33,2012-07-01,"Boston",NA
+"1614","Roxbury",33,2012-06-01,"Boston",NA
+"1615","Roxbury",33,2012-05-01,"Boston",NA
+"1616","Roxbury",33,2012-04-01,"Boston",NA
+"1617","Roxbury",33,2012-03-01,"Boston",NA
+"1618","Roxbury",33,2012-02-01,"Boston",NA
+"1619","Roxbury",33,2012-01-01,"Boston",NA
+"1620","Roxbury",33,2011-12-01,"Boston",NA
+"1621","Roxbury",23,2011-11-01,"Boston",NA
+"1622","Roxbury",23,2011-10-01,"Boston",NA
+"1623","Roxbury",23,2011-09-01,"Boston",NA
+"1624","Roxbury",22,2011-08-01,"Boston",NA
+"1625","Roxbury",20,2011-07-01,"Boston",NA
+"1626","Roxbury",20,2011-06-01,"Boston",NA
+"1627","Roxbury",18,2011-05-01,"Boston",NA
+"1628","Roxbury",18,2011-04-01,"Boston",NA
+"1629","Roxbury",18,2011-03-01,"Boston",NA
+"1630","Roxbury",18,2011-02-01,"Boston",NA
+"1631","Roxbury",18,2011-01-01,"Boston",NA
+"1632","Roxbury",18,2010-12-01,"Boston",NA
+"1633","Roxbury",18,2010-11-01,"Boston",NA
+"1634","South Dorchester",0,2016-09-01,"Boston",NA
+"1635","South Dorchester",0,2016-08-01,"Boston",NA
+"1636","South Dorchester",0,2016-07-01,"Boston",NA
+"1637","South Dorchester",0,2016-06-01,"Boston",NA
+"1638","South Dorchester",0,2016-05-01,"Boston",NA
+"1639","South Dorchester",0,2016-04-01,"Boston",NA
+"1640","South Dorchester",0,2016-03-01,"Boston",NA
+"1641","South Dorchester",0,2016-02-01,"Boston",NA
+"1642","South Dorchester",0,2016-01-01,"Boston",NA
+"1643","South Dorchester",0,2015-12-01,"Boston",NA
+"1644","South Dorchester",0,2015-11-01,"Boston",NA
+"1645","South Dorchester",0,2015-10-01,"Boston",NA
+"1646","South Dorchester",0,2015-09-01,"Boston",NA
+"1647","South Dorchester",0,2015-08-01,"Boston",NA
+"1648","South Dorchester",0,2015-07-01,"Boston",NA
+"1649","South Dorchester",0,2015-06-01,"Boston",NA
+"1650","South Dorchester",0,2015-05-01,"Boston",NA
+"1651","South Dorchester",0,2015-04-01,"Boston",NA
+"1652","South Dorchester",0,2015-03-01,"Boston",NA
+"1653","South Dorchester",0,2015-02-01,"Boston",NA
+"1654","South Dorchester",0,2015-01-01,"Boston",NA
+"1655","South Dorchester",0,2014-12-01,"Boston",NA
+"1656","South Dorchester",0,2014-11-01,"Boston",NA
+"1657","South Dorchester",0,2014-10-01,"Boston",NA
+"1658","South Dorchester",0,2014-09-01,"Boston",NA
+"1659","South Dorchester",0,2014-08-01,"Boston",NA
+"1660","South Dorchester",0,2014-07-01,"Boston",NA
+"1661","South Dorchester",0,2014-06-01,"Boston",NA
+"1662","South Dorchester",0,2014-05-01,"Boston",NA
+"1663","South Dorchester",0,2014-04-01,"Boston",NA
+"1664","South Dorchester",0,2014-03-01,"Boston",NA
+"1665","South Dorchester",0,2014-02-01,"Boston",NA
+"1666","South Dorchester",0,2014-01-01,"Boston",NA
+"1667","South Dorchester",0,2013-12-01,"Boston",NA
+"1668","South Dorchester",0,2013-11-01,"Boston",NA
+"1669","South Dorchester",0,2013-10-01,"Boston",NA
+"1670","South Dorchester",0,2013-09-01,"Boston",NA
+"1671","South Dorchester",0,2013-08-01,"Boston",NA
+"1672","South Dorchester",0,2013-07-01,"Boston",NA
+"1673","South Dorchester",0,2013-06-01,"Boston",NA
+"1674","South Dorchester",0,2013-05-01,"Boston",NA
+"1675","South Dorchester",0,2013-04-01,"Boston",NA
+"1676","South Dorchester",0,2013-03-01,"Boston",NA
+"1677","South Dorchester",0,2013-02-01,"Boston",NA
+"1678","South Dorchester",0,2013-01-01,"Boston",NA
+"1679","South Dorchester",0,2012-12-01,"Boston",NA
+"1680","South Dorchester",0,2012-11-01,"Boston",NA
+"1681","South Dorchester",0,2012-10-01,"Boston",NA
+"1682","South Dorchester",0,2012-09-01,"Boston",NA
+"1683","South Dorchester",0,2012-08-01,"Boston",NA
+"1684","South Dorchester",0,2012-07-01,"Boston",NA
+"1685","South Dorchester",0,2012-06-01,"Boston",NA
+"1686","South Dorchester",0,2012-05-01,"Boston",NA
+"1687","South Dorchester",0,2012-04-01,"Boston",NA
+"1688","South Dorchester",0,2012-03-01,"Boston",NA
+"1689","South Dorchester",0,2012-02-01,"Boston",NA
+"1690","South Dorchester",0,2012-01-01,"Boston",NA
+"1691","South Dorchester",0,2011-12-01,"Boston",NA
+"1692","South Dorchester",0,2011-11-01,"Boston",NA
+"1693","South Dorchester",0,2011-10-01,"Boston",NA
+"1694","South Dorchester",0,2011-09-01,"Boston",NA
+"1695","South Dorchester",0,2011-08-01,"Boston",NA
+"1696","South Dorchester",0,2011-07-01,"Boston",NA
+"1697","South Dorchester",0,2011-06-01,"Boston",NA
+"1698","South Dorchester",0,2011-05-01,"Boston",NA
+"1699","South Dorchester",0,2011-04-01,"Boston",NA
+"1700","South Dorchester",0,2011-03-01,"Boston",NA
+"1701","South Dorchester",0,2011-02-01,"Boston",NA
+"1702","South Dorchester",0,2011-01-01,"Boston",NA
+"1703","South Dorchester",0,2010-12-01,"Boston",NA
+"1704","South Dorchester",0,2010-11-01,"Boston",NA
