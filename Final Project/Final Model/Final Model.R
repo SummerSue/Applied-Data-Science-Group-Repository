@@ -39,7 +39,7 @@ pd$bnb_lag2 <- lag(pd$bnb_lag, 2)
 pd$bnb_lag3 <- lag(pd$bnb_lag, 3)
 pd$bnb_lag4 <- lag(pd$bnb_lag, 4)
 
-#One Year Lag
+#One Month Lag
 
 model_lag1<- plm(ZRI ~ bnb_lag1 + ZRI_SFR_CONDO + Date,  
                  index = c("Neighborhood","Date"), model="within", data = pd)
@@ -64,7 +64,7 @@ summary(model_lagged4)
 
 
 
-#Instrumental Variables------------------------FINAL MODEL
+#Instrumental Variables------------------------FINAL MODEL. This is what was used in presentation
 model_instrumental<- plm(ZRI ~ bnb_lag + Date | ZRI_City + Date, 
                         index = c("Neighborhood","Date"), model="within", data = pd)
 summary(model_instrumental)
