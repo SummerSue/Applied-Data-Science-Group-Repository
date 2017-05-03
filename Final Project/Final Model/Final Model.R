@@ -1,10 +1,10 @@
-setwd("/Users/samgass/GitHub/Applied-Data-Science-Group-Repository/Final Project/Final Model")
 merged_data <- read.csv("merged_data_with_controls.csv")
 
 library(plm)
 library(systemfit)
 library(lme4)
 
+#Start off testing the different models
 
 model_original <- plm(ZRI ~ bnb_lag, 
              index = c("Neighborhood","Date"), model="within", data = merged_data)

@@ -1,2 +1,0 @@
-model <- plm(ZRI ~ Airbnb, 
-             index = c("Neighborhood","Date"), model="within", data = merged_data)
