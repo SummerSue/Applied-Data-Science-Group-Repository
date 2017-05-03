@@ -15,15 +15,18 @@ zri_city <- read.csv("nbh_condo.csv")
 zri_city <- filter(zri_city, City == "New York" | City == "New Orleans" |
                      City == "Los Angeles")
 
-
+#Format for merging
 zri_city <- zri_city[,-c(1,4:7)]
-zri_city <- melt(zri_city)
-zri_city <- as.data.frame(sapply(zri_city, function(x) gsub("X", "", x)))
+zri_city <- melt(zri_city) #Melt long to wide
+zri_city <- as.data.frame(sapply(zri_city, function(x) gsub("X", "", x))) #Take out X's 
+#Change Factors to characters
 zri_city$variable <- as.character(zri_city$variable)
 zri_city$RegionName <- as.character(zri_city$RegionName)
+#Change numbers to numeric
 zri_city$value <- as.numeric(as.character(zri_city$value))
 zri_city$variable <- lapply(zri_city$variable, function(x) paste(x,"01", sep="."))
 zri_city$variable <- as.character(zri_city$variable)
+#Make Date in right format
 zri_city$variable <- as.Date(zri_city$variable, "%Y.%m.%d")
 
 #Add in condo rent data
@@ -66,14 +69,17 @@ zri_city <- filter(zri_city, RegionName == "Boston, MA" | RegionName == "Austin,
 
 zri_city <- zri_city[,-c(1,3)]
 zri_city <- melt(zri_city)
-zri_city <- as.data.frame(sapply(zri_city, function(x) gsub("X", "", x)))
+zri_city <- as.data.frame(sapply(zri_city, function(x) gsub("X", "", x))) #Take out X's
+
+#Change factors to characters
 zri_city$variable <- as.character(zri_city$variable)
 zri_city$RegionName <- as.character(zri_city$RegionName)
 zri_city$value <- as.numeric(as.character(zri_city$value))
+#Add day to date to make date convertible
 zri_city$variable <- lapply(zri_city$variable, function(x) paste(x,"01", sep="."))
 zri_city$variable <- as.character(zri_city$variable)
-zri_city$variable <- as.Date(zri_city$variable, "%Y.%m.%d")
-colnames(zri_city) <- c("Neighborhood", "Date", "City_ZRI")
+zri_city$variable <- as.Date(zri_city$variable, "%Y.%m.%d") #Change date format
+colnames(zri_city) <- c("Neighborhood", "Date", "City_ZRI")#Change colnames for merging
 
 #Merge Files
 merged_data <- left_join(merged_data, zri_city, by = c("Neighborhood", "Date"))
