@@ -1,0 +1,2677 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.5">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="Neighborhood_Zri_AllHomesPlusMultifamily20170403165829447" source="file:///C:/Users/Suer%20Hu/Desktop/Applied_DS/Group%20Project/Group%20Project/Airbnb/Crosssection/Neighborhood_Zri_AllHomesPlusMultifamily.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" name="Neighborhood_Zri_AllHomesPlusMultifamily">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="listings20170403170325803" source="file:///C:/Users/Suer%20Hu/Desktop/Applied_DS/Group%20Project/Group%20Project/Airbnb/Crosssection/LA/listings.csv?type=csv&amp;xField=longitude&amp;yField=latitude&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="listings">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="neighbourhoods20170403165710722" source="C:\Users\Suer Hu\Desktop\Applied_DS\Group Project\Group Project\Airbnb\Crosssection\LA\neighbourhoods.geojson" name="neighbourhoods OGRGeoJSON MultiPolygon25D">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="neighbourhoods20170403170046203" source="C:\Users\Suer Hu\Desktop\Applied_DS\Group Project\Group Project\Airbnb\Crosssection\LA\neighbourhoods.geojson" name="neighbourhoods OGRGeoJSON MultiPolygon25D">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>degrees</units>
+    <extent>
+      <xmin>-118.83933447307786935</xmin>
+      <ymin>33.66797166238568195</ymin>
+      <xmax>-117.52435320437943744</xmax>
+      <ymax>34.53203874604055557</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="neighbourhoods20170403165710722"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4269" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZillowNeighborhoods_CA20170403202440440"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="neighbourhoods20170403170046203"/>
+      <layer_coordinate_transform destAuthId="EPSG:4326" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="listings20170403170325803"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>neighbourhoods20170403165710722</item>
+      <item>Neighborhood_Zri_AllHomesPlusMultifamily20170403165829447</item>
+      <item>neighbourhoods20170403170046203</item>
+      <item>listings20170403170325803</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Neighborhood_Zri_AllHomesPlusMultifamily" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Neighborhood_Zri_AllHomesPlusMultifamily20170403165829447" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="listings" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="listings20170403170325803" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="neighbourhoods OGRGeoJSON MultiPolygon25D" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="neighbourhoods20170403165710722" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="neighbourhoods OGRGeoJSON MultiPolygon25D" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="neighbourhoods20170403170046203" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
+      <id>Neighborhood_Zri_AllHomesPlusMultifamily20170403165829447</id>
+      <datasource>file:///C:/Users/Suer%20Hu/Desktop/Applied_DS/Group%20Project/Group%20Project/Airbnb/Crosssection/Neighborhood_Zri_AllHomesPlusMultifamily.csv?type=csv&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Neighborhood_Zri_AllHomesPlusMultifamily</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties/>
+      <provider encoding="System">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="RegionID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="RegionName">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="City">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="State">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Metro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="CountyName">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="SizeRank">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2010-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2010-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-04">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-05">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-06">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-07">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-08">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-09">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2011-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-04">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-05">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-06">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-07">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-08">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-09">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2012-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-04">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-05">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-06">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-07">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-08">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-09">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2013-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-04">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-05">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-06">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-07">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-08">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-09">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2014-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-04">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-05">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-06">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-07">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-08">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-09">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2015-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-03">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-04">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-05">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-06">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-07">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-08">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-09">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-10">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-11">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2016-12">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2017-01">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="2017-02">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="RegionID" index="0" name=""/>
+        <alias field="RegionName" index="1" name=""/>
+        <alias field="City" index="2" name=""/>
+        <alias field="State" index="3" name=""/>
+        <alias field="Metro" index="4" name=""/>
+        <alias field="CountyName" index="5" name=""/>
+        <alias field="SizeRank" index="6" name=""/>
+        <alias field="2010-11" index="7" name=""/>
+        <alias field="2010-12" index="8" name=""/>
+        <alias field="2011-01" index="9" name=""/>
+        <alias field="2011-02" index="10" name=""/>
+        <alias field="2011-03" index="11" name=""/>
+        <alias field="2011-04" index="12" name=""/>
+        <alias field="2011-05" index="13" name=""/>
+        <alias field="2011-06" index="14" name=""/>
+        <alias field="2011-07" index="15" name=""/>
+        <alias field="2011-08" index="16" name=""/>
+        <alias field="2011-09" index="17" name=""/>
+        <alias field="2011-10" index="18" name=""/>
+        <alias field="2011-11" index="19" name=""/>
+        <alias field="2011-12" index="20" name=""/>
+        <alias field="2012-01" index="21" name=""/>
+        <alias field="2012-02" index="22" name=""/>
+        <alias field="2012-03" index="23" name=""/>
+        <alias field="2012-04" index="24" name=""/>
+        <alias field="2012-05" index="25" name=""/>
+        <alias field="2012-06" index="26" name=""/>
+        <alias field="2012-07" index="27" name=""/>
+        <alias field="2012-08" index="28" name=""/>
+        <alias field="2012-09" index="29" name=""/>
+        <alias field="2012-10" index="30" name=""/>
+        <alias field="2012-11" index="31" name=""/>
+        <alias field="2012-12" index="32" name=""/>
+        <alias field="2013-01" index="33" name=""/>
+        <alias field="2013-02" index="34" name=""/>
+        <alias field="2013-03" index="35" name=""/>
+        <alias field="2013-04" index="36" name=""/>
+        <alias field="2013-05" index="37" name=""/>
+        <alias field="2013-06" index="38" name=""/>
+        <alias field="2013-07" index="39" name=""/>
+        <alias field="2013-08" index="40" name=""/>
+        <alias field="2013-09" index="41" name=""/>
+        <alias field="2013-10" index="42" name=""/>
+        <alias field="2013-11" index="43" name=""/>
+        <alias field="2013-12" index="44" name=""/>
+        <alias field="2014-01" index="45" name=""/>
+        <alias field="2014-02" index="46" name=""/>
+        <alias field="2014-03" index="47" name=""/>
+        <alias field="2014-04" index="48" name=""/>
+        <alias field="2014-05" index="49" name=""/>
+        <alias field="2014-06" index="50" name=""/>
+        <alias field="2014-07" index="51" name=""/>
+        <alias field="2014-08" index="52" name=""/>
+        <alias field="2014-09" index="53" name=""/>
+        <alias field="2014-10" index="54" name=""/>
+        <alias field="2014-11" index="55" name=""/>
+        <alias field="2014-12" index="56" name=""/>
+        <alias field="2015-01" index="57" name=""/>
+        <alias field="2015-02" index="58" name=""/>
+        <alias field="2015-03" index="59" name=""/>
+        <alias field="2015-04" index="60" name=""/>
+        <alias field="2015-05" index="61" name=""/>
+        <alias field="2015-06" index="62" name=""/>
+        <alias field="2015-07" index="63" name=""/>
+        <alias field="2015-08" index="64" name=""/>
+        <alias field="2015-09" index="65" name=""/>
+        <alias field="2015-10" index="66" name=""/>
+        <alias field="2015-11" index="67" name=""/>
+        <alias field="2015-12" index="68" name=""/>
+        <alias field="2016-01" index="69" name=""/>
+        <alias field="2016-02" index="70" name=""/>
+        <alias field="2016-03" index="71" name=""/>
+        <alias field="2016-04" index="72" name=""/>
+        <alias field="2016-05" index="73" name=""/>
+        <alias field="2016-06" index="74" name=""/>
+        <alias field="2016-07" index="75" name=""/>
+        <alias field="2016-08" index="76" name=""/>
+        <alias field="2016-09" index="77" name=""/>
+        <alias field="2016-10" index="78" name=""/>
+        <alias field="2016-11" index="79" name=""/>
+        <alias field="2016-12" index="80" name=""/>
+        <alias field="2017-01" index="81" name=""/>
+        <alias field="2017-02" index="82" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="12455789">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="RegionID" expression=""/>
+        <default field="RegionName" expression=""/>
+        <default field="City" expression=""/>
+        <default field="State" expression=""/>
+        <default field="Metro" expression=""/>
+        <default field="CountyName" expression=""/>
+        <default field="SizeRank" expression=""/>
+        <default field="2010-11" expression=""/>
+        <default field="2010-12" expression=""/>
+        <default field="2011-01" expression=""/>
+        <default field="2011-02" expression=""/>
+        <default field="2011-03" expression=""/>
+        <default field="2011-04" expression=""/>
+        <default field="2011-05" expression=""/>
+        <default field="2011-06" expression=""/>
+        <default field="2011-07" expression=""/>
+        <default field="2011-08" expression=""/>
+        <default field="2011-09" expression=""/>
+        <default field="2011-10" expression=""/>
+        <default field="2011-11" expression=""/>
+        <default field="2011-12" expression=""/>
+        <default field="2012-01" expression=""/>
+        <default field="2012-02" expression=""/>
+        <default field="2012-03" expression=""/>
+        <default field="2012-04" expression=""/>
+        <default field="2012-05" expression=""/>
+        <default field="2012-06" expression=""/>
+        <default field="2012-07" expression=""/>
+        <default field="2012-08" expression=""/>
+        <default field="2012-09" expression=""/>
+        <default field="2012-10" expression=""/>
+        <default field="2012-11" expression=""/>
+        <default field="2012-12" expression=""/>
+        <default field="2013-01" expression=""/>
+        <default field="2013-02" expression=""/>
+        <default field="2013-03" expression=""/>
+        <default field="2013-04" expression=""/>
+        <default field="2013-05" expression=""/>
+        <default field="2013-06" expression=""/>
+        <default field="2013-07" expression=""/>
+        <default field="2013-08" expression=""/>
+        <default field="2013-09" expression=""/>
+        <default field="2013-10" expression=""/>
+        <default field="2013-11" expression=""/>
+        <default field="2013-12" expression=""/>
+        <default field="2014-01" expression=""/>
+        <default field="2014-02" expression=""/>
+        <default field="2014-03" expression=""/>
+        <default field="2014-04" expression=""/>
+        <default field="2014-05" expression=""/>
+        <default field="2014-06" expression=""/>
+        <default field="2014-07" expression=""/>
+        <default field="2014-08" expression=""/>
+        <default field="2014-09" expression=""/>
+        <default field="2014-10" expression=""/>
+        <default field="2014-11" expression=""/>
+        <default field="2014-12" expression=""/>
+        <default field="2015-01" expression=""/>
+        <default field="2015-02" expression=""/>
+        <default field="2015-03" expression=""/>
+        <default field="2015-04" expression=""/>
+        <default field="2015-05" expression=""/>
+        <default field="2015-06" expression=""/>
+        <default field="2015-07" expression=""/>
+        <default field="2015-08" expression=""/>
+        <default field="2015-09" expression=""/>
+        <default field="2015-10" expression=""/>
+        <default field="2015-11" expression=""/>
+        <default field="2015-12" expression=""/>
+        <default field="2016-01" expression=""/>
+        <default field="2016-02" expression=""/>
+        <default field="2016-03" expression=""/>
+        <default field="2016-04" expression=""/>
+        <default field="2016-05" expression=""/>
+        <default field="2016-06" expression=""/>
+        <default field="2016-07" expression=""/>
+        <default field="2016-08" expression=""/>
+        <default field="2016-09" expression=""/>
+        <default field="2016-10" expression=""/>
+        <default field="2016-11" expression=""/>
+        <default field="2016-12" expression=""/>
+        <default field="2017-01" expression=""/>
+        <default field="2017-02" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>listings20170403170325803</id>
+      <datasource>file:///C:/Users/Suer%20Hu/Desktop/Applied_DS/Group%20Project/Group%20Project/Airbnb/Crosssection/LA/listings.csv?type=csv&amp;xField=longitude&amp;yField=latitude&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>listings</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="listing_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="scrape_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="last_scraped">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="summary">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="space">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="description">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="experiences_offered">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="neighborhood_overview">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="notes">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="transit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="access">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="interaction">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="house_rules">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="thumbnail_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="medium_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="picture_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="xl_picture_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_since">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_location">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_about">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_response_time">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_response_rate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_acceptance_rate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_is_superhost">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_thumbnail_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_picture_url">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_neighbourhood">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_listings_count">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_total_listings_count">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_verifications">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_has_profile_pic">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="host_identity_verified">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="street">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="neighbourhood">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="neighbourhood_cleansed">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="neighbourhood_group_cleansed">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="city">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="state">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="zipcode">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="market">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="smart_location">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="country_code">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="country">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="latitude">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="longitude">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="is_location_exact">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="property_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="room_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="accommodates">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bathrooms">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bedrooms">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="beds">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bed_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="amenities">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="square_feet">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="price">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="weekly_price">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="monthly_price">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="security_deposit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cleaning_fee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="guests_included">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="extra_people">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="minimum_nights">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maximum_nights">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="calendar_updated">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="has_availability">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="availability_30">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="availability_60">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="availability_90">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="availability_365">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="calendar_last_scraped">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="number_of_reviews">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="first_review">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="last_review">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_rating">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_accuracy">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_cleanliness">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_checkin">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_communication">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_location">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="review_scores_value">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="requires_license">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="license">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="jurisdiction_names">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="instant_bookable">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cancellation_policy">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="require_guest_profile_picture">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="require_guest_phone_verification">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="calculated_host_listings_count">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="reviews_per_month">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="18,132,137,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="Pixel"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="Pixel"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="Pixel"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="3"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="6"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>name</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="listing_url" index="1" name=""/>
+        <alias field="scrape_id" index="2" name=""/>
+        <alias field="last_scraped" index="3" name=""/>
+        <alias field="name" index="4" name=""/>
+        <alias field="summary" index="5" name=""/>
+        <alias field="space" index="6" name=""/>
+        <alias field="description" index="7" name=""/>
+        <alias field="experiences_offered" index="8" name=""/>
+        <alias field="neighborhood_overview" index="9" name=""/>
+        <alias field="notes" index="10" name=""/>
+        <alias field="transit" index="11" name=""/>
+        <alias field="access" index="12" name=""/>
+        <alias field="interaction" index="13" name=""/>
+        <alias field="house_rules" index="14" name=""/>
+        <alias field="thumbnail_url" index="15" name=""/>
+        <alias field="medium_url" index="16" name=""/>
+        <alias field="picture_url" index="17" name=""/>
+        <alias field="xl_picture_url" index="18" name=""/>
+        <alias field="host_id" index="19" name=""/>
+        <alias field="host_url" index="20" name=""/>
+        <alias field="host_name" index="21" name=""/>
+        <alias field="host_since" index="22" name=""/>
+        <alias field="host_location" index="23" name=""/>
+        <alias field="host_about" index="24" name=""/>
+        <alias field="host_response_time" index="25" name=""/>
+        <alias field="host_response_rate" index="26" name=""/>
+        <alias field="host_acceptance_rate" index="27" name=""/>
+        <alias field="host_is_superhost" index="28" name=""/>
+        <alias field="host_thumbnail_url" index="29" name=""/>
+        <alias field="host_picture_url" index="30" name=""/>
+        <alias field="host_neighbourhood" index="31" name=""/>
+        <alias field="host_listings_count" index="32" name=""/>
+        <alias field="host_total_listings_count" index="33" name=""/>
+        <alias field="host_verifications" index="34" name=""/>
+        <alias field="host_has_profile_pic" index="35" name=""/>
+        <alias field="host_identity_verified" index="36" name=""/>
+        <alias field="street" index="37" name=""/>
+        <alias field="neighbourhood" index="38" name=""/>
+        <alias field="neighbourhood_cleansed" index="39" name=""/>
+        <alias field="neighbourhood_group_cleansed" index="40" name=""/>
+        <alias field="city" index="41" name=""/>
+        <alias field="state" index="42" name=""/>
+        <alias field="zipcode" index="43" name=""/>
+        <alias field="market" index="44" name=""/>
+        <alias field="smart_location" index="45" name=""/>
+        <alias field="country_code" index="46" name=""/>
+        <alias field="country" index="47" name=""/>
+        <alias field="latitude" index="48" name=""/>
+        <alias field="longitude" index="49" name=""/>
+        <alias field="is_location_exact" index="50" name=""/>
+        <alias field="property_type" index="51" name=""/>
+        <alias field="room_type" index="52" name=""/>
+        <alias field="accommodates" index="53" name=""/>
+        <alias field="bathrooms" index="54" name=""/>
+        <alias field="bedrooms" index="55" name=""/>
+        <alias field="beds" index="56" name=""/>
+        <alias field="bed_type" index="57" name=""/>
+        <alias field="amenities" index="58" name=""/>
+        <alias field="square_feet" index="59" name=""/>
+        <alias field="price" index="60" name=""/>
+        <alias field="weekly_price" index="61" name=""/>
+        <alias field="monthly_price" index="62" name=""/>
+        <alias field="security_deposit" index="63" name=""/>
+        <alias field="cleaning_fee" index="64" name=""/>
+        <alias field="guests_included" index="65" name=""/>
+        <alias field="extra_people" index="66" name=""/>
+        <alias field="minimum_nights" index="67" name=""/>
+        <alias field="maximum_nights" index="68" name=""/>
+        <alias field="calendar_updated" index="69" name=""/>
+        <alias field="has_availability" index="70" name=""/>
+        <alias field="availability_30" index="71" name=""/>
+        <alias field="availability_60" index="72" name=""/>
+        <alias field="availability_90" index="73" name=""/>
+        <alias field="availability_365" index="74" name=""/>
+        <alias field="calendar_last_scraped" index="75" name=""/>
+        <alias field="number_of_reviews" index="76" name=""/>
+        <alias field="first_review" index="77" name=""/>
+        <alias field="last_review" index="78" name=""/>
+        <alias field="review_scores_rating" index="79" name=""/>
+        <alias field="review_scores_accuracy" index="80" name=""/>
+        <alias field="review_scores_cleanliness" index="81" name=""/>
+        <alias field="review_scores_checkin" index="82" name=""/>
+        <alias field="review_scores_communication" index="83" name=""/>
+        <alias field="review_scores_location" index="84" name=""/>
+        <alias field="review_scores_value" index="85" name=""/>
+        <alias field="requires_license" index="86" name=""/>
+        <alias field="license" index="87" name=""/>
+        <alias field="jurisdiction_names" index="88" name=""/>
+        <alias field="instant_bookable" index="89" name=""/>
+        <alias field="cancellation_policy" index="90" name=""/>
+        <alias field="require_guest_profile_picture" index="91" name=""/>
+        <alias field="require_guest_phone_verification" index="92" name=""/>
+        <alias field="calculated_host_listings_count" index="93" name=""/>
+        <alias field="reviews_per_month" index="94" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="804207800">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="listing_url"/>
+          <column width="-1" hidden="0" type="field" name="scrape_id"/>
+          <column width="-1" hidden="0" type="field" name="last_scraped"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="summary"/>
+          <column width="-1" hidden="0" type="field" name="space"/>
+          <column width="-1" hidden="0" type="field" name="description"/>
+          <column width="-1" hidden="0" type="field" name="experiences_offered"/>
+          <column width="-1" hidden="0" type="field" name="neighborhood_overview"/>
+          <column width="-1" hidden="0" type="field" name="notes"/>
+          <column width="-1" hidden="0" type="field" name="transit"/>
+          <column width="-1" hidden="0" type="field" name="access"/>
+          <column width="-1" hidden="0" type="field" name="interaction"/>
+          <column width="-1" hidden="0" type="field" name="house_rules"/>
+          <column width="-1" hidden="0" type="field" name="thumbnail_url"/>
+          <column width="-1" hidden="0" type="field" name="medium_url"/>
+          <column width="-1" hidden="0" type="field" name="picture_url"/>
+          <column width="-1" hidden="0" type="field" name="xl_picture_url"/>
+          <column width="-1" hidden="0" type="field" name="host_id"/>
+          <column width="-1" hidden="0" type="field" name="host_url"/>
+          <column width="-1" hidden="0" type="field" name="host_name"/>
+          <column width="-1" hidden="0" type="field" name="host_since"/>
+          <column width="-1" hidden="0" type="field" name="host_location"/>
+          <column width="-1" hidden="0" type="field" name="host_about"/>
+          <column width="-1" hidden="0" type="field" name="host_response_time"/>
+          <column width="-1" hidden="0" type="field" name="host_response_rate"/>
+          <column width="-1" hidden="0" type="field" name="host_acceptance_rate"/>
+          <column width="-1" hidden="0" type="field" name="host_is_superhost"/>
+          <column width="-1" hidden="0" type="field" name="host_thumbnail_url"/>
+          <column width="-1" hidden="0" type="field" name="host_picture_url"/>
+          <column width="-1" hidden="0" type="field" name="host_neighbourhood"/>
+          <column width="-1" hidden="0" type="field" name="host_listings_count"/>
+          <column width="-1" hidden="0" type="field" name="host_total_listings_count"/>
+          <column width="-1" hidden="0" type="field" name="host_verifications"/>
+          <column width="-1" hidden="0" type="field" name="host_has_profile_pic"/>
+          <column width="-1" hidden="0" type="field" name="host_identity_verified"/>
+          <column width="-1" hidden="0" type="field" name="street"/>
+          <column width="-1" hidden="0" type="field" name="neighbourhood"/>
+          <column width="-1" hidden="0" type="field" name="neighbourhood_cleansed"/>
+          <column width="-1" hidden="0" type="field" name="neighbourhood_group_cleansed"/>
+          <column width="-1" hidden="0" type="field" name="city"/>
+          <column width="-1" hidden="0" type="field" name="state"/>
+          <column width="-1" hidden="0" type="field" name="zipcode"/>
+          <column width="-1" hidden="0" type="field" name="market"/>
+          <column width="-1" hidden="0" type="field" name="smart_location"/>
+          <column width="-1" hidden="0" type="field" name="country_code"/>
+          <column width="-1" hidden="0" type="field" name="country"/>
+          <column width="-1" hidden="0" type="field" name="latitude"/>
+          <column width="-1" hidden="0" type="field" name="longitude"/>
+          <column width="-1" hidden="0" type="field" name="is_location_exact"/>
+          <column width="-1" hidden="0" type="field" name="property_type"/>
+          <column width="-1" hidden="0" type="field" name="room_type"/>
+          <column width="-1" hidden="0" type="field" name="accommodates"/>
+          <column width="-1" hidden="0" type="field" name="bathrooms"/>
+          <column width="-1" hidden="0" type="field" name="bedrooms"/>
+          <column width="-1" hidden="0" type="field" name="beds"/>
+          <column width="-1" hidden="0" type="field" name="bed_type"/>
+          <column width="-1" hidden="0" type="field" name="amenities"/>
+          <column width="-1" hidden="0" type="field" name="square_feet"/>
+          <column width="-1" hidden="0" type="field" name="price"/>
+          <column width="-1" hidden="0" type="field" name="weekly_price"/>
+          <column width="-1" hidden="0" type="field" name="monthly_price"/>
+          <column width="-1" hidden="0" type="field" name="security_deposit"/>
+          <column width="-1" hidden="0" type="field" name="cleaning_fee"/>
+          <column width="-1" hidden="0" type="field" name="guests_included"/>
+          <column width="-1" hidden="0" type="field" name="extra_people"/>
+          <column width="-1" hidden="0" type="field" name="minimum_nights"/>
+          <column width="-1" hidden="0" type="field" name="maximum_nights"/>
+          <column width="-1" hidden="0" type="field" name="calendar_updated"/>
+          <column width="-1" hidden="0" type="field" name="has_availability"/>
+          <column width="-1" hidden="0" type="field" name="availability_30"/>
+          <column width="-1" hidden="0" type="field" name="availability_60"/>
+          <column width="-1" hidden="0" type="field" name="availability_90"/>
+          <column width="-1" hidden="0" type="field" name="availability_365"/>
+          <column width="-1" hidden="0" type="field" name="calendar_last_scraped"/>
+          <column width="-1" hidden="0" type="field" name="number_of_reviews"/>
+          <column width="-1" hidden="0" type="field" name="first_review"/>
+          <column width="-1" hidden="0" type="field" name="last_review"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_rating"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_accuracy"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_cleanliness"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_checkin"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_communication"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_location"/>
+          <column width="-1" hidden="0" type="field" name="review_scores_value"/>
+          <column width="-1" hidden="0" type="field" name="requires_license"/>
+          <column width="-1" hidden="0" type="field" name="license"/>
+          <column width="-1" hidden="0" type="field" name="jurisdiction_names"/>
+          <column width="-1" hidden="0" type="field" name="instant_bookable"/>
+          <column width="-1" hidden="0" type="field" name="cancellation_policy"/>
+          <column width="-1" hidden="0" type="field" name="require_guest_profile_picture"/>
+          <column width="-1" hidden="0" type="field" name="require_guest_phone_verification"/>
+          <column width="-1" hidden="0" type="field" name="calculated_host_listings_count"/>
+          <column width="-1" hidden="0" type="field" name="reviews_per_month"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="listing_url" expression=""/>
+        <default field="scrape_id" expression=""/>
+        <default field="last_scraped" expression=""/>
+        <default field="name" expression=""/>
+        <default field="summary" expression=""/>
+        <default field="space" expression=""/>
+        <default field="description" expression=""/>
+        <default field="experiences_offered" expression=""/>
+        <default field="neighborhood_overview" expression=""/>
+        <default field="notes" expression=""/>
+        <default field="transit" expression=""/>
+        <default field="access" expression=""/>
+        <default field="interaction" expression=""/>
+        <default field="house_rules" expression=""/>
+        <default field="thumbnail_url" expression=""/>
+        <default field="medium_url" expression=""/>
+        <default field="picture_url" expression=""/>
+        <default field="xl_picture_url" expression=""/>
+        <default field="host_id" expression=""/>
+        <default field="host_url" expression=""/>
+        <default field="host_name" expression=""/>
+        <default field="host_since" expression=""/>
+        <default field="host_location" expression=""/>
+        <default field="host_about" expression=""/>
+        <default field="host_response_time" expression=""/>
+        <default field="host_response_rate" expression=""/>
+        <default field="host_acceptance_rate" expression=""/>
+        <default field="host_is_superhost" expression=""/>
+        <default field="host_thumbnail_url" expression=""/>
+        <default field="host_picture_url" expression=""/>
+        <default field="host_neighbourhood" expression=""/>
+        <default field="host_listings_count" expression=""/>
+        <default field="host_total_listings_count" expression=""/>
+        <default field="host_verifications" expression=""/>
+        <default field="host_has_profile_pic" expression=""/>
+        <default field="host_identity_verified" expression=""/>
+        <default field="street" expression=""/>
+        <default field="neighbourhood" expression=""/>
+        <default field="neighbourhood_cleansed" expression=""/>
+        <default field="neighbourhood_group_cleansed" expression=""/>
+        <default field="city" expression=""/>
+        <default field="state" expression=""/>
+        <default field="zipcode" expression=""/>
+        <default field="market" expression=""/>
+        <default field="smart_location" expression=""/>
+        <default field="country_code" expression=""/>
+        <default field="country" expression=""/>
+        <default field="latitude" expression=""/>
+        <default field="longitude" expression=""/>
+        <default field="is_location_exact" expression=""/>
+        <default field="property_type" expression=""/>
+        <default field="room_type" expression=""/>
+        <default field="accommodates" expression=""/>
+        <default field="bathrooms" expression=""/>
+        <default field="bedrooms" expression=""/>
+        <default field="beds" expression=""/>
+        <default field="bed_type" expression=""/>
+        <default field="amenities" expression=""/>
+        <default field="square_feet" expression=""/>
+        <default field="price" expression=""/>
+        <default field="weekly_price" expression=""/>
+        <default field="monthly_price" expression=""/>
+        <default field="security_deposit" expression=""/>
+        <default field="cleaning_fee" expression=""/>
+        <default field="guests_included" expression=""/>
+        <default field="extra_people" expression=""/>
+        <default field="minimum_nights" expression=""/>
+        <default field="maximum_nights" expression=""/>
+        <default field="calendar_updated" expression=""/>
+        <default field="has_availability" expression=""/>
+        <default field="availability_30" expression=""/>
+        <default field="availability_60" expression=""/>
+        <default field="availability_90" expression=""/>
+        <default field="availability_365" expression=""/>
+        <default field="calendar_last_scraped" expression=""/>
+        <default field="number_of_reviews" expression=""/>
+        <default field="first_review" expression=""/>
+        <default field="last_review" expression=""/>
+        <default field="review_scores_rating" expression=""/>
+        <default field="review_scores_accuracy" expression=""/>
+        <default field="review_scores_cleanliness" expression=""/>
+        <default field="review_scores_checkin" expression=""/>
+        <default field="review_scores_communication" expression=""/>
+        <default field="review_scores_location" expression=""/>
+        <default field="review_scores_value" expression=""/>
+        <default field="requires_license" expression=""/>
+        <default field="license" expression=""/>
+        <default field="jurisdiction_names" expression=""/>
+        <default field="instant_bookable" expression=""/>
+        <default field="cancellation_policy" expression=""/>
+        <default field="require_guest_profile_picture" expression=""/>
+        <default field="require_guest_phone_verification" expression=""/>
+        <default field="calculated_host_listings_count" expression=""/>
+        <default field="reviews_per_month" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>-118.94486399999999549</xmin>
+        <ymin>33.29819200000000023</ymin>
+        <xmax>-117.64560400000000584</xmax>
+        <ymax>34.82319300000000339</ymax>
+      </extent>
+      <id>neighbourhoods20170403165710722</id>
+      <datasource>C:\Users\Suer Hu\Desktop\Applied_DS\Group Project\Group Project\Airbnb\Crosssection\LA\neighbourhoods.geojson</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>neighbourhoods OGRGeoJSON MultiPolygon25D</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins>
+        <join joinFieldName="RegionName" targetFieldName="neighbourhood" memoryCache="1" joinLayerId="Neighborhood_Zri_AllHomesPlusMultifamily20170403165829447"/>
+      </vectorjoins>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="neighbourhood">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="neighbourhood_group">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_RegionID">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_City">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_State">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_Metro">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_CountyName">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_SizeRank">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2010-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2010-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-03">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-04">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-05">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-06">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-07">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-08">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-09">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-10">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-03">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-04">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-05">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-06">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-07">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-08">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-09">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-10">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-03">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-04">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-05">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-06">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-07">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-08">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-09">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-10">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-03">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-04">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-05">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-06">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-07">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-08">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-09">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-10">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-03">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-04">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-05">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-06">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-07">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-08">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-09">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-10">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-03">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-04">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-05">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-06">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-07">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-08">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-09">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-10">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-11">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-12">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2017-01">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="Neighborhood_Zri_AllHomesPlusMultifamily_2017-02">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 attr="Neighborhood_Zri_AllHomesPlusMultifamily_2017-02" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
+        <ranges>
+          <range render="true" symbol="0" lower="0.000000000000000" upper="1262.400000000000091" label=" 0 - 1262 "/>
+          <range render="true" symbol="1" lower="1262.400000000000091" upper="2240.199999999999818" label=" 1262 - 2240 "/>
+          <range render="true" symbol="2" lower="2240.199999999999818" upper="2551.000000000000000" label=" 2240 - 2551 "/>
+          <range render="true" symbol="3" lower="2551.000000000000000" upper="3182.800000000000182" label=" 2551 - 3183 "/>
+          <range render="true" symbol="4" lower="3182.800000000000182" upper="9759.000000000000000" label=" 3183 - 9759 "/>
+        </ranges>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,220,200,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="252,191,175,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="248,161,150,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="245,132,125,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="4">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="241,102,100,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="12,195,140,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp type="gradient" name="[source]">
+          <prop k="color1" v="255,220,200,255"/>
+          <prop k="color2" v="241,102,100,255"/>
+          <prop k="discrete" v="0"/>
+        </colorramp>
+        <invertedcolorramp value="0"/>
+        <mode name="quantile"/>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="0"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>20</layerTransparency>
+      <displayfield>Neighborhood_Zri_AllHomesPlusMultifamily_CountyName</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="neighbourhood" index="0" name=""/>
+        <alias field="neighbourhood_group" index="1" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_RegionID" index="2" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_City" index="3" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_State" index="4" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_Metro" index="5" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_CountyName" index="6" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_SizeRank" index="7" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2010-11" index="8" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2010-12" index="9" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-01" index="10" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-02" index="11" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-03" index="12" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-04" index="13" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-05" index="14" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-06" index="15" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-07" index="16" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-08" index="17" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-09" index="18" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-10" index="19" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-11" index="20" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-12" index="21" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-01" index="22" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-02" index="23" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-03" index="24" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-04" index="25" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-05" index="26" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-06" index="27" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-07" index="28" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-08" index="29" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-09" index="30" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-10" index="31" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-11" index="32" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-12" index="33" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-01" index="34" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-02" index="35" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-03" index="36" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-04" index="37" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-05" index="38" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-06" index="39" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-07" index="40" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-08" index="41" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-09" index="42" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-10" index="43" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-11" index="44" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-12" index="45" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-01" index="46" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-02" index="47" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-03" index="48" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-04" index="49" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-05" index="50" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-06" index="51" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-07" index="52" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-08" index="53" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-09" index="54" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-10" index="55" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-11" index="56" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-12" index="57" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-01" index="58" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-02" index="59" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-03" index="60" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-04" index="61" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-05" index="62" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-06" index="63" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-07" index="64" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-08" index="65" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-09" index="66" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-10" index="67" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-11" index="68" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-12" index="69" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-01" index="70" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-02" index="71" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-03" index="72" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-04" index="73" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-05" index="74" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-06" index="75" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-07" index="76" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-08" index="77" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-09" index="78" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-10" index="79" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-11" index="80" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-12" index="81" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2017-01" index="82" name=""/>
+        <alias field="Neighborhood_Zri_AllHomesPlusMultifamily_2017-02" index="83" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;neighbourhood&quot;" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="neighbourhood"/>
+          <column width="-1" hidden="0" type="field" name="neighbourhood_group"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_RegionID"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_City"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_State"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_Metro"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_CountyName"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_SizeRank"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2010-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2010-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-02"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-03"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-04"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-05"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-06"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-07"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-08"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-09"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-10"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2011-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-02"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-03"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-04"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-05"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-06"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-07"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-08"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-09"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-10"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2012-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-02"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-03"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-04"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-05"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-06"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-07"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-08"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-09"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-10"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2013-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-02"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-03"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-04"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-05"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-06"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-07"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-08"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-09"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-10"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2014-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-02"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-03"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-04"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-05"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-06"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-07"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-08"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-09"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-10"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2015-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-02"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-03"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-04"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-05"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-06"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-07"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-08"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-09"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-10"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-11"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2016-12"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2017-01"/>
+          <column width="-1" hidden="0" type="field" name="Neighborhood_Zri_AllHomesPlusMultifamily_2017-02"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="neighbourhood" expression=""/>
+        <default field="neighbourhood_group" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_RegionID" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_City" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_State" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_Metro" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_CountyName" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_SizeRank" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2010-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2010-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-02" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-03" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-04" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-05" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-06" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-07" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-08" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-09" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-10" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2011-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-02" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-03" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-04" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-05" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-06" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-07" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-08" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-09" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-10" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2012-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-02" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-03" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-04" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-05" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-06" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-07" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-08" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-09" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-10" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2013-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-02" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-03" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-04" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-05" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-06" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-07" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-08" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-09" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-10" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2014-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-02" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-03" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-04" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-05" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-06" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-07" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-08" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-09" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-10" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2015-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-02" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-03" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-04" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-05" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-06" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-07" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-08" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-09" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-10" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-11" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2016-12" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2017-01" expression=""/>
+        <default field="Neighborhood_Zri_AllHomesPlusMultifamily_2017-02" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "neighbourhood", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>neighbourhoods20170403170046203</id>
+      <datasource>C:\Users\Suer Hu\Desktop\Applied_DS\Group Project\Group Project\Airbnb\Crosssection\LA\neighbourhoods.geojson</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>neighbourhoods OGRGeoJSON MultiPolygon25D</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="neighbourhood">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="neighbourhood_group">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="255,255,255,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="neighbourhood"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>neighbourhood</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="neighbourhood" index="0" name=""/>
+        <alias field="neighbourhood_group" index="1" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="631205120">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="neighbourhood"/>
+          <column width="-1" hidden="0" type="field" name="neighbourhood_group"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="neighbourhood" expression=""/>
+        <default field="neighbourhood_group" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList">
+        <value>neighbourhoods20170403165710722</value>
+        <value>neighbourhoods20170403170046203</value>
+        <value>listings20170403170325803</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>2</value>
+        <value>2</value>
+        <value>2</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>
