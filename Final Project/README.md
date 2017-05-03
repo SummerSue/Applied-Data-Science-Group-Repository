@@ -1,3 +1,7 @@
+Airbnb Final Project:
+
+General Information
+
 Our team decided to explore Airbnb data to see if there was some meaningful trend in the evidence 
 to support or reject the "uptrending real estate" hypothesis. According to current conversation in the
 media, there was some reason to believe that Airbnb has impacted real estate markets across the country.
