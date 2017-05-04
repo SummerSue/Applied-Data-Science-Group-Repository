@@ -1,6 +1,6 @@
-Airbnb Final Project:
+# Airbnb Final Project:
 
-General Information
+## General Information
 
 Our team decided to explore Airbnb data to see if there was some meaningful trend in the evidence 
 to support or reject the "uptrending real estate" hypothesis. According to current conversation in the
@@ -13,4 +13,6 @@ stakeholders, so that they could apply our findings in real time.
 The results of our final model supported our original hypothesis, which was that Airbnb does impact
 median real estate prices. 
 
-Here is access to our final presentation: https://docs.google.com/presentation/d/1_OMaHgXmvyFfTJY9cbGWBfCmon7YjEjB1svjxaZT-pk/edit#slide=id.p
+## Files in this folder
+
+ss
