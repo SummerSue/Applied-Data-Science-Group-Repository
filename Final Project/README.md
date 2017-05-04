@@ -13,6 +13,11 @@ stakeholders, so that they could apply our findings in real time.
 The results of our final model supported our original hypothesis, which was that Airbnb does impact
 median real estate prices. 
 
-## Files in this folder
+## What is in this folder
 
-*ss
+**Final Project Team 5.pptx** - Our final presentation
+**R Codes Team 5.Rmd** - Combined version of all our R codes in the *Analysis* folder
+*Analysis* - Collection of all of our R codes for this project
+*Data* - Collection of all the data we used for this project and more
+*Miscellaneous* - Previous reports and used analysis
+*Visualizations* - All of our visualizations created for this project, and .qgs files for drawing geographic graphs in QGIS
