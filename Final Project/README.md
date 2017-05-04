@@ -23,6 +23,6 @@ median real estate prices.
 
 *Data* - Collection of all the data we used for this project and more
 
-*Miscellaneous* - Previous reports and used analysis
+*Miscellaneous* - Previous reports and unused analysis
 
 *Visualizations* - All of our visualizations created for this project, and .qgs files for drawing geographic graphs in QGIS
