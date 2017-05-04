@@ -1,4 +1,4 @@
-# Applied-Data-Science-Group-Repository
+# Applied Data Science - Group 5 Repository
 
 Welcome to our page!
 
