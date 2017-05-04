@@ -1,0 +1,62 @@
+---
+title: "Creating Time Series for Queens"
+output: github_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_knit$set(root.dir = '/Users/samgass/Documents/Columbia/Spring 2017/Applied Data Science/Project')
+```
+
+```{r}
+library(dplyr)
+zillow <- read.csv("zillow2.csv")
+airbnb <- read.csv("airbnb_listings.csv")
+
+queens <- filter(airbnb, neighbourhood_group_cleansed == "Queens")
+
+z_queens <- filter(zillow, CountyName == "Queens")
+queens$host_since <- as.Date(queens$host_since)
+
+
+library(timeSeries)
+dat <- timeSequence(from = "2011-12-01", to="2017-01-01", by="month")
+dat <- as.list(dat)
+
+air <- data.frame()
+aird <- data.frame()
+
+detach("package:timeSeries", unload=TRUE)
+
+for (k in dat){
+    aird<- as.data.frame(nrow(filter(queens, host_since <= as.Date(k))))
+    air <- rbind(air,aird)
+}
+
+date <- t(as.data.frame(dat))
+air$date <- date
+
+zil <- z_queens[,-c(1:19)]
+zil <- t(zil)
+zil <- as.data.frame(zil)
+
+air <-cbind(air,zil)
+
+col <- c("Airbnbs", "Date", "Med_Rent")
+colnames(air) <- col
+air$Date <- as.Date(air$Date)
+
+```
+
+```{r}
+# Plots
+library(ggplot2)
+ggplot(air, aes(Date)) + geom_line(aes(y = Airbnbs), col = "blue")
+
+
+ggplot(air, aes(Date)) + geom_line(aes(y = Med_Rent), col = "red")
+
+
+ggplot(air, aes(Date)) + geom_line(aes(y = Airbnbs), col = "blue") + geom_line(aes(y = Med_Rent), col = "red")
+
+```
+

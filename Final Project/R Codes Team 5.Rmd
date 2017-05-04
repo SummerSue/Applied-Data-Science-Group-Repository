@@ -1,0 +1,451 @@
+---
+title: "Final Project Team 5"
+author: "Bob Chen, Sam Gass, Suer Hu, Miriam McKinney, Sindhi Polubothu"
+date: "May 3, 2017"
+output: github_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r panel data}
+#We used this as a format to take the airbnb data and zillow data and put it into
+#panel data format
+
+#Read in New Orleans Data and separate out to only NO
+neworleans <- read.csv("Data/Airbnb listings/neworleanslistings.csv")
+zri <- read.csv("Data/Panel Data/zri_all.csv")
+neworleans_zri <- filter(zri, City == "New Orleans")
+
+#All New Orleans Neighborhoods in Zillow File
+neigh_neworleans <- unique(neworleans_zri$RegionName)
+neworleans$host_since <- as.Date(neworleans$host_since)
+
+
+#Create Time List (these are the dates we want)
+library(timeSeries)
+dat <- timeSequence(from = "2010-11-01", to="2017-02-01", by="month")
+dat <- as.list(dat)
+detach("package:timeSeries", unload=TRUE) #This package interferes with dplyr
+
+#This loop takes the airbnb data and gives us the number in each neighborhood for each date
+neworleans_bnb <- data.frame()
+aird <- data.frame()
+air <- data.frame()
+for (i in neigh_neworleans){
+  aird <- data.frame()
+  air <- data.frame()
+  for (k in dat){ 
+    hood <- filter(neworleans, neighbourhood_cleansed == i) 
+    aird[1,1] <- i
+    aird[1,2] <- as.data.frame(nrow(filter(hood, host_since <= as.Date(k))))
+    aird[1,3] <- as.character(k)
+    air <- rbind(aird, air)
+  }
+  neworleans_bnb <- rbind(air, neworleans_bnb)
+}
+
+neworleans_bnb$City <- "New Orleans"
+
+#Getting Zillow Data in
+library(reshape)
+
+neworleans_zri <- neworleans_zri[,-c(1,3:7)]
+neworleans_zri <- melt(neworleans_zri) #Melt to go long to wide
+
+#Mess with data to get in right format
+neworleans_zri <- as.data.frame(sapply(neworleans_zri, function(x) gsub("X", "", x)))
+neworleans_zri$variable <- as.character(neworleans_zri$variable)
+neworleans_zri$RegionName <- as.character(neworleans_zri$RegionName)
+neworleans_zri$value <- as.numeric(as.character(neworleans_zri$value))
+neworleans_zri$variable <- lapply(neworleans_zri$variable, function(x) paste(x,"01", sep="."))
+neworleans_zri$variable <- as.character(neworleans_zri$variable)
+#Get correct date format
+neworleans_zri$variable <- as.Date(neworleans_zri$variable, "%Y.%m.%d")
+#Rename columns to merge
+colnames(neworleans_zri) <- c("Neighborhood", "Date", "ZRI")
+colnames(neworleans_bnb) <- c("Neighborhood", "Airbnb", "Date", "City")
+neworleans_bnb$Date <- as.Date(neworleans_bnb$Date)
+
+#Merge Airbnb and Zillow Data
+neworleans_bnb <- left_join(neworleans_bnb, neworleans_zri, by = c("Neighborhood", "Date"))
+#Filter to the dates we want
+neworleans_bnb <- filter(neworleans_bnb, Date <= as.Date("2016-12-30") & Date >= as.Date("2016-01-01"))
+
+#Los Angeles--------------------------------------------------------------------
+
+
+#Read in Los Angeles Data and separate out to only LA
+la <- read.csv("Data/Airbnb listings/la_bnb.csv")
+la_zri <- filter(zri, City == "Los Angeles")
+
+#All Los Angeles Neighborhoods in Zillow File
+neigh_la <- unique(la_zri$RegionName)
+la$host_since <- as.Date(la$host_since)
+
+#This loop takes the airbnb data and gives us the number in each neighborhood for each date
+la_bnb <- data.frame()
+aird <- data.frame()
+air <- data.frame()
+for (i in neigh_la){
+  aird <- data.frame()
+  air <- data.frame()
+  for (k in dat){ 
+    hood <- filter(la, neighbourhood_cleansed == i) 
+    aird[1,1] <- i
+    aird[1,2] <- as.data.frame(nrow(filter(hood, host_since <= as.Date(k))))
+    aird[1,3] <- as.character(k)
+    air <- rbind(aird, air)
+  }
+  la_bnb <- rbind(air, la_bnb)
+}
+
+la_bnb$City <- "Los Angeles"
+
+#Getting Zillow Data in
+library(reshape)
+
+la_zri <- la_zri[,-c(1,3:7)]
+la_zri <- melt(la_zri)
+la_zri <- as.data.frame(sapply(la_zri, function(x) gsub("X", "", x)))
+la_zri$variable <- as.character(la_zri$variable)
+la_zri$RegionName <- as.character(la_zri$RegionName)
+la_zri$value <- as.numeric(as.character(la_zri$value))
+la_zri$variable <- lapply(la_zri$variable, function(x) paste(x,"01", sep="."))
+la_zri$variable <- as.character(la_zri$variable)
+la_zri$variable <- as.Date(la_zri$variable, "%Y.%m.%d")
+colnames(la_zri) <- c("Neighborhood", "Date", "ZRI")
+colnames(la_bnb) <- c("Neighborhood", "Airbnb", "Date", "City")
+la_bnb$Date <- as.Date(la_bnb$Date)
+
+la_bnb <- left_join(la_bnb, la_zri, by = c("Neighborhood", "Date"))
+la_bnb <- filter(la_bnb, Date <= as.Date("2016-12-30") & Date >= as.Date("2016-01-01"))
+
+#New York City-------------------------------------------------------------------
+
+
+#Read in New York Data and separate out to only NYC
+nyc <- read.csv("Data/Airbnb listings/nyc_bnb.csv")
+nyc_zri <- filter(zri, City == "New York")
+
+#All New York Neighborhoods in Zillow File
+neigh_nyc <- unique(nyc_zri$RegionName)
+nyc$host_since <- as.Date(nyc$host_since)
+
+#This loop takes the airbnb data and gives us the number in each neighborhood for each date
+nyc_bnb <- data.frame()
+aird <- data.frame()
+air <- data.frame()
+for (i in neigh_nyc){
+  aird <- data.frame()
+  air <- data.frame()
+  for (k in dat){ 
+    hood <- filter(nyc, neighbourhood_cleansed == i) 
+    aird[1,1] <- i
+    aird[1,2] <- as.data.frame(nrow(filter(hood, host_since <= as.Date(k))))
+    aird[1,3] <- as.character(k)
+    air <- rbind(aird, air)
+  }
+  nyc_bnb <- rbind(air, nyc_bnb)
+}
+
+nyc_bnb$City <- "New York"
+
+#Getting Zillow Data in
+library(reshape)
+
+nyc_zri <- nyc_zri[,-c(1,3:7)]
+nyc_zri <- melt(nyc_zri) #Melt to go long to wide
+
+#Mess with data to get in right format
+nyc_zri <- as.data.frame(sapply(nyc_zri, function(x) gsub("X", "", x)))
+nyc_zri$variable <- as.character(nyc_zri$variable)
+nyc_zri$RegionName <- as.character(nyc_zri$RegionName)
+nyc_zri$value <- as.numeric(as.character(nyc_zri$value))
+nyc_zri$variable <- lapply(nyc_zri$variable, function(x) paste(x,"01", sep="."))
+nyc_zri$variable <- as.character(nyc_zri$variable)
+#Get correct date format
+nyc_zri$variable <- as.Date(nyc_zri$variable, "%Y.%m.%d")
+#Rename columns to merge
+colnames(nyc_zri) <- c("Neighborhood", "Date", "ZRI")
+colnames(nyc_bnb) <- c("Neighborhood", "Airbnb", "Date", "City")
+nyc_bnb$Date <- as.Date(nyc_bnb$Date)
+
+#Merge Airbnb and Zillow Data
+nyc_bnb <- left_join(nyc_bnb, nyc_zri, by = c("Neighborhood", "Date"))
+#Filter to the dates we want
+nyc_bnb <- filter(nyc_bnb, Date <= as.Date("2016-12-30") & Date >= as.Date("2016-01-01"))
+```
+
+```{r merge cities}
+#This file merges the three cities we use in the study together--------------------------
+
+t <- seq(from = 2138, to = 2160, by = 2)
+newyork_bnb <- read.csv("nyc_2016_pnl.csv") #New York Panel Data
+newyork_bnb <- newyork_bnb[-c(901:924, 1825:1848,t),]
+la_bnb <- read.csv("la_2016_pnl.csv") #LA Panel Data
+newyork_bnb <- newyork_bnb[,-1]
+la_bnb <- la_bnb[,-1]
+neworleans_bnb <- read.csv("neworleans_2016_pnl.csv") #NO Panel Data
+neworleans_bnb <- neworleans_bnb[,-1]
+
+#We added cities to the neighborhood column to avoid duplicates
+la_bnb$Neighborhood <- lapply(la_bnb$Neighborhood, function(x) paste(x,"(Los Angeles)", sep=""))
+neworleans_bnb$Neighborhood<- lapply(neworleans_bnb$Neighborhood, function(x) paste(x,"(New Orleans)", sep=""))
+newyork_bnb$Neighborhood<- lapply(newyork_bnb$Neighborhood, function(x) paste(x,"(New York)", sep="."))
+newyork_bnb$Neighborhood <- as.character(newyork_bnb$Neighborhood)
+neworleans_bnb$Neighborhood <- as.character(neworleans_bnb$Neighborhood)
+la_bnb$Neighborhood <- as.character(la_bnb$Neighborhood)
+neworleans_bnb$Date <- as.Date(neworleans_bnb$Date)
+newyork_bnb$Date <- as.Date(newyork_bnb$Date)
+la_bnb$Date <- as.Date(la_bnb$Date)
+
+#Bind all of the cities together
+merged_data <- rbind(newyork_bnb, neworleans_bnb, la_bnb) #Create merged data file
+merged_data$Neighborhood <- as.character(merged_data$Neighborhood)
+```
+
+```{r add control}
+#Adding control variables to data
+merged_data <- read.csv("Data/merged_data.csv") #data created in previous r chunk
+
+##This File Creates Panel Data With City Rent and City Pricing Controls-------------------
+
+#Make names the same as in other file
+merged_data$City <- as.character(merged_data$City)
+merged_data$City[merged_data$City == "New York"] <- "New York, NY"
+merged_data$City[merged_data$City == "la"] <- "Los Angeles-Long Beach-Anaheim, CA"
+merged_data$City[merged_data$City == "New Orleans"] <- "New Orleans, LA"
+
+#Read in condo data
+zri_city <- read.csv("nbh_condo.csv")
+zri_city <- filter(zri_city, City == "New York" | City == "New Orleans" |
+                     City == "Los Angeles")
+
+#Format for merging
+zri_city <- zri_city[,-c(1,4:7)]
+zri_city <- melt(zri_city) #Melt long to wide
+zri_city <- as.data.frame(sapply(zri_city, function(x) gsub("X", "", x))) #Take out X's 
+#Change Factors to characters
+zri_city$variable <- as.character(zri_city$variable)
+zri_city$RegionName <- as.character(zri_city$RegionName)
+#Change numbers to numeric
+zri_city$value <- as.numeric(as.character(zri_city$value))
+zri_city$variable <- lapply(zri_city$variable, function(x) paste(x,"01", sep="."))
+zri_city$variable <- as.character(zri_city$variable)
+#Make Date in right format
+zri_city$variable <- as.Date(zri_city$variable, "%Y.%m.%d")
+
+#Add in condo rent data
+la_zri <- filter(zri_city, City == "Los Angeles")
+no_zri <- filter(zri_city, City == "New Orleans")
+nyc_zri <- filter(zri_city, City == "New York")
+
+#Add city names to neighborhood to avoid duplicates
+la_zri$Neighborhood <- lapply(la_zri$RegionName, function(x) paste(x,"(Los Angeles)", sep=""))
+no_zri$Neighborhood<- lapply(no_zri$RegionName, function(x) paste(x,"(New Orleans)", sep=""))
+nyc_zri$Neighborhood<- lapply(nyc_zri$RegionName, function(x) paste(x,"(New York)", sep="."))
+
+#Bind cities together
+zri_city <- rbind(la_zri, no_zri, nyc_zri)
+zri_city <- zri_city[,-c(1:2)]
+
+#Make variables same as other dataset
+colnames(zri_city) <- c("Date", "ZRI_SFR_CONDO", "Neighborhood")
+
+#Get dates we want
+zri_city <- filter(zri_city, Date <= as.Date("2016-12-31") &  Date >= as.Date("2016-01-01"))
+zri_city$Neighborhood <- as.character(zri_city$Neighborhood)
+zri_city$Date <- as.Date(zri_city$Date)
+zri_city$ZRI_SFR_CONDO <- as.numeric(zri_city$ZRI_SFR_CONDO)
+merged_data$Date <- as.Date(merged_data$Date)
+
+#Merge data files
+merged_data <- left_join(merged_data, zri_city, by = c("Neighborhood", "Date"))
+
+#Eliminate duplicates(This happens because some cities have duplicate neighborhood names)
+merged_data <- merged_data[!duplicated(merged_data[,c(2,4)]),]
+
+
+#Add in city median rent data --------------------------------------------------------
+zri_city <- read.csv("zri_city.csv")
+zri_city <- filter(zri_city, RegionName == "Boston, MA" | RegionName == "Austin, TX" |
+                     RegionName == "Los Angeles-Long Beach-Anaheim, CA" |
+                     RegionName == "Denver, CO" | RegionName == "neworleans, IL")
+
+
+zri_city <- zri_city[,-c(1,3)]
+zri_city <- melt(zri_city)
+zri_city <- as.data.frame(sapply(zri_city, function(x) gsub("X", "", x))) #Take out X's
+
+#Change factors to characters
+zri_city$variable <- as.character(zri_city$variable)
+zri_city$RegionName <- as.character(zri_city$RegionName)
+zri_city$value <- as.numeric(as.character(zri_city$value))
+#Add day to date to make date convertible
+zri_city$variable <- lapply(zri_city$variable, function(x) paste(x,"01", sep="."))
+zri_city$variable <- as.character(zri_city$variable)
+zri_city$variable <- as.Date(zri_city$variable, "%Y.%m.%d") #Change date format
+colnames(zri_city) <- c("Neighborhood", "Date", "City_ZRI")#Change colnames for merging
+
+#Merge Files
+merged_data <- left_join(merged_data, zri_city, by = c("Neighborhood", "Date"))
+```
+
+```{r panel model}
+merged_data <- read.csv("Data/merged_data_with_controls.csv") #data created in previous r chunk
+
+library(plm)
+library(systemfit)
+model_original <- plm(ZRI ~ Airbnb, 
+             index = c("Neighborhood","Date"), model="within", data = merged_data)
+model_fixed <- plm(ZRI ~ Airbnb + ZRI_SFR_CONDO + ZRI_City, 
+                   index = c("Neighborhood","Date"), model="within", data = merged_data)
+model_fixed_time <- plm(ZRI ~ Airbnb + ZRI_SFR_CONDO + Date + ZRI_City, 
+             index = c("Neighborhood","Date"), model="within", data = merged_data)
+model_random <- plm(ZRI ~ Airbnb + ZRI_SFR_CONDO + Date + ZRI_City, 
+              index = c("Neighborhood","Date"), model="random", data = merged_data)
+
+summary(model_original)
+summary(model_fixed)
+summary(model_random)
+summary(model_fixed_time)
+
+#Random Effects vs Fixed Effects
+
+phtest(model_fixed, model_random) #Use Fixed
+
+#Use time as variable?
+pFtest(model_fixed_time, model_fixed) #Use time as variable
+```
+
+```{r final model}
+merged_data <- read.csv("Data/merged_data_with_controls.csv")
+
+library(plm)
+library(systemfit)
+library(lme4)
+
+#Start off testing the different models
+
+model_original <- plm(ZRI ~ bnb_lag, 
+             index = c("Neighborhood","Date"), model="within", data = merged_data)
+model_fixed <- plm(ZRI ~ bnb_lag + ZRI_SFR_CONDO + ZRI_City, 
+                   index = c("Neighborhood","Date"), model="within", data = merged_data)
+model_fixed_time <- plm(ZRI ~ bnb_lag + ZRI_SFR_CONDO + Date, 
+             index = c("Neighborhood","Date"), model="within", data = merged_data)
+model_random <- plm(ZRI ~ bnb_lag + ZRI_SFR_CONDO + Date + ZRI_City, 
+              index = c("Neighborhood","Date"), model="random", data = merged_data)
+
+summary(model_original)
+summary(model_fixed)
+summary(model_random)
+summary(model_fixed_time)
+
+fixef(model_fixed_time)
+
+#Random Effects vs Fixed Effects
+
+phtest(model_fixed, model_random) #Use Fixed
+
+#Use time as variable?
+pFtest(model_fixed_time, model_fixed) #Use time as variable
+
+#Lagging
+
+#Lagged
+m <- merged_data[, c(3,5,2,4,7:9)]
+pd <- pdata.frame(m)
+pd$bnb_lag1 <- lag(pd$bnb_lag)
+pd$bnb_lag2 <- lag(pd$bnb_lag, 2)
+pd$bnb_lag3 <- lag(pd$bnb_lag, 3)
+pd$bnb_lag4 <- lag(pd$bnb_lag, 4)
+
+#One Month Lag
+
+model_lag1<- plm(ZRI ~ bnb_lag1 + ZRI_SFR_CONDO + Date,  
+                 index = c("Neighborhood","Date"), model="within", data = pd)
+summary(model_lag1)
+#Lag 2
+model_lagged2 <- plm(ZRI ~ bnb_lag2 + Date + ZRI_SFR_CONDO, 
+                     index = c("Neighborhood","Date"), model="within", data = pd)
+
+summary(model_lagged2)
+
+#Lag 3
+model_lagged3 <- plm(ZRI ~ bnb_lag3 + Date + ZRI_SFR_CONDO, 
+                     index = c("Neighborhood","Date"), model="within", data = pd)
+
+summary(model_lagged3)
+
+#Lag 4
+model_lagged4 <- plm(ZRI ~ bnb_lag4 + Date + ZRI_SFR_CONDO, 
+                     index = c("Neighborhood","Date"), model="within", data = pd)
+summary(model_lagged4)
+
+
+
+
+#Instrumental Variables------------------------FINAL MODEL. This is what was used in presentation
+model_instrumental<- plm(ZRI ~ bnb_lag + Date | ZRI_City + Date, 
+                        index = c("Neighborhood","Date"), model="within", data = pd)
+summary(model_instrumental)
+
+#Lagged
+m <- merged_data[, c(3,5,2,4,7:9)]
+pd <- pdata.frame(m)
+pd$bnb_lag1 <- lag(pd$bnb_lag)
+pd$bnb_lag2 <- lag(pd$bnb_lag, 2)
+pd$bnb_lag3 <- lag(pd$bnb_lag, 3)
+pd$bnb_lag4 <- lag(pd$bnb_lag, 4)
+
+
+
+model_lag1<- plm(ZRI ~ bnb_lag1 + Date | ZRI_City + Date,  
+                        index = c("Neighborhood","Date"), model="within", data = pd)
+summary(model_lag1)
+#Lag 2
+instr_lagged2 <- plm(ZRI ~ bnb_lag2 + Date | ZRI_City + Date, 
+                     index = c("Neighborhood","Date"), model="within", data = pd)
+
+summary(instr_lagged2)
+
+#Lag 3
+instr_lagged3 <- plm(ZRI ~ bnb_lag3 + Date | ZRI_City + Date, 
+                     index = c("Neighborhood","Date"), model="within", data = pd)
+
+summary(instr_lagged3)
+
+#Lag 4
+instr_lagged4 <- plm(ZRI ~ bnb_lag4 + Date | ZRI_City + Date, 
+                     index = c("Neighborhood","Date"), model="within", data = pd)
+
+summary(instr_lagged4)
+
+#Graphing Coefs
+
+
+nolag <- as.data.frame(coef(summary(model_fixed_time)))
+lag1 <- as.data.frame(coef(summary(model_lagged1)))
+lag2 <- as.data.frame(coef(summary(model_lagged2)))
+lag3 <- as.data.frame(coef(summary(model_lagged3)))
+lag4 <- as.data.frame(coef(summary(model_lagged4)))
+
+coefs <- rbind(nolag[1, ], lag1[1, ], lag2[1, ], lag3[1, ], lag4[1, ])
+coefs <- coefs[, 1]
+coefs <- as.data.frame(coefs)
+
+t<- c("Same Month", "One Month", "Two Months", "Three Months", "Four Months")
+
+coefs$time <- 0:4
+
+#Graphing
+
+ggplot(coefs, aes(time, coefs)) + geom_line(col = "dodgerblue3", size = 2) +
+  labs(y = "Effect of Number of Airbnb on Median Rent", 
+       x = "Months After Airbnb Increase", 
+       caption = "(Effect is Fixed Effect Coefficient)") + theme_minimal() + 
+  scale_y_continuous(limits = c(0, .3))
+```
+
