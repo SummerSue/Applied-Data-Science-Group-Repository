@@ -1,4 +1,4 @@
-# Airbnb Final Project:
+# Airbnb Final Project
 
 ## General Information
 
